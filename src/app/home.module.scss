@@ -1,0 +1,34 @@
+@import '../assets/styles/colors.scss';
+@import '../assets/styles/globals.scss';
+
+.empty__blockBg {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  background: $fourth;
+  padding-right: 40px;
+}
+
+.decoration__line {
+  position: relative;
+}
+
+.decoration__line::before {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 37px;
+  bottom: -3.5px;
+  width: 2px;
+  border-radius: 10px;
+  height: 20px;
+  background: $secondary;
+}
+
+.empty__link {
+  font-weight: 500;
+  color: $secondary;
+}

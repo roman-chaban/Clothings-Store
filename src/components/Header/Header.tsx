@@ -2,10 +2,10 @@
 
 import { FC } from 'react';
 import styles from '@/components/Header/header.module.scss';
-import Image from 'next/image';
 import Link from 'next/link';
 import { navBarLinks, HeaderNavLinks } from '@/constants/header-links';
 import { usePathname } from 'next/navigation';
+import { Code } from 'grommet-icons';
 
 export const Header: FC = () => {
   const pathname = usePathname();
@@ -13,12 +13,7 @@ export const Header: FC = () => {
     <header className={styles.header}>
       <div className={styles.header__container}>
         <div className={styles.header__logo}>
-          <Image
-            src='./favicon/vantela.svg'
-            width={119}
-            height={70}
-            alt='Vantela Logo'
-          />
+          E-Commerce <Code />
         </div>
         <nav className={styles.header__navBar}>
           <ul className={styles.header__menu}>

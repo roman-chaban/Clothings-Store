@@ -8,7 +8,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Vantela | Home',
+  title: 'E-Commerce | Home',
   description: 'E-Commerce App',
   icons: './favicon/vantela.svg',
 };

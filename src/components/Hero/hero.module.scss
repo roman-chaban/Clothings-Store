@@ -2,8 +2,17 @@
 @import '../../assets/styles/globals.scss';
 @import '../../assets/styles/functions.scss';
 
+.hero {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .heroTop__block {
-  padding: rem(36px);
+  padding: rem(26px);
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -35,4 +44,70 @@
   color: $secondary;
   font-size: $primary-size;
   font-weight: 500;
+}
+
+.heroBanner {
+  width: 80%;
+  height: rem(600px);
+  margin: 0 auto;
+  border-radius: 1rem;
+  background: url('../../images/banner/nike-banner.png');
+  background-position: center 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.heroBanner__block {
+  display: flex;
+  flex-direction: column;
+  gap: rem(20px);
+  margin-top: 100px;
+  margin-left: 10px;
+  max-width: 650px;
+  border-radius: 20px;
+  background: #ffffffb1;
+  padding: rem(10px);
+  margin-left: 40px;
+}
+
+.hero__title {
+  font-size: rem(48px);
+  color: $yellow;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.hero__subTitle {
+  font-size: rem(30px);
+  color: $primary;
+}
+
+.hero__bold {
+  font-size: rem(32px);
+  color: $primary;
+}
+
+.hero__subTitleCapture {
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.slider__circles {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: rem(16px);
+  margin-right: 40px;
+  margin-top: 150px;
+}
+
+.slider__circle {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background: $yellow;
+}
+
+.active {
+  background: $secondary;
 }
