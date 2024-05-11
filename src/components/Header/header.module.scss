@@ -1,0 +1,100 @@
+@import '../../assets/styles/colors.scss';
+@import '../../assets/styles/globals.scss';
+@import '../../assets/styles/functions.scss';
+
+.empty__blockBg {
+  width: 100%;
+  height: 70px;
+  background: $fourth;
+}
+
+.header {
+  width: 100%;
+}
+
+.header__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1440px;
+  padding: 25px 40px;
+  margin: 0 auto;
+}
+
+.header__navBar {
+  display: flex;
+  align-items: center;
+  gap: rem(32px);
+}
+
+.header__menu {
+  display: flex;
+  gap: rem(16px);
+}
+
+.active {
+  color: $primary;
+  font-weight: 700;
+}
+
+.menu__listItem {
+  color: $secondary;
+  font-weight: 700;
+  font-size: $primary-size;
+}
+
+.nav__icon {
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  position: relative;
+}
+
+.nav__icon > .counter__icon {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  color: #ffffff;
+  font-weight: 700;
+  background: #1f3d97d0;
+  border-radius: 50%;
+  font-size: 10px;
+}
+
+.nav__icons {
+  display: flex;
+  align-items: center;
+  gap: $primary-size;
+}
+
+.nav__buttonsBlock {
+  display: flex;
+  align-items: center;
+  gap: $primary-size;
+}
+
+.nav__signUp {
+  padding: rem(14px) rem(18px);
+  background: transparent;
+  font-size: $secondary-size;
+  font-weight: 700;
+  color: $primary;
+  border: 1px solid $primary;
+  border-radius: rem(73px);
+}
+
+.nav__signIn {
+  padding: rem(14px) rem(18px);
+  background: $primary;
+  font-size: $secondary-size;
+  font-weight: 700;
+  color: $thirdary;
+  border: 1px solid $primary;
+  border-radius: rem(73px);
+}
