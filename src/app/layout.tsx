@@ -4,6 +4,7 @@ import '@/assets/styles/main.scss';
 import { Header } from '@/components/Header/Header';
 import styles from '@/app/home.module.scss';
 import { Footer } from '@/components/Footer/Footer';
+import { Providers } from '@/redux/provider/provider';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -11,9 +12,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'E-Commerce | Home',
+  title: 'Clothing Store | Home',
   description: 'E-Commerce App',
-  icons: './favicon/vantela.svg',
+  icons: './favicon/nextjs.svg',
 };
 
 export default function RootLayout({
@@ -24,9 +25,11 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={`${inter.className} ${styles.body}`}>
-        <Header />
-        <main className={styles.main}>{children}</main>
-        <Footer />
+        <Providers>
+          <Header />
+          <main className={styles.main}>{children}</main>
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

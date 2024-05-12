@@ -3,9 +3,7 @@
 import { FC } from 'react';
 import styles from '@/components/Footer/footer.module.scss';
 import Link from 'next/link';
-import { Facebook } from 'grommet-icons';
-import { Tiktok } from 'grommet-icons';
-import { Instagram } from 'grommet-icons';
+import { Github, Linkedin, Send } from 'grommet-icons';
 
 interface ListItem {
   id: number;
@@ -21,18 +19,18 @@ interface ListProps {
 export const listItemsSocialMedia = [
   {
     id: 0,
-    label: 'Facebook',
-    icon: <Facebook color='white' style={{ width: 16, height: 14 }} />,
+    label: 'Github',
+    icon: <Github color='white' style={{ width: 14, height: 14 }} />,
   },
   {
     id: 1,
-    label: 'TikTok',
-    icon: <Tiktok color='white' style={{ width: 16, height: 14 }} />,
+    label: 'LinkedIn',
+    icon: <Linkedin color='white' style={{ width: 14, height: 14 }} />,
   },
   {
     id: 2,
-    label: 'Instagram',
-    icon: <Instagram color='white' style={{ width: 16, height: 14 }} />,
+    label: 'Telegram',
+    icon: <Send color='white' style={{ width: 16, height: 14 }} />,
   },
 ];
 

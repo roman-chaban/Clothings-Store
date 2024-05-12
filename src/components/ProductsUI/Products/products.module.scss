@@ -1,0 +1,51 @@
+@import '../../../assets/styles/colors.scss';
+@import '../../../assets/styles/globals.scss';
+@import '../../../assets/styles/functions.scss';
+
+.productsWrapper {
+  display: flex;
+  gap: rem(20px);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+  max-width: 1920px;
+  overflow: hidden;
+  margin-bottom: rem(50px);
+}
+
+.slide {
+  width: 300px;
+}
+
+.productBlock {
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.shoesTitle {
+  font-size: $thirdary-size;
+  font-weight: 700;
+  color: $primary;
+}
+
+
+.navigationButtons {
+  display: flex;
+  align-items: center;
+  gap: rem(20px);
+}
+
+.prevButton , .nextButton {
+  padding: 10px;
+  background: $primary;
+  color: $thirdary;
+  font-weight: 500;
+  border-radius: rem(20px);
+}
+
+.swiper__wrapper {
+  gap: rem(50px);
+}

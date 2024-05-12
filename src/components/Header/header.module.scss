@@ -34,11 +34,6 @@
   color: $secondary;
 }
 
-
-
-
-
-
 .header {
   width: 100%;
 }
@@ -46,9 +41,10 @@
 .header__logo {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
+  font-size: $four-size;
   color: $primary;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .header__container {
@@ -121,9 +117,6 @@
 .nav__signUp {
   padding: rem(14px) rem(18px);
   background: transparent;
-  font-size: $secondary-size;
-  font-weight: 700;
-  color: $primary;
   border: 1px solid $primary;
   border-radius: rem(73px);
 }
@@ -131,9 +124,17 @@
 .nav__signIn {
   padding: rem(14px) rem(18px);
   background: $primary;
-  font-size: $secondary-size;
-  font-weight: 700;
-  color: $thirdary;
   border: 1px solid $primary;
   border-radius: rem(73px);
+}
+
+.signIn {
+  color: $thirdary;
+  font-size: $secondary-size;
+  font-weight: 700;
+}
+.signUp {
+  font-size: $secondary-size;
+  font-weight: 700;
+  color: $primary;
 }

@@ -1,0 +1,74 @@
+@import '../../../assets/styles/colors.scss';
+@import '../../../assets/styles/globals.scss';
+@import '../../../assets/styles/functions.scss';
+
+.productCart {
+  height: 500px;
+  width: 300px;
+  background: $input-bg;
+  border-radius: rem(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  &:hover {
+    transform: scale(0.90);
+  }
+}
+
+.productCart__container {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: rem(30px);
+}
+
+.productImage {
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.categoryBlock {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.productCart__Info {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: rem(10px);
+}
+
+.productCart__title {
+  color: $primary;
+  font-weight: 600;
+  font-size: $five-size;
+}
+
+.productCart__price {
+  font-size: $primary-size;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: rem(10px);
+}
+
+.productCart__productRating {
+  font-weight: 600;
+  font-size: $primary-size;
+  display: flex;
+  align-items: center;
+  gap: rem(8px);
+}
+
+.productCart__style {
+  font-weight: 500;
+  color: $secondary;
+}
+
+.priceDiscount {
+  text-decoration: line-through;
+  color: $secondary;
+  background: transparent;
+}
