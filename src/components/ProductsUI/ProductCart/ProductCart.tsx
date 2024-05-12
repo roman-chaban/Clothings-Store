@@ -13,7 +13,7 @@ export const ProductCart: FC<Products> = ({
   productRating,
   mainImage,
   style,
-  priceDiscount,
+  priceDiscount = 0,
 }) => {
   return (
     <div className={styles.productCart}>

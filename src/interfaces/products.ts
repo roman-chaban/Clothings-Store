@@ -5,7 +5,7 @@ export interface Products {
   price: number;
   productRating: number;
   mainImage: string;
-  priceDiscount: number;
+  priceDiscount?: number;
   images?: {
     one: string;
     two: string;
