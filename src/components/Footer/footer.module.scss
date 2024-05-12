@@ -1,0 +1,98 @@
+@import '../../assets/styles/colors.scss';
+@import '../../assets/styles/globals.scss';
+@import '../../assets/styles/functions.scss';
+
+.footer {
+  width: 100%;
+  padding-top: 80px;
+  background: $primary;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  gap: rem(80px);
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.footer__logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: $thirdary;
+  font-weight: normal;
+  font-size: $four-size;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer__form {
+  width: 359px;
+  display: flex;
+  align-items: center;
+  padding: 0 32px;
+  justify-content: space-between;
+  background: $thirdary;
+  border-radius: rem(48px);
+}
+
+.footer__input {
+  padding: 16px 0px;
+  color: $input-bg;
+  background: transparent;
+}
+
+.footer__input::placeholder {
+  color: $gray;
+  caret-color: $gray;
+  font-weight: 500;
+}
+
+.footer__arrow {
+  position: relative;
+  top: 3px;
+}
+
+.footer__nav {
+  display: flex;
+  align-items: center;
+  gap: rem(160px);
+}
+
+.footer__menu {
+  display: flex;
+  flex-direction: column;
+  gap: rem(16px);
+}
+
+.menu__title {
+  font-size: $four-size;
+  padding-bottom: 16px;
+  color: $thirdary;
+}
+
+.menu__ListLink {
+  color: $thirdary;
+  display: flex;
+  align-items: center;
+  gap: rem(8px);
+  text-decoration: underline;
+}
+
+.footer__copyright {
+  padding: 32px 0;
+  margin-top: rem(80px);
+  text-align: center;
+  color: $thirdary;
+  font-size: $primary-size;
+  background: $footer-menu;
+}

@@ -98,7 +98,7 @@
   justify-content: flex-end;
   gap: rem(16px);
   margin-right: 40px;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 .slider__circle {
@@ -110,4 +110,14 @@
 
 .active {
   background: $secondary;
+}
+
+.shopNow {
+  padding: 16px 32px;
+  max-width: 143px;
+  color: $thirdary;
+  font-weight: 600;
+  font-size: rem(16px);
+  background: $primary;
+  border-radius: rem(40px);
 }

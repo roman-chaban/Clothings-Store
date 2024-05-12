@@ -37,9 +37,14 @@ export const Hero: FC = () => {
             containing Lorem Ipsum passages, and more recently with desktop
             publishing
           </span>
+          <button type='button' className={styles.shopNow}>
+            Shop Now
+          </button>
         </div>
         <div className={styles.slider__circles}>
-          <button className={`${styles.slider__circle} ${styles.active}`}></button>
+          <button
+            className={`${styles.slider__circle} ${styles.active}`}
+          ></button>
           <button className={styles.slider__circle}></button>
           <button className={styles.slider__circle}></button>
         </div>

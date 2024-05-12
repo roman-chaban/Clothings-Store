@@ -11,6 +11,17 @@ export const Header: FC = () => {
   const pathname = usePathname();
   return (
     <header className={styles.header}>
+      <div className={styles.empty__blockBg}>
+        <Link
+          className={`${styles.empty__link} ${styles.decoration__line}`}
+          href='/help'
+        >
+          Help
+        </Link>
+        <Link className={styles.empty__link} href='/store'>
+          Store
+        </Link>
+      </div>
       <div className={styles.header__container}>
         <div className={styles.header__logo}>
           E-Commerce <Code />
