@@ -14,7 +14,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: 'Clothing Store | Home',
   description: 'E-Commerce App',
-  icons: './favicon/nextjs.svg',
+  icons: './favicon/favicon.svg',
 };
 
 export default function RootLayout({

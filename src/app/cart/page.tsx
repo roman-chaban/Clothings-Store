@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 
 export const metadata: Metadata = {
-   title: 'E-Commerce | Cart',
+  title: 'Clothing Store | Cart',
 }
 
 

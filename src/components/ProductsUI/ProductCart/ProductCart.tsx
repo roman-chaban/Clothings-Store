@@ -30,10 +30,15 @@ export const ProductCart: FC<Products> = ({
         <div className={styles.productCart__Info}>
           <h3 className={styles.productCart__title}>{title}</h3>
           <p className={styles.productCart__price}>
-            {'$'} {price}{' '}
-            <mark className={styles.priceDiscount}>
+            {priceDiscount < 1 ? '' : priceDiscount}
+            <mark
+              className={styles.priceDiscount}
+              style={{
+                textDecoration: priceDiscount < 1 ? 'none' : 'line-through',
+              }}
+            >
               {'$'}
-              {priceDiscount}
+              {price}
             </mark>
           </p>
           <span className={styles.productCart__productRating}>

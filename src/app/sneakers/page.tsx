@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'E-Commerce | Sneakers',
+  title: 'Clothing Store | Sneakers',
 };
 
 export default function Sneakers() {
