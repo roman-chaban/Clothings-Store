@@ -1,36 +1,11 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Project-Stack: Next.js , React.js, Redux Toolkit.js, Swiper, Grommet Icons, MUI icons, scss.modules
 
-## Getting Started
+Project Name: Clothing-Store
 
-First, run the development server:
+Description: Welcome to Clothing-Store - your ultimate destination for all things related to fashionable footwear! We are true enthusiasts in the world of sneakers, where each pair reflects the latest fashion trends and technologies. Whether you're in search of comfortable kicks for everyday wear, performance-oriented styles for athletic training, or statement-making designs for upscale events, we have everything you need.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+We take pride in offering a wide selection of renowned brands, including Nike, Adidas, Puma, Reebok, and many more. Our team carefully curates each model to ensure you're provided with only the best products that deliver the highest level of comfort, style, and quality.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+At Clothing-Store, we don't just sell sneakers - we provide unparalleled service aimed at satisfying our customers. Our experts are always ready to assist you in finding the perfect pair, taking into account your needs and style preferences. We strive to make your shopping experience enjoyable and unforgettable.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Visit Clothing-Store today to discover endless possibilities of fashionable footwear and elevate your style to new heights!
