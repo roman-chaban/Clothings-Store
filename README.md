@@ -1,6 +1,6 @@
-Project-Stack: Next.js , React.js, Redux Toolkit.js, Swiper, Grommet Icons, MUI icons, scss.modules
+# Project-Stack: Next.js , React.js, Redux Toolkit.js, Swiper, Grommet Icons, MUI icons, scss.modules
 
-Project Name: Clothing-Store
+# Project Name: Clothing-Store
 
 Description: Welcome to Clothing-Store - your ultimate destination for all things related to fashionable footwear! We are true enthusiasts in the world of sneakers, where each pair reflects the latest fashion trends and technologies. Whether you're in search of comfortable kicks for everyday wear, performance-oriented styles for athletic training, or statement-making designs for upscale events, we have everything you need.
 
