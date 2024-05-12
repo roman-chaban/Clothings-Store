@@ -61,7 +61,7 @@ export const SneakersProducts: FC<ProductsProps> = ({
           slidesPerView={4}
         >
           {products.map((product) => (
-            <SwiperSlide key={product.style} className={styles.slide}>
+            <SwiperSlide key={product.productId} className={styles.slide}>
               <ProductCart
                 priceDiscount={product.priceDiscount}
                 mainImage={product.mainImage}
