@@ -6,7 +6,7 @@ interface InputProps {
   name?: string;
   placeholder: string;
   className: string;
-  id: string;
+  id?: string;
   onChange: (event: ChangeEvent<HTMLInputElement>) => void;
 }
 
