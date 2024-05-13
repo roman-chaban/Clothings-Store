@@ -9,3 +9,7 @@ We take pride in offering a wide selection of renowned brands, including Nike, A
 At Clothing-Store, we don't just sell sneakers - we provide unparalleled service aimed at satisfying our customers. Our experts are always ready to assist you in finding the perfect pair, taking into account your needs and style preferences. We strive to make your shopping experience enjoyable and unforgettable.
 
 Visit Clothing-Store today to discover endless possibilities of fashionable footwear and elevate your style to new heights!
+
+# Sneakers Page
+
+![image](https://github.com/Chaban1001/clothing-store/assets/137433410/f58886ae-495c-45d6-a691-74feb9b04e22)
