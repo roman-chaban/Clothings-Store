@@ -10,6 +10,11 @@ At Clothing-Store, we don't just sell sneakers - we provide unparalleled service
 
 Visit Clothing-Store today to discover endless possibilities of fashionable footwear and elevate your style to new heights!
 
+# Home Page: 
+
+![image](https://github.com/Chaban1001/clothing-store/assets/137433410/28fe46d9-6459-4ff7-9b71-035c2cc7c0c0)
+
+
 # Sneakers Page:
 
 ![image](https://github.com/Chaban1001/clothing-store/assets/137433410/f58886ae-495c-45d6-a691-74feb9b04e22)
