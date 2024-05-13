@@ -81,15 +81,40 @@ export const Header: FC = () => {
             </button>
           </div>
           <div className={styles.nav__buttonsBlock}>
-            <button type='button' className={styles.nav__signIn}>
-              <Link className={styles.signIn} href='/auth/signUp'>
-                {' '}
+            <button
+              type='button'
+              className={
+                pathname === '/auth/signUp'
+                  ? `${styles.nav__signUp} ${styles.active__button}`
+                  : styles.nav__signUp
+              }
+            >
+              <Link
+                className={`
+      ${styles.signUp}
+      ${pathname === '/auth/signUp' ? styles.active__link : ''}
+    `}
+                href='/auth/signUp'
+              >
                 Sign Up
               </Link>
             </button>
-            <button type='button' className={styles.nav__signUp}>
-              <Link className={styles.signUp} href='/auth/signIn'>
-                {' '}
+
+            <button
+              type='button'
+              className={
+                pathname === '/auth/signIn'
+                  ? `${styles.nav__signIn} ${styles.active__button}`
+                  : styles.nav__signIn
+              }
+            >
+              <Link
+                className={`
+      ${styles.signIn}
+      ${pathname === '/auth/signIn' ? styles.active__link : ''}
+    `}
+                href='/auth/signIn'
+              >
                 Sign In
               </Link>
             </button>

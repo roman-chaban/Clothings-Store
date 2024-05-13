@@ -34,7 +34,7 @@ export const SneakersProducts: FC<ProductsProps> = ({
   return (
     <div className={styles.products}>
       <div className={styles.productBlock}>
-        <h2 className={styles.shoesTitle}>Shoes</h2>
+        <h2 className={styles.shoesTitle}>Most Popular</h2>
         <div className={styles.navigationButtons}>
           <Button
             variant='contained'

@@ -3,9 +3,8 @@
 import { FC, useState } from 'react';
 import styles from './hero.module.scss';
 import { Input } from '../ui/Input/Input';
-import Image from 'next/image';
-import Find from '@/images/icons/find.svg';
 import { HeroSlider } from '../HeroSlider/HeroSlider';
+import SearchIcon from '@mui/icons-material/Search';
 
 export const Hero: FC = () => {
   const [value, setValue] = useState<string>('Search...');
@@ -21,7 +20,7 @@ export const Hero: FC = () => {
             type='text'
             placeholder='Search...'
           />
-          <Image src={Find} width={18} height={18} alt='Find icon' />
+          <SearchIcon style={{ color: '#1f3e97' }} />
         </div>
       </div>
       <div className={styles.heroBanner}>
@@ -44,7 +43,6 @@ export const Hero: FC = () => {
         </div> */}
         <HeroSlider />
       </div>
-    
     </div>
   );
 };

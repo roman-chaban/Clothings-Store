@@ -116,25 +116,41 @@
 
 .nav__signUp {
   padding: rem(14px) rem(18px);
-  background: transparent;
-  border: 1px solid $primary;
+  border: 2px solid $primary;
   border-radius: rem(73px);
+  background: transparent;
 }
 
 .nav__signIn {
   padding: rem(14px) rem(18px);
-  background: $primary;
-  border: 1px solid $primary;
+  border: 2px solid $primary;
   border-radius: rem(73px);
+  background: transparent;
 }
 
 .signIn {
-  color: $thirdary;
   font-size: $secondary-size;
   font-weight: 700;
 }
+
 .signUp {
   font-size: $secondary-size;
   font-weight: 700;
+}
+
+.active__button {
+  background: $primary;
+  color: $thirdary;
+}
+
+.active__link {
+  color: $thirdary;
+}
+
+.signIn:active {
+  color: $primary;
+}
+
+.signUp:active {
   color: $primary;
 }

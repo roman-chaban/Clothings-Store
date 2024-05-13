@@ -48,17 +48,6 @@
   font-weight: 500;
 }
 
-// .heroBanner {
-//   width: 80%;
-//   height: rem(600px);
-//   margin: 0 auto;
-//   border-radius: 1rem;
-//   background: url('../../images/banner/nike-banner.png');
-//   background-position: center 10px;
-//   background-size: cover;
-//   background-repeat: no-repeat;
-// }
-
 .heroBanner__block {
   display: flex;
   flex-direction: column;
@@ -103,5 +92,3 @@
   background: $primary;
   border-radius: rem(40px);
 }
-
-

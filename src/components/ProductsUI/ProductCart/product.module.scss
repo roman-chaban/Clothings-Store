@@ -3,15 +3,15 @@
 @import '../../../assets/styles/functions.scss';
 
 .productCart {
-  height: 500px;
+  height: 530px;
   width: 300px;
-  background: $input-bg;
+  background: $thirdary;
   border-radius: rem(20px);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 64, 128, 0.2) 2px 2px 5px 0px;
   transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   cursor: pointer;
   &:hover {
-    transform: scale(0.90);
+    transform: scale(0.9);
   }
 }
 
@@ -19,7 +19,6 @@
   width: 300px;
   display: flex;
   flex-direction: column;
-  gap: rem(30px);
 }
 
 .productImage {
@@ -71,4 +70,25 @@
   text-decoration: line-through;
   color: $secondary;
   background: transparent;
+}
+
+.shopBtn {
+  margin: 10px 10px;
+  padding: rem(10px);
+  border-radius: rem(20px);
+  background: $primary;
+  color: $thirdary;
+  font-weight: 600;
+}
+
+.cardDiscount {
+  position: relative;
+  bottom: 280px;
+  left: 220px;
+  font-size: rem(14px);
+  background: #c73508d5;
+  font-weight: 600;
+  padding: rem(6px);
+  color: $thirdary;
+  border-radius: rem(10px);
 }
