@@ -7,18 +7,22 @@ import { Facebook, Google, Phone } from 'grommet-icons';
 
 export const SocialForm: FC = () => {
   return (
-    <div className={styles.social}>
+    <div className={styles.socialContainer}>
       <h5 className={styles.social__title}>Or</h5>
       <div className={styles.social__buttons}>
-        <Button type='button' id='social' className={styles.withGoogle}>
+        <Button type='button' id={styles.social} className={styles.withGoogle}>
           <Google color='plain' />
           Sign Up with Google
         </Button>
-        <Button type='button' id='social' className={styles.withFacebook}>
+        <Button
+          type='button'
+          id={styles.social}
+          className={styles.withFacebook}
+        >
           <Facebook color='plain' />
           Sign Up with Facebook
         </Button>
-        <Button type='button' id='social' className={styles.withPhone}>
+        <Button type='button' id={styles.social} className={styles.withPhone}>
           <Phone color='gray' />
           Sign Up with Number
         </Button>

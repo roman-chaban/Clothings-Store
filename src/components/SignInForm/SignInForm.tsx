@@ -1,15 +1,41 @@
 'use client';
 
-import { FC, useState } from 'react';
+import { ChangeEvent, FC, useState } from 'react';
 import styles from './signInForm.module.scss';
 import { Input } from '@/components/ui/Input/Input';
 import { Button } from '../ui/Button/Button';
 import Link from 'next/link';
 import { SocialForm } from '../SocialForm/SocialForm';
 
+interface FormData {
+  email: {
+    value: string;
+  };
+  password: {
+    value: string;
+  };
+}
+
 export const SignInForm: FC = () => {
-  const [email, setEmail] = useState<string>('');
-  const [password, setPassword] = useState<string>('');
+  const [formData, setFormData] = useState<FormData>({
+    email: {
+      value: '',
+    },
+    password: {
+      value: '',
+    },
+  });
+
+  const handleChangeFormData = (event: ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = event.target;
+    setFormData({
+      ...formData,
+      [name]: {
+        value: value,
+      },
+    });
+  };
+
   return (
     <form autoComplete='off' className={styles.signIn__form}>
       <div className={styles.form__flex}>
@@ -23,8 +49,8 @@ export const SignInForm: FC = () => {
             name='email'
             type='email'
             className={styles.email}
-            value={email}
-            onChange={(event) => setEmail(event.target.value)}
+            value={formData.email.value}
+            onChange={handleChangeFormData}
           />
         </label>
         <label htmlFor='password' className={styles.password__label}>
@@ -37,8 +63,8 @@ export const SignInForm: FC = () => {
             name='password'
             type='password'
             className={styles.password}
-            value={password}
-            onChange={(event) => setPassword(event.target.value)}
+            value={formData.password.value}
+            onChange={handleChangeFormData}
           />
         </label>
       </div>

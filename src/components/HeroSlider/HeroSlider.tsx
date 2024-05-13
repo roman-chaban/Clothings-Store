@@ -12,6 +12,8 @@ import {
 import Image from 'next/image';
 import FirstBanner from '@/images/banner/first.jpg';
 import SecondBanner from '@/images/banner/second.jpg';
+import ThirdBanner from '@/images/banner/third.jpg';
+
 import styles from './heroSlider.module.scss';
 
 export const HeroSlider: FC = () => {
@@ -55,6 +57,14 @@ export const HeroSlider: FC = () => {
             alt='airMax banner'
           />
         </SwiperSlide>
+        <SwiperSlide>
+          <Image
+            src={ThirdBanner}
+            width={1080}
+            height={500}
+            alt='Video Banner'
+          />
+        </SwiperSlide>
       </Swiper>
       <div className={styles.slider__circles}>
         <button
@@ -67,12 +77,12 @@ export const HeroSlider: FC = () => {
             activeIndex === 1 ? styles.active : ''
           }`}
         ></button>
-        {/* <button
+        <button
           className={`${styles.slider__circle} ${
             activeIndex === 2 ? styles.active : ''
           }`}
         ></button>
-        <button
+        {/* <button
           className={`${styles.slider__circle} ${
             activeIndex === 3 ? styles.active : ''
           }`}

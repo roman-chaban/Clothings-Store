@@ -2,7 +2,7 @@
 @import '../../assets/styles/globals.scss';
 @import '../../assets/styles/functions.scss';
 
-.social {
+.socialContainer {
   width: rem(729px);
   display: flex;
   flex-direction: column;
@@ -11,6 +11,8 @@
 
 .social__title {
   text-align: center;
+  font-weight: 600;
+  font-size: $primary-size;
 }
 
 .social__buttons {
