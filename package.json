@@ -21,7 +21,7 @@
     "react": "^18",
     "react-dom": "^18",
     "redux": "^5.0.1",
-    "swiper": "^11.1.1"
+    "swiper": "^11.1.2"
   },
   "devDependencies": {
     "@types/node": "^20",

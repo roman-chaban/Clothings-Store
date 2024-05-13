@@ -1,24 +1,15 @@
 @import '../assets/styles/colors.scss';
 @import '../assets/styles/globals.scss';
 
-.body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.main {
-  flex: 1 1 auto;
-}
-
 .upButton {
   position: fixed;
-  bottom: 15px;
+  bottom: 20px;
   right: 15px;
+  width: 45px;
+  height: 45px;
   display: none;
   z-index: 2;
   background: $primary;
-  padding: 10px;
   transition: opacity 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
     transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   -webkit-transition: opacity 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),

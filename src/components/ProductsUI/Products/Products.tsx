@@ -10,6 +10,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import SwiperCore from 'swiper';
 import { Navigation } from 'swiper/modules';
+import { Button } from '@mui/material';
 
 SwiperCore.use([Navigation]);
 
@@ -35,12 +36,20 @@ export const SneakersProducts: FC<ProductsProps> = ({
       <div className={styles.productBlock}>
         <h2 className={styles.shoesTitle}>Shoes</h2>
         <div className={styles.navigationButtons}>
-          <button className={styles.prevButton} onClick={slidePrev}>
+          <Button
+            variant='contained'
+            className={styles.prevButton}
+            onClick={slidePrev}
+          >
             Previous
-          </button>
-          <button className={styles.nextButton} onClick={slideNext}>
+          </Button>
+          <Button
+            variant='contained'
+            className={styles.nextButton}
+            onClick={slideNext}
+          >
             Next
-          </button>
+          </Button>
         </div>
       </div>
       <div className={styles.productsWrapper}>

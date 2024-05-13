@@ -1,0 +1,31 @@
+@import '../../assets/styles/colors.scss';
+@import '../../assets/styles/globals.scss';
+@import '../../assets/styles/functions.scss';
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  gap: rem(20px);
+}
+
+.slide__img {
+  object-fit: cover;
+}
+
+.slider__circles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(16px);
+}
+
+.slider__circle {
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  background: $secondary;
+}
+
+.active {
+  background: lightblue;
+}

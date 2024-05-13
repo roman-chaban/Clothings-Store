@@ -1,0 +1,8 @@
+@import '../../assets/styles/colors.scss';
+@import '../../assets/styles/globals.scss';
+
+.sideBar {
+  width: 300px;
+  height: 100vh;
+  background: $input-bg;
+}

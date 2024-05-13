@@ -5,6 +5,7 @@ import styles from './hero.module.scss';
 import { Input } from '../ui/Input/Input';
 import Image from 'next/image';
 import Find from '@/images/icons/find.svg';
+import { HeroSlider } from '../HeroSlider/HeroSlider';
 
 export const Hero: FC = () => {
   const [value, setValue] = useState<string>('Search...');
@@ -24,7 +25,7 @@ export const Hero: FC = () => {
         </div>
       </div>
       <div className={styles.heroBanner}>
-        <div className={styles.heroBanner__block}>
+        {/* <div className={styles.heroBanner__block}>
           <h1 className={styles.hero__title}>
             E-Commerce, This is the best Store!
           </h1>
@@ -40,15 +41,10 @@ export const Hero: FC = () => {
           <button type='button' className={styles.shopNow}>
             Shop Now
           </button>
-        </div>
-        <div className={styles.slider__circles}>
-          <button
-            className={`${styles.slider__circle} ${styles.active}`}
-          ></button>
-          <button className={styles.slider__circle}></button>
-          <button className={styles.slider__circle}></button>
-        </div>
+        </div> */}
+        <HeroSlider />
       </div>
+    
     </div>
   );
 };

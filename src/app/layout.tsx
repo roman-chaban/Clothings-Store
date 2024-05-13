@@ -2,10 +2,10 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import '@/assets/styles/main.scss';
 import { Header } from '@/components/Header/Header';
-import styles from '@/app/home.module.scss';
+import styles from '@/app/layout.module.scss';
 import { Footer } from '@/components/Footer/Footer';
 import { Providers } from '@/redux/provider/provider';
-import { ButtonUp } from '@/components/ui/Input/buttonUp/ButtonUp';
+import { ButtonUp } from '@/components/ui/buttonUp/ButtonUp';
 
 const inter = Inter({
   subsets: ['latin'],
