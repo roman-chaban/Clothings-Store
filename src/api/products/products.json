@@ -153,55 +153,58 @@
   },
   {
     "productId": 8,
-    "title": "Air Jordan 1 Low",
-    "category": "Women's Shoes",
-    "style": "Style: DC0774-001",
-    "price": 115,
-    "productRating": 4.9,
-    "mainImage": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8e475055-a3cf-464f-8bd5-23ff8dc0f243/air-jordan-1-low-womens-shoes-rJrHLw.png",
+    "title": "Nike Air Max Flyknit Racer",
+    "category": "Men's Shoes",
+    "style": "Style: DJ6106-001",
+    "price": 160,
+    "priceDiscount": 89.97,
+    "productRating": 4.8,
+    "mainImage": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f1247bad-7acf-4af6-8198-8c5aab26eeb2/air-max-flyknit-racer-mens-shoes-m3NSDB.png",
     "images": [
       {
-        "one": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/6c5db0c6-6ace-47e5-bc50-8b3a116297ff/air-jordan-1-low-womens-shoes-rJrHLw.png",
-        "two": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/390e464c-bb34-42c5-8464-6890dd5b593e/air-jordan-1-low-womens-shoes-rJrHLw.png",
-        "three": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b7764fbd-4db3-4c20-b77e-090dd17052bd/air-jordan-1-low-womens-shoes-rJrHLw.png",
-        "four": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/1151b0fb-16c7-49e3-9d18-3be255778b8f/air-jordan-1-low-womens-shoes-rJrHLw.png",
-        "five": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/98f74d0a-11fb-444c-8706-8c8b9510f758/air-jordan-1-low-womens-shoes-rJrHLw.png"
+        "one": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2608332b-6953-4c8a-a575-a67e406b9d0d/air-max-flyknit-racer-mens-shoes-m3NSDB.png",
+        "two": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/72d02e91-4f10-456f-86ed-e1fdc9daa51e/air-max-flyknit-racer-mens-shoes-m3NSDB.png",
+        "three": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4a802f1f-fe43-481f-a590-6494809017e7/air-max-flyknit-racer-mens-shoes-m3NSDB.png",
+        "four": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f1247bad-7acf-4af6-8198-8c5aab26eeb2/air-max-flyknit-racer-mens-shoes-m3NSDB.png",
+        "five": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e55b19d5-7ae0-4539-b064-6939464edb7f/air-max-flyknit-racer-mens-shoes-m3NSDB.png"
       }
     ]
   },
   {
     "productId": 9,
-    "title": "Air Jordan 1 Low",
-    "category": "Women's Shoes",
-    "style": "Style: DC0774-001",
-    "price": 115,
-    "productRating": 4.9,
-    "mainImage": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8e475055-a3cf-464f-8bd5-23ff8dc0f243/air-jordan-1-low-womens-shoes-rJrHLw.png",
+    "title": "Nike Air Max Plus",
+    "category": "Men's Shoes",
+    "style": "Style: 604133-050",
+    "price": 180,
+    "priceDiscount": 0,
+    "productRating": 5,
+    "mainImage": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/877d30e7-4880-46f8-aa71-6704eb7d944d/air-max-plus-mens-shoes-x9G2xF.png",
     "images": [
       {
-        "one": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/6c5db0c6-6ace-47e5-bc50-8b3a116297ff/air-jordan-1-low-womens-shoes-rJrHLw.png",
-        "two": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/390e464c-bb34-42c5-8464-6890dd5b593e/air-jordan-1-low-womens-shoes-rJrHLw.png",
-        "three": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b7764fbd-4db3-4c20-b77e-090dd17052bd/air-jordan-1-low-womens-shoes-rJrHLw.png",
-        "four": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/1151b0fb-16c7-49e3-9d18-3be255778b8f/air-jordan-1-low-womens-shoes-rJrHLw.png",
-        "five": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/98f74d0a-11fb-444c-8706-8c8b9510f758/air-jordan-1-low-womens-shoes-rJrHLw.png"
+        "one": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d6ad9c1a-9872-4a92-8a03-2297d2ed718c/air-max-plus-mens-shoes-x9G2xF.png",
+        "two": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fea9fd17-a50b-4d72-9eba-60a632b756cc/air-max-plus-mens-shoes-x9G2xF.png",
+        "three": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/efc6f027-b24c-45eb-aaf2-ccb50417d280/air-max-plus-mens-shoes-x9G2xF.png",
+        "four": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b1b39193-e07b-4d2a-bc8c-fd16fa5b2110/air-max-plus-mens-shoes-x9G2xF.png",
+        "five": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7ae0868d-1309-45b6-9ba7-64c1eabe069e/air-max-plus-mens-shoes-x9G2xF.png"
       }
     ]
   },
   {
     "productId": 10,
-    "title": "Air Jordan 1 Low",
-    "category": "Women's Shoes",
+    "title": "Nike Air Huarache Runner",
+    "category": "Men's Shoes",
     "style": "Style: DC0774-001",
-    "price": 115,
+    "price": 140,
+    "priceDiscount": 89.97,
     "productRating": 4.9,
-    "mainImage": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8e475055-a3cf-464f-8bd5-23ff8dc0f243/air-jordan-1-low-womens-shoes-rJrHLw.png",
+    "mainImage": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/bf6f9523-08b8-4f9a-9518-64640fb7ee91/air-huarache-runner-mens-shoes-hkFLHQ.png",
     "images": [
       {
-        "one": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/6c5db0c6-6ace-47e5-bc50-8b3a116297ff/air-jordan-1-low-womens-shoes-rJrHLw.png",
-        "two": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/390e464c-bb34-42c5-8464-6890dd5b593e/air-jordan-1-low-womens-shoes-rJrHLw.png",
-        "three": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b7764fbd-4db3-4c20-b77e-090dd17052bd/air-jordan-1-low-womens-shoes-rJrHLw.png",
-        "four": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/1151b0fb-16c7-49e3-9d18-3be255778b8f/air-jordan-1-low-womens-shoes-rJrHLw.png",
-        "five": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/98f74d0a-11fb-444c-8706-8c8b9510f758/air-jordan-1-low-womens-shoes-rJrHLw.png"
+        "one": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/86909d76-a6b5-4b9b-9b34-b35f47c8756d/air-huarache-runner-mens-shoes-hkFLHQ.png",
+        "two": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8505d33a-c378-492c-b0d3-276668045a81/air-huarache-runner-mens-shoes-hkFLHQ.png",
+        "three": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/016b614b-d9df-4dec-a00c-25130240db77/air-huarache-runner-mens-shoes-hkFLHQ.png",
+        "four": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b3a1c39b-9193-472e-8616-b395faabf96b/air-huarache-runner-mens-shoes-hkFLHQ.png",
+        "five": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2e64ca03-39e2-439c-9a0b-30e1e0382364/air-huarache-runner-mens-shoes-hkFLHQ.png"
       }
     ]
   },

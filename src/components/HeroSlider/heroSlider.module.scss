@@ -9,7 +9,13 @@
 }
 
 .slide__img {
+  width: 100%;
+  cursor: grab;
+  height: 450px;
   object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+  transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .slider__circles {
@@ -23,9 +29,9 @@
   border-radius: 50%;
   width: 16px;
   height: 16px;
-  background: $secondary;
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .active {
-  background: lightblue;
+  background: $primary;
 }

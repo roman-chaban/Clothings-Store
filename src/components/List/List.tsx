@@ -40,7 +40,19 @@ export const List: FC<ListProps> = ({ title, listItems }) => {
       <h3 className={styles.menu__title}>{title}</h3>
       {listItems.map((listItem) => (
         <li key={listItem.id} className={styles.menu__ListItem}>
-          <Link href='' className={styles.menu__ListLink}>
+          <Link
+            href=''
+            className={styles.menu__ListLink}
+            style={{
+              textDecoration:
+                !listItem.label
+                  .toLowerCase()
+                  .startsWith('R'.toLocaleLowerCase()) &&
+                !listItem.label.toLowerCase().startsWith('P'.toLowerCase())
+                  ? 'underline'
+                  : 'none',
+            }}
+          >
             {listItem.icon && listItem.icon}
             {listItem.label}
           </Link>

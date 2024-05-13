@@ -1,0 +1,27 @@
+@import '../../../assets/styles/colors.scss';
+@import '../../../assets/styles/globals.scss';
+@import '../../../assets/styles/functions.scss';
+
+.signIn {
+  min-height: 100vh;
+}
+
+.form__bannerContainer {
+  display: flex;
+  gap: rem(16px);
+}
+
+.smallBanner {
+  object-fit: cover;
+  object-position: 60%;
+  width: 350px;
+  height: 400px;
+}
+
+.title {
+  font-size: $six-size;
+  color: $gray;
+  font-weight: 500;
+  padding-bottom: rem(40px);
+  border-bottom: 2px solid $decoration-bottom;
+}

@@ -1,0 +1,35 @@
+@import '../../assets/styles/colors.scss';
+@import '../../assets/styles/globals.scss';
+@import '../../assets/styles/functions.scss';
+
+.social {
+  width: rem(729px);
+  display: flex;
+  flex-direction: column;
+  gap: rem(24px);
+}
+
+.social__title {
+  text-align: center;
+}
+
+.social__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.withGoogle,
+.withFacebook,
+.withPhone {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: rem(8px);
+  padding: rem(17px);
+  border: 1.5px solid $primary;
+  border-radius: rem(36px);
+  color: $primary;
+  font-weight: 600;
+  font-size: $eight-size;
+}

@@ -1,0 +1,17 @@
+@import '../../../assets/styles/colors.scss';
+@import '../../../assets/styles/globals.scss';
+@import '../../../assets/styles/functions.scss';
+
+.sneakersContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  gap: 2rem;
+}
+
+.title {
+  padding: 25px 0 40px 0;
+  text-align: center;
+  font-size: $thirdary-size;
+  color: $gray;
+  font-weight: 500;
+}

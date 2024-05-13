@@ -33,7 +33,7 @@ export const HeroSlider: FC = () => {
           prevEl: '.swiper-button-prev',
         }}
         scrollbar={{ draggable: true }}
-        style={{ width: 1000, height: 400, borderRadius: '2rem' }}
+        style={{ width: '100%', height: 400, borderRadius: '2rem' }}
         autoplay={{ delay: 4000 }}
         onSlideChange={handleSliderChange}
       >

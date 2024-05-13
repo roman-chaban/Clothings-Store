@@ -1,0 +1,90 @@
+@import '../../assets/styles/colors.scss';
+@import '../../assets/styles/globals.scss';
+@import '../../assets/styles/functions.scss';
+
+.signIn__form {
+  width: rem(729px);
+  margin-top: rem(72px);
+  margin-bottom: rem(40px);
+}
+
+.form__flex {
+  display: flex;
+  align-items: center;
+  gap: rem(31px);
+  margin-bottom: rem(32px);
+}
+
+.email__label {
+  display: flex;
+  flex-direction: column;
+  gap: rem(16px);
+}
+
+.label__title {
+  color: $primary;
+  font-weight: 600;
+}
+
+.email {
+  width: rem(349px);
+  height: rem(49px);
+  border-radius: rem(8px);
+  padding: rem(16px);
+  background: $fourth;
+  color: $primary;
+  font-weight: 600;
+  caret-color: $primary;
+}
+
+.password__label {
+  display: flex;
+  flex-direction: column;
+  gap: rem(16px);
+}
+
+.password__title {
+  color: $primary;
+  font-weight: 600;
+}
+
+.password {
+  width: rem(349px);
+  height: rem(49px);
+  border-radius: rem(8px);
+  padding: rem(16px);
+  background: $fourth;
+  color: $primary;
+  font-weight: 600;
+  caret-color: $primary;
+}
+
+.submit__button {
+  width: 100%;
+  background: $primary;
+  color: $thirdary;
+  font-weight: 600;
+  font-size: $five-size;
+  padding: rem(16px);
+  border-radius: rem(8px);
+}
+
+.forgot__links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: rem(32px);
+  margin-bottom: rem(32px);
+}
+
+.forgot__password {
+  color: $primary;
+  font-weight: 600;
+  font-size: $secondary-size;
+}
+
+.not__account{
+  color: $deep-black;
+  font-weight: 600;
+  font-size: $secondary-size;
+}
