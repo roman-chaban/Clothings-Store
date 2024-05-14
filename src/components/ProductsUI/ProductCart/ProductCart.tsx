@@ -6,9 +6,11 @@ import { Products } from '@/interfaces/products';
 import Image from 'next/image';
 import { Star } from 'grommet-icons';
 import { Button } from '@mui/material';
+import Link from 'next/link';
 
 export const ProductCart: FC<Products> = ({
   title,
+  name,
   category,
   price,
   productRating,
@@ -20,18 +22,20 @@ export const ProductCart: FC<Products> = ({
     <div className={styles.productCart}>
       <div className={styles.productCart__container}>
         <div className={styles.productImage}>
-          <Image
-            className={styles.productImage}
-            src={mainImage}
-            width={300}
-            height={300}
-            alt='sneakers photo'
-          />
+          <Link href={`/sneakers/${encodeURIComponent(name)}`}>
+            <Image
+              className={styles.productImage}
+              src={mainImage}
+              width={300}
+              height={300}
+              alt='sneakers photo'
+            />
+          </Link>
           {priceDiscount < 1 ? (
             ''
           ) : (
             <span className={styles.cardDiscount}>
-             Disc: {Math.floor((priceDiscount / price) * 100)}%
+              Disc: {Math.floor((priceDiscount / price) * 100)}%
             </span>
           )}
         </div>
@@ -50,7 +54,8 @@ export const ProductCart: FC<Products> = ({
             </mark>
           </p>
           <span className={styles.productCart__productRating}>
-            Rating: {productRating}/5 <Star color='gold' style={{position: 'relative', bottom: 1.5}} />
+            Rating: {productRating}/5{' '}
+            <Star color='gold' style={{ position: 'relative', bottom: 1.5 }} />
           </span>
           <span className={styles.productCart__style}>{style}</span>
           <br />

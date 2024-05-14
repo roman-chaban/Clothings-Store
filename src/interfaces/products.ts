@@ -1,6 +1,7 @@
 export interface Products {
   productId?: number;
   title: string;
+  name: string;
   category: string;
   style: string;
   price: number;
@@ -14,4 +15,6 @@ export interface Products {
     four: string;
     five: string;
   }[];
+  about?: string;
+  subStyle?: string;
 }

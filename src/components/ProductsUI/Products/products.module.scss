@@ -31,7 +31,7 @@
 .shoesTitle {
   font-size: $thirdary-size;
   font-weight: 700;
-  color: $primary;
+  color: $light-black;
 }
 
 
@@ -45,7 +45,11 @@
   padding: 10px;
   font-weight: 600;
   border-radius: rem(20px);
-  background: $primary;
+  background: $light-black;
+  color: $thirdary;
+  &:hover {
+    color: $light-black;
+  }
 }
 
 .swiper__wrapper {

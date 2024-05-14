@@ -2,6 +2,7 @@
   {
     "productId": 0,
     "title": "LeBron NXXT Gen",
+    "name": "LeBron-NXXT-Gen",
     "category": "Basketball Shoes",
     "style": "Style: DR8784-301",
     "price": 170,
@@ -16,11 +17,14 @@
         "four": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0b48bc38-0051-483b-8cad-d554da606a6e/lebron-nxxt-gen-basketball-shoes-55g4w1.png",
         "five": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0f9d6d9f-e77d-4ccc-bce5-32e2ea88030c/lebron-nxxt-gen-basketball-shoes-55g4w1.png"
       }
-    ]
+    ],
+    "about": "Whether you’re a dunk contest-like leaper or a below-the-rim wonder roaming the baseline, feel faster, lower to the court and assured in the LeBron NXXT Gen. We specifically tailored it to meet the demands of today’s fast-paced game, so that you can stay ahead of the opposition with your speed and force in all directions.",
+    "subStyle": "Geode Teal/Melon Tint/Stadium Green/Campfire Orange"
   },
   {
     "productId": 1,
     "title": "Nike Dunk Low Retro",
+    "name": "Nike-Dunk-Low-Retro",
     "category": "Men's Shoes",
     "style": "Style: FB7160-231",
     "price": 115,
@@ -35,11 +39,14 @@
         "four": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f14d2dfb-4454-4560-8cc3-fc57a4c5e01d/dunk-low-retro-mens-shoes-1xlGBR.png",
         "five": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/97e7fa59-f367-4bba-bcc3-5510c444cc96/dunk-low-retro-mens-shoes-1xlGBR.png"
       }
-    ]
+    ],
+    "about": "Created for the hardwood but taken to the streets, the basketball icon returns with classic details and throwback hoops flair. Channeling '80s vibes, its padded, low-cut collar lets you take your game anywhere—in comfort.",
+    "subStyle": "Rattan/Sail/Dark Driftwood/Gorge Green"
   },
   {
     "productId": 2,
     "title": "Nike Impact 4",
+    "name": "Nike-Impact-4",
     "category": "Basketball Shoes",
     "style": "Style: DM1124-001",
     "price": 115,
@@ -54,11 +61,14 @@
         "four": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c5a5877b-cbbd-42e1-92f8-da76f7b9019a/impact-4-basketball-shoes-nmn08j.png",
         "five": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/38295325-b920-4acc-9ddd-a3ac119a8180/impact-4-basketball-shoes-nmn08j.png"
       }
-    ]
+    ],
+    "about": "Elevate your game and your hops. Charged with Max Air cushioning in the heel, this lightweight, secure shoe helps you get off the ground confidently and land comfortably. Plus, rubber wraps up the sides for added durability and stability.",
+    "subStyle": "Black/Anthracite/Racer Blue/White"
   },
   {
     "productId": 3,
     "title": "Nike Air Max 90",
+    "name": "Nike-Air-Max-90",
     "category": "Men's Shoes",
     "style": "Style: FB9658-200",
     "price": 130,
@@ -73,11 +83,14 @@
         "four": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/dd8c6ecd-c5a6-45ac-ab62-6ac428ae9bb5/air-max-90-mens-shoes-nkr3dc.png",
         "five": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/26156039-3742-4cc7-a154-5e31f84a589d/air-max-90-mens-shoes-nkr3dc.png"
       }
-    ]
+    ],
+    "about": "Lace up and feel the legacy in this champion running shoe that helped define the ‘90s. Worn by presidents, revolutionized through collabs and celebrated through rare colorways, its Waffle outsole, visible Nike Air cushioning and striking visuals keep it alive and well.",
+    "subStyle": "Hemp/Sesame/Earth/Summit White"
   },
   {
     "productId": 4,
     "title": "Nike Wildhorse 8",
+    "name": "Nike-Wildhorse-8",
     "category": "Men's Trail Running Shoes",
     "style": "Style: DR2686-101",
     "price": 140,
@@ -86,17 +99,20 @@
     "mainImage": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3a9417f1-9947-4952-9b10-8c4acf8b64de/wildhorse-8-mens-trail-running-shoes-zPRz8Z.png",
     "images": [
       {
-        "one": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b60b0fd8-e0cb-46bd-b098-bc6e3003fec8/wildhorse-8-mens-trail-running-shoes-zPRz8Z.png",
-        "two": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/23d0c119-9af8-4a79-8e60-9aca053bef4c/wildhorse-8-mens-trail-running-shoes-zPRz8Z.png",
-        "three": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/da13f87c-5f71-4115-ba6f-c11dedbe5ea1/wildhorse-8-mens-trail-running-shoes-zPRz8Z.png",
-        "four": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/348241b7-73b5-4f16-826f-c7f09d36b64f/wildhorse-8-mens-trail-running-shoes-zPRz8Z.png",
+        "one": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b6407915-8bfc-46f7-bc59-6f2bc26bb73b/wildhorse-8-womens-trail-running-shoes-TlD93l.png",
+        "two": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/bd43d77e-33d2-47b6-90f3-e280c1fe37ad/wildhorse-8-womens-trail-running-shoes-TlD93l.png",
+        "three": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2ab863d7-f851-4ad8-beeb-e030e0df9cb2/wildhorse-8-womens-trail-running-shoes-TlD93l.png",
+        "four": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/dd566987-cf76-4318-9de8-6b92288fb920/wildhorse-8-womens-trail-running-shoes-TlD93l.png",
         "five": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c22a4c45-8051-446b-82ea-41c3b2ef8ce8/wildhorse-8-mens-trail-running-shoes-zPRz8Z.png"
       }
-    ]
+    ],
+    "about": "Hoof it from the trailhead to the top, and handle winding paths, rolling hills and everything in between in the Nike Wildhorse 8. With an abundance of rugged traction, cushioned responsiveness and trusted containment to help keep you upright, it’s made for tough trail runs, the ones with limitless miles and gnarly terrain that are too enticing to turn down. This special design is part of our ongoing #IYKYK series. It traverses the Pyrenees mountains via the GR 11, using the coastal lighthouses as your guide from the Mediterranean Sea to the Cantabrian Sea.",
+    "subStyle": "White/Alabaster/University Gold/Black"
   },
   {
     "productId": 5,
     "title": "Nike Air More Uptempo '96",
+    "name": "Nike-Air-More-Uptempo-'96",
     "category": "Men's Shoes",
     "style": "Style: FN6249-100",
     "price": 180,
@@ -111,11 +127,14 @@
         "four": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e22bbe55-2baf-4580-969a-3cd9883c2296/air-more-uptempo-96-mens-shoes-bS0clS.png",
         "five": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0aac6129-3331-4737-a930-64aa671ace71/air-more-uptempo-96-mens-shoes-bS0clS.png"
       }
-    ]
+    ],
+    "about": "All about the A-I-R. The Air More Uptempo '96 refreshes an original that has reigned supreme for more than 20 years. With a design inspired by high-flying basketball style and '90s graffiti art, these kicks can't help but turn heads off court. Plus, Air units in the heel, forefoot and midfoot provide comfortable cushioning so you feel as good as you look.",
+    "subStyle": "White/Vintage Green/Summit White/Sea Glass"
   },
   {
     "productId": 6,
     "title": "Nike ACG Mountain Fly 2 Low",
+    "name": "Nike-ACG-Mountain-Fly-2-Low",
     "category": "Men's Shoes",
     "style": "Style: HF5700-121",
     "price": 150,
@@ -130,11 +149,14 @@
         "four": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/499c80ac-c189-4196-8ad2-96f8bca1e012/acg-mountain-fly-2-low-mens-shoes-kl94gN.png",
         "five": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/cca8e048-a9f2-41cb-a7ac-fb4a1bce816f/acg-mountain-fly-2-low-mens-shoes-kl94gN.png"
       }
-    ]
+    ],
+    "about": "Fast, rugged and ready for whatever wild comes your way. The updated ACG Mountain Fly 2 is built to take you to the top. Over glacier-smoothed granite and root-twisted trails, every step is reinforced with an extended toe cap and tough rubber sidewalls. Don't worry about pushing your limits either: The breathable upper helps keep you from overheating and airs out quickly when wet. For extra comfort and support, there's a foam midsole and lightweight plate running from the ball of your foot to the heel. We also made it easier to get on and off, thanks to a semi-gusseted tongue and lace toggle for quick adjustments. To finish it off, crag-like traction (inspired by mountain bike tires) helps improve durability so you can continue enjoying the adventure.",
+    "subStyle": "Sail/Sanddrift/Vapor Green/Earth"
   },
   {
     "productId": 7,
     "title": "Nike Blazer Low '77 Vintage",
+    "name": "Nike-Blazer-Low-'77-Vintage",
     "category": "Men's Shoes",
     "style": "Style: DA6364-101",
     "price": 90,
@@ -149,11 +171,14 @@
         "four": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/cc6e85e6-0a90-4567-99f3-7b65efde18df/blazer-low-77-vintage-mens-shoes-jsksCM.png",
         "five": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2ea0c191-6c69-4f95-9119-a564383fa253/blazer-low-77-vintage-mens-shoes-jsksCM.png"
       }
-    ]
+    ],
+    "about": "Praised by the streets for its classic simplicity and comfort, the Nike Blazer Low '77 Vintage returns with its low-profile style and heritage b-ball looks. Featuring luscious suede details, a retro Swoosh design and a super-soft collar, it's the must-have wardrobe staple that will take you everywhere.",
+    "subStyle": "White/Sail/Black"
   },
   {
     "productId": 8,
     "title": "Nike Air Max Flyknit Racer",
+    "name": "Nike-Air-Max-Flyknit-Racer",
     "category": "Men's Shoes",
     "style": "Style: DJ6106-001",
     "price": 160,
@@ -168,11 +193,14 @@
         "four": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f1247bad-7acf-4af6-8198-8c5aab26eeb2/air-max-flyknit-racer-mens-shoes-m3NSDB.png",
         "five": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e55b19d5-7ae0-4539-b064-6939464edb7f/air-max-flyknit-racer-mens-shoes-m3NSDB.png"
       }
-    ]
+    ],
+    "about": "Paying homage to both heritage and innovation, we've blended 2 icons (old and new) to go beyond what's expected in the Nike Air Max Flyknit Racer. Incredibly light and airy Flyknit pairs with oh-so-comfy Air Max cushioning. Lace up and let your feet do the talking.",
+    "subStyle": "Black/White"
   },
   {
     "productId": 9,
     "title": "Nike Air Max Plus",
+    "name": "Nike-Air-Max-Plus",
     "category": "Men's Shoes",
     "style": "Style: 604133-050",
     "price": 180,
@@ -187,11 +215,14 @@
         "four": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b1b39193-e07b-4d2a-bc8c-fd16fa5b2110/air-max-plus-mens-shoes-x9G2xF.png",
         "five": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7ae0868d-1309-45b6-9ba7-64c1eabe069e/air-max-plus-mens-shoes-x9G2xF.png"
       }
-    ]
+    ],
+    "about": "Let your attitude have the edge in your Nike Air Max Plus, a Tuned Air experience that offers premium stability and unbelievable cushioning. Featuring the OG's wavy design lines, TPU accents and airy mesh on the upper, it celebrates defiant style.",
+    "subStyle": "Black/Black/Black"
   },
   {
     "productId": 10,
     "title": "Nike Air Huarache Runner",
+    "name": "Nike-Air-Huarache-Runner",
     "category": "Men's Shoes",
     "style": "Style: DC0774-001",
     "price": 140,
@@ -206,96 +237,115 @@
         "four": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b3a1c39b-9193-472e-8616-b395faabf96b/air-huarache-runner-mens-shoes-hkFLHQ.png",
         "five": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2e64ca03-39e2-439c-9a0b-30e1e0382364/air-huarache-runner-mens-shoes-hkFLHQ.png"
       }
-    ]
+    ],
+    "about": "When it fits this good and looks this great, it doesn’t need a Swoosh logo. The Air Huarache takes on a classic silhouette with a runner-inspired design, mixed materials and rich neutrals for a look that is both nostalgic and brand new. With its stretchy, foot-hugging fabric and futuristic heel cage, it's still everything you love about the Huarache.",
+    "subStyle": "Hemp/Sesame"
   },
   {
     "productId": 11,
-    "title": "Air Jordan 1 Low",
-    "category": "Women's Shoes",
-    "style": "Style: DC0774-001",
+    "title": "Nike Blazer Mid Pro Club",
+    "name": "Nike-Blazer-Mid-Pro-Club",
+    "category": "Men's Shoes",
+    "style": "Style: FJ4186-200",
     "price": 115,
-    "productRating": 4.9,
-    "mainImage": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8e475055-a3cf-464f-8bd5-23ff8dc0f243/air-jordan-1-low-womens-shoes-rJrHLw.png",
+    "productRating": 5,
+    "mainImage": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b6c74dce-2593-448c-879e-3a16b6e46aed/blazer-mid-pro-club-mens-shoes-3mzkQN.png",
     "images": [
       {
-        "one": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/6c5db0c6-6ace-47e5-bc50-8b3a116297ff/air-jordan-1-low-womens-shoes-rJrHLw.png",
-        "two": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/390e464c-bb34-42c5-8464-6890dd5b593e/air-jordan-1-low-womens-shoes-rJrHLw.png",
-        "three": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b7764fbd-4db3-4c20-b77e-090dd17052bd/air-jordan-1-low-womens-shoes-rJrHLw.png",
-        "four": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/1151b0fb-16c7-49e3-9d18-3be255778b8f/air-jordan-1-low-womens-shoes-rJrHLw.png",
-        "five": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/98f74d0a-11fb-444c-8706-8c8b9510f758/air-jordan-1-low-womens-shoes-rJrHLw.png"
+        "one": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ae3288f1-f6a6-4526-af4f-ec2225b040b5/blazer-mid-pro-club-mens-shoes-3mzkQN.png",
+        "two": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/44d9738c-bff8-4ec9-9e1b-ae18ef594bfb/blazer-mid-pro-club-mens-shoes-3mzkQN.png",
+        "three": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/85a5a188-414a-45a0-86b4-9231da1bcbb0/blazer-mid-pro-club-mens-shoes-3mzkQN.png",
+        "four": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f5f018c5-4846-4490-83ae-e115d940770d/blazer-mid-pro-club-mens-shoes-3mzkQN.png",
+        "five": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7023128b-3b11-4029-b0c9-1daaf1dfbb62/blazer-mid-pro-club-mens-shoes-3mzkQN.png"
       }
-    ]
+    ],
+    "about": "Being rooted doesn't mean you can't step forward. Keeping the classic comfort you love from the original, your favorite mid-top shoes get remastered for the modern era. Durable rubber extends from the midsole to the Swoosh for a bold twist (and a little nod to Nike innovation from the '70s). The patchwork upper adds the perfect amount of retro attitude.",
+    "subStyle": "Grain/Light Pumice/Monarch/Black"
   },
   {
     "productId": 12,
-    "title": "Air Jordan 1 Low",
-    "category": "Women's Shoes",
-    "style": "Style: DC0774-001",
-    "price": 115,
+    "title": "Nike Zoom Vomero 5",
+    "name": "Nike-Zoom-Vomero-5",
+    "category": "Men's Shoes",
+    "style": "Style: HF1553-200",
+    "price": 160,
     "productRating": 4.9,
-    "mainImage": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8e475055-a3cf-464f-8bd5-23ff8dc0f243/air-jordan-1-low-womens-shoes-rJrHLw.png",
+    "mainImage": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/aa722273-9564-42c6-8143-a1d086ef16b6/zoom-vomero-5-mens-shoes-MgsTqZ.png",
     "images": [
       {
-        "one": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/6c5db0c6-6ace-47e5-bc50-8b3a116297ff/air-jordan-1-low-womens-shoes-rJrHLw.png",
-        "two": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/390e464c-bb34-42c5-8464-6890dd5b593e/air-jordan-1-low-womens-shoes-rJrHLw.png",
-        "three": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b7764fbd-4db3-4c20-b77e-090dd17052bd/air-jordan-1-low-womens-shoes-rJrHLw.png",
-        "four": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/1151b0fb-16c7-49e3-9d18-3be255778b8f/air-jordan-1-low-womens-shoes-rJrHLw.png",
-        "five": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/98f74d0a-11fb-444c-8706-8c8b9510f758/air-jordan-1-low-womens-shoes-rJrHLw.png"
+        "one": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/75168cec-50a9-4bac-a7d9-d41a898b192e/zoom-vomero-5-mens-shoes-MgsTqZ.png",
+        "two": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3717ad71-ff59-4003-a8dd-78eab3f718d8/zoom-vomero-5-mens-shoes-MgsTqZ.png",
+        "three": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0d17dca8-b9f8-478e-9398-400239438992/zoom-vomero-5-mens-shoes-MgsTqZ.png",
+        "four": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b1aa0cb1-d494-4467-8f7d-e8eed6ebc282/zoom-vomero-5-mens-shoes-MgsTqZ.png",
+        "five": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/966a5381-725b-4274-a6ed-a7702a5470ea/zoom-vomero-5-mens-shoes-MgsTqZ.png"
       }
-    ]
+    ],
+    "about": "Carve a new lane for yourself in the Zoom Vomero 5—your go-to for complexity, depth and easy styling. The richly layered design includes textiles, leather and plastic accents that come together to make one of the coolest sneakers of the season.",
+    "subStyle": " Dusted Clay/Platinum Violet/Smokey Mauve/Earth"
   },
   {
     "productId": 13,
-    "title": "Air Jordan 1 Low",
-    "category": "Women's Shoes",
-    "style": "Style: DC0774-001",
-    "price": 115,
+    "title": "Nike Air VaporMax Plus",
+    "name": "Nike-Air-VaporMax-Plus",
+    "category": "Men's Shoes",
+    "style": "Style: 924453-405",
+    "price": 210,
     "productRating": 4.9,
-    "mainImage": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8e475055-a3cf-464f-8bd5-23ff8dc0f243/air-jordan-1-low-womens-shoes-rJrHLw.png",
+    "mainImage": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f1zdhkqgz1jrws7rul0m/air-vapormax-plus-mens-shoes-nC0dzF.png",
     "images": [
       {
-        "one": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/6c5db0c6-6ace-47e5-bc50-8b3a116297ff/air-jordan-1-low-womens-shoes-rJrHLw.png",
-        "two": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/390e464c-bb34-42c5-8464-6890dd5b593e/air-jordan-1-low-womens-shoes-rJrHLw.png",
-        "three": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b7764fbd-4db3-4c20-b77e-090dd17052bd/air-jordan-1-low-womens-shoes-rJrHLw.png",
-        "four": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/1151b0fb-16c7-49e3-9d18-3be255778b8f/air-jordan-1-low-womens-shoes-rJrHLw.png",
-        "five": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/98f74d0a-11fb-444c-8706-8c8b9510f758/air-jordan-1-low-womens-shoes-rJrHLw.png"
+        "one": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b3uc7aujdnt7ghl8ximc/air-vapormax-plus-mens-shoes-nC0dzF.png",
+        "two": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/jabzs39ffgxzk4vg7fh7/air-vapormax-plus-mens-shoes-nC0dzF.png",
+        "three": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/pdbkpo7wucnjioqh4oc2/air-vapormax-plus-mens-shoes-nC0dzF.png",
+        "four": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/p9rebhkk4g2gfss1y7br/air-vapormax-plus-mens-shoes-nC0dzF.png",
+        "five": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/kpkodwlrwhxywdmcatpc/air-vapormax-plus-mens-shoes-nC0dzF.png"
       }
-    ]
+    ],
+    "about": "The Nike Air VaporMax Plus looks to the past and propels you into the future. Nodding to the 1998 Air Max Plus with its floating cage, padded upper and heel logo, it adds revolutionary VaporMax Air technology to ramp up the comfort and create a modern look.",
+    "subStyle": " Midnight Navy/Black/University Red/Metallic Gold"
   },
   {
     "productId": 14,
-    "title": "Air Jordan 1 Low",
-    "category": "Women's Shoes",
+    "title": "Nike Air Max Alpha Trainer 5",
+    "name": "Nike-Air-Max-Alpha-Trainer-5",
+    "category": "Men's Workout Shoes",
     "style": "Style: DC0774-001",
-    "price": 115,
-    "productRating": 4.9,
-    "mainImage": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8e475055-a3cf-464f-8bd5-23ff8dc0f243/air-jordan-1-low-womens-shoes-rJrHLw.png",
+    "price": 95,
+    "priceDiscount": 65.97,
+    "productRating": 4.2,
+    "mainImage": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4a65486d-4db8-4989-b790-832670e31e22/air-max-alpha-trainer-5-mens-workout-shoes-7LjRM6.png",
     "images": [
       {
-        "one": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/6c5db0c6-6ace-47e5-bc50-8b3a116297ff/air-jordan-1-low-womens-shoes-rJrHLw.png",
-        "two": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/390e464c-bb34-42c5-8464-6890dd5b593e/air-jordan-1-low-womens-shoes-rJrHLw.png",
-        "three": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b7764fbd-4db3-4c20-b77e-090dd17052bd/air-jordan-1-low-womens-shoes-rJrHLw.png",
-        "four": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/1151b0fb-16c7-49e3-9d18-3be255778b8f/air-jordan-1-low-womens-shoes-rJrHLw.png",
-        "five": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/98f74d0a-11fb-444c-8706-8c8b9510f758/air-jordan-1-low-womens-shoes-rJrHLw.png"
+        "one": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/abc387df-552e-4288-adc8-b622cd0e7493/air-max-alpha-trainer-5-mens-workout-shoes-7LjRM6.png",
+        "two": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/55ae29cd-6386-4dec-baf2-9551522a3745/air-max-alpha-trainer-5-mens-workout-shoes-7LjRM6.png",
+        "three": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/26307a39-e11a-4ce2-aed4-472bb5560160/air-max-alpha-trainer-5-mens-workout-shoes-7LjRM6.png",
+        "four": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/595cef6f-8cf0-426a-9c06-eaf8f854f6d5/air-max-alpha-trainer-5-mens-workout-shoes-7LjRM6.png",
+        "five": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3489698c-7f51-48aa-af04-12a99075ceda/air-max-alpha-trainer-5-mens-workout-shoes-7LjRM6.png"
       }
-    ]
+    ],
+    "about": "Finish your last rep with power and rack it with a roar that stuns the gym floor in the Nike Air Max Alpha Trainer 5. Max Air cushioning offers comfortable stability for lifting whether it’s a light or heavy day. A wide, flat base gives you enhanced stability and grip for all kinds of tough workouts without sacrificing style, as you roam from station to station and set to set.",
+    "subStyle": "Court Blue/Green Strike/Black"
   },
   {
     "productId": 15,
-    "title": "Air Jordan 1 Low",
-    "category": "Women's Shoes",
-    "style": "Style: DC0774-001",
-    "price": 115,
-    "productRating": 4.9,
-    "mainImage": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8e475055-a3cf-464f-8bd5-23ff8dc0f243/air-jordan-1-low-womens-shoes-rJrHLw.png",
+    "title": "Nike Dunk High Retro SE",
+    "name": "Nike-Dunk-High-Retro-SE",
+    "category": "Men's Shoes",
+    "style": "Style: FJ4191-200",
+    "price": 140,
+    "priceDiscount": 111.97,
+    "productRating": 4.5,
+    "mainImage": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9a0a53db-be24-4bee-8df0-d8b5d312a172/dunk-high-retro-se-mens-shoes-gkJPlt.png",
     "images": [
       {
-        "one": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/6c5db0c6-6ace-47e5-bc50-8b3a116297ff/air-jordan-1-low-womens-shoes-rJrHLw.png",
-        "two": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/390e464c-bb34-42c5-8464-6890dd5b593e/air-jordan-1-low-womens-shoes-rJrHLw.png",
-        "three": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b7764fbd-4db3-4c20-b77e-090dd17052bd/air-jordan-1-low-womens-shoes-rJrHLw.png",
-        "four": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/1151b0fb-16c7-49e3-9d18-3be255778b8f/air-jordan-1-low-womens-shoes-rJrHLw.png",
-        "five": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/98f74d0a-11fb-444c-8706-8c8b9510f758/air-jordan-1-low-womens-shoes-rJrHLw.png"
+        "one": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2f5c7d7b-5898-497a-a200-2c154d0a52da/dunk-high-retro-se-mens-shoes-gkJPlt.png",
+        "two": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9a0a53db-be24-4bee-8df0-d8b5d312a172/dunk-high-retro-se-mens-shoes-gkJPlt.png",
+        "three": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0b4c0d76-b885-439e-adbf-891a02d33813/dunk-high-retro-se-mens-shoes-gkJPlt.png",
+        "four": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8b525efb-cf3f-4ea2-91a4-234d9641ed84/dunk-high-retro-se-mens-shoes-gkJPlt.png",
+        "five": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3e350737-1cbe-4301-85f0-9a4513faab6e/dunk-high-retro-se-mens-shoes-gkJPlt.png"
       }
-    ]
+    ],
+    "about": "Created for the hardwood but taken to the streets, the '80s b-ball icon returns with gardening-inspired fabrics and colors. Plus, its padded collar adds an old-school look rooted in comfort.",
+    "subStyle": " Grain/Light Pumice/Pale Vanilla/Black"
   }
 ]

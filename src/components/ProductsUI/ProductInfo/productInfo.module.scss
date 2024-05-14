@@ -1,0 +1,99 @@
+@import '../../../assets/styles/colors.scss';
+@import '../../../assets/styles/globals.scss';
+@import '../../../assets/styles/functions.scss';
+
+.productInfo {
+  display: flex;
+  flex-direction: column;
+  gap: rem(20px);
+}
+
+.productDiscount {
+  display: flex;
+  align-items: center;
+  gap: rem(5px);
+  padding: rem(10px);
+  color: $thirdary;
+  background: $light-black;
+  opacity: 0.9;
+  max-width: 140px;
+  border-radius: rem(20px);
+  font-weight: 600;
+}
+
+.productDiscount::after {
+  content: '%';
+  font-weight: 700;
+}
+
+.discountTitle {
+  font-weight: 600;
+}
+
+.sneakerTitle {
+  font-weight: 700;
+  font-size: $thirdary-size;
+}
+
+.infoDiscount__title {
+  text-decoration: line-through;
+  font-weight: 600;
+  font-size: $four-size;
+}
+
+.priceTitle {
+  font-weight: 700;
+  font-size: $six-size;
+}
+
+.productSize__container {
+  margin-top: rem(20px);
+  display: flex;
+  align-items: center;
+  gap: rem(10px);
+}
+
+.sizeBtn {
+  padding: rem(8px);
+  background: $deep-black;
+  color: $thirdary;
+  font-weight: 600;
+  border-radius: rem(10px);
+}
+
+.activeSize {
+  background: $thirdary;
+  color: $deep-black;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.selectSize {
+  font-weight: 600;
+  font-size: $four-size;
+}
+
+.markSize {
+  background: none;
+}
+
+.about {
+  line-height: 1.85;
+  text-align: justify;
+  font-weight: 500;
+  font-size: $five-size;
+  max-width: 400px;
+}
+
+.about__list {
+  display: flex;
+  flex-direction: column;
+  gap: rem(10px);
+  margin-left: rem(15px);
+  margin-top: rem(20px);
+}
+
+.about__listItem {
+  list-style-type: disc;
+  font-weight: 500;
+  font-size: $five-size;
+}

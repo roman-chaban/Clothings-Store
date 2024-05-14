@@ -20,7 +20,7 @@ export const Hero: FC = () => {
             type='text'
             placeholder='Search...'
           />
-          <SearchIcon style={{ color: '#1f3e97' }} />
+          <SearchIcon style={{ color: '#111111' }} />
         </div>
       </div>
       <div className={styles.heroBanner}>

@@ -1,0 +1,66 @@
+@import '../../../assets/styles/colors.scss';
+@import '../../../assets/styles/globals.scss';
+@import '../../../assets/styles/functions.scss';
+
+.sneakerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: rem(50px);
+}
+
+.sneakersFlex {
+  display: flex;
+  gap: rem(40px);
+}
+
+.sneakersNav__block {
+  display: flex;
+  align-items: center;
+  gap: rem(8px);
+}
+
+.title {
+  color: $secondary;
+  display: flex;
+  align-items: center;
+  gap: rem(5px);
+  font-weight: 500;
+}
+
+.titleActive {
+  color: $light-black;
+  font-weight: 600;
+}
+
+.sneakerImage {
+  object-fit: cover;
+  border-radius: rem(20px);
+  cursor: pointer;
+  transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  &:hover {
+    transform: scale(0.9);
+  }
+}
+
+.sneakerImagesBlock {
+  display: flex;
+  gap: rem(50px);
+}
+
+.smallImages {
+  display: flex;
+  flex-direction: column;
+  gap: rem(12px);
+}
+
+.smallImage {
+  cursor: pointer;
+  object-fit: cover;
+  border-radius: rem(16px);
+  box-shadow: 2px 2px 5px #00408033;
+}
+
+.active {
+  opacity: 0.8;
+  filter: blur(1px);
+}

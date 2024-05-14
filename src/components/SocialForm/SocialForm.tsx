@@ -23,7 +23,7 @@ export const SocialForm: FC = () => {
           Sign Up with Facebook
         </Button>
         <Button type='button' id={styles.social} className={styles.withPhone}>
-          <Phone color='gray' />
+          <Phone color='#1f3e97' />
           Sign Up with Number
         </Button>
       </div>

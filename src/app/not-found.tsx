@@ -30,7 +30,7 @@ export default function NotFoundPage() {
         <Link className={styles.redirect__link} href='/'>
           Go to home
         </Link>
-        <Revert size='large' color='#1f3d97d0' className={styles.arrow__link} />
+        <Revert size='large' color='#111111' className={styles.arrow__link} />
       </div>
     </div>
   );

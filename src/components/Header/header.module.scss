@@ -9,7 +9,7 @@
   align-items: center;
   width: 100%;
   height: 40px;
-  background: $fourth;
+  background: $light-black;
   padding-right: 40px;
 }
 
@@ -26,12 +26,12 @@
   width: 2px;
   border-radius: 10px;
   height: 20px;
-  background: $secondary;
+  background: $thirdary;
 }
 
 .empty__link {
   font-weight: 500;
-  color: $secondary;
+  color: $thirdary;
 }
 
 .header {
@@ -43,7 +43,7 @@
   align-items: center;
   gap: 0.5rem;
   font-size: $four-size;
-  color: $primary;
+  color: $light-black;
   font-weight: 600;
 }
 
@@ -69,7 +69,7 @@
 }
 
 .active {
-  color: $primary;
+  color: $light-black;
   font-weight: 700;
 }
 
@@ -80,7 +80,7 @@
   position: relative;
   transition: all 0.4s ease-in-out 0s;
   &:hover {
-    color: $primary;
+    color: $light-black;
   }
 }
 
@@ -92,7 +92,7 @@
   width: 0;
   height: 2px;
   border-radius: 2px;
-  background-color: $primary;
+  background-color: $light-black;
   transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out,
     left 0.3s ease-in-out;
   transform: translateX(-50%);
@@ -121,7 +121,7 @@
   height: 16px;
   color: #ffffff;
   font-weight: 700;
-  background: #1f3d97d0;
+  background: rgba(0,0,0,0.8);
   border-radius: 50%;
   font-size: 10px;
 }
@@ -140,14 +140,14 @@
 
 .nav__signUp {
   padding: rem(14px) rem(18px);
-  border: 2px solid $primary;
+  border: 2px solid $light-black;
   border-radius: rem(73px);
   background: transparent;
 }
 
 .nav__signIn {
   padding: rem(14px) rem(18px);
-  border: 2px solid $primary;
+  border: 2px solid $light-black;
   border-radius: rem(73px);
   background: transparent;
 }
@@ -163,7 +163,7 @@
 }
 
 .active__button {
-  background: $primary;
+  background: $light-black;
   color: $thirdary;
 }
 
@@ -172,9 +172,9 @@
 }
 
 .signIn:active {
-  color: $primary;
+  color: $thirdary;
 }
 
 .signUp:active {
-  color: $primary;
+  color: $thirdary;
 }

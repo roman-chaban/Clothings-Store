@@ -36,18 +36,10 @@ export const SneakersProducts: FC<ProductsProps> = ({
       <div className={styles.productBlock}>
         <h2 className={styles.shoesTitle}>Most Popular</h2>
         <div className={styles.navigationButtons}>
-          <Button
-            variant='contained'
-            className={styles.prevButton}
-            onClick={slidePrev}
-          >
+          <Button className={styles.prevButton} onClick={slidePrev}>
             Previous
           </Button>
-          <Button
-            variant='contained'
-            className={styles.nextButton}
-            onClick={slideNext}
-          >
+          <Button className={styles.nextButton} onClick={slideNext}>
             Next
           </Button>
         </div>
@@ -72,6 +64,7 @@ export const SneakersProducts: FC<ProductsProps> = ({
           {products.map((product) => (
             <SwiperSlide key={product.productId} className={styles.slide}>
               <ProductCart
+                name={product.name}
                 priceDiscount={product.priceDiscount}
                 mainImage={product.mainImage}
                 title={product.title}

@@ -43,7 +43,7 @@
 }
 
 .productCart__title {
-  color: $primary;
+  color: $light-black;
   padding-bottom: rem(10px);
   font-weight: 600;
   font-size: $five-size;
@@ -80,7 +80,7 @@
   margin: 10px 10px;
   padding: rem(10px);
   border-radius: rem(20px);
-  background: $primary;
+  background: $light-black;
   color: $thirdary;
   font-weight: 600;
 }
@@ -90,7 +90,7 @@
   bottom: 280px;
   left: 220px;
   font-size: rem(14px);
-  background: #c73508d5;
+  background: $light-black;
   font-weight: 600;
   padding: rem(6px);
   color: $thirdary;

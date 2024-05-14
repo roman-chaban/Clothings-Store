@@ -5,7 +5,7 @@ import styles from '@/components/Header/header.module.scss';
 import Link from 'next/link';
 import { navBarLinks, HeaderNavLinks } from '@/constants/header-links';
 import { usePathname } from 'next/navigation';
-import { Code, Favorite, Shop, Tooltip } from 'grommet-icons';
+import { Favorite, Shop, Tooltip } from 'grommet-icons';
 
 export const Header: FC = () => {
   const pathname = usePathname();
@@ -58,13 +58,13 @@ export const Header: FC = () => {
           </ul>
           <div className={styles.nav__icons}>
             <button className={styles.nav__icon}>
-              <Tooltip color='#1F3E97' />
+              <Tooltip color='#111111' />
               <span className={styles.counter__icon}>0</span>
             </button>
             <button className={styles.nav__icon}>
               <Link href='/favorite'>
                 <Favorite
-                  color='#1F3E97'
+                  color='#111111'
                   style={{ position: 'relative', bottom: 2 }}
                 />
               </Link>
@@ -73,7 +73,7 @@ export const Header: FC = () => {
             <button className={styles.nav__icon}>
               <Link href='/cart'>
                 <Shop
-                  color='#1F3E97'
+                  color='#111111'
                   style={{ position: 'relative', bottom: 4 }}
                 />
               </Link>
