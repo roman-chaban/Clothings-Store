@@ -55,7 +55,7 @@ export const SignInForm: FC = () => {
         </label>
         <label htmlFor='password' className={styles.password__label}>
           <h4 className={styles.password__title}>
-            Username or Email <span style={{ color: '#ea1c0f' }}>*</span>
+            Password <span style={{ color: '#ea1c0f' }}>*</span>
           </h4>
           <Input
             id='password'
