@@ -48,6 +48,7 @@
 .footer__input {
   padding: 16px 0px;
   color: $input-bg;
+  width: 200px;
   background: transparent;
 }
 
@@ -55,11 +56,6 @@
   color: $gray;
   caret-color: $gray;
   font-weight: 500;
-}
-
-.footer__arrow {
-  position: relative;
-  top: 3px;
 }
 
 .footer__nav {

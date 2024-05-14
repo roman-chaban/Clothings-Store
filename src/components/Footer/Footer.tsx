@@ -3,11 +3,10 @@
 import { FC, useState } from 'react';
 import styles from '@/components/Footer/footer.module.scss';
 import { Input } from '../ui/Input/Input';
-import FooterIcon from '@/images/icons/footer-arrow.svg';
-import Image from 'next/image';
 import { List, listItemsSocialMedia } from '../List/List';
 import { listItemsContacts } from '../List/contacts/contacts';
 import { listItemsCompany, listItemsHelp } from '../List/lists/lists';
+import { Next } from 'grommet-icons';
 
 export const Footer: FC = () => {
   const [value, setValue] = useState<string>('');
@@ -40,12 +39,11 @@ export const Footer: FC = () => {
               onChange={(event) => setValue(event.target.value)}
               placeholder='Subscribe to our newsletter ...'
             />
-            <Image
+            <Next
               className={styles.footer__arrow}
-              src={FooterIcon}
+              color='#111111'
               width={20}
               height={20}
-              alt='Blue arrow icon'
             />
           </form>
         </div>

@@ -83,6 +83,9 @@
   background: $light-black;
   color: $thirdary;
   font-weight: 600;
+  &:hover {
+    background: $yellow;
+  }
 }
 
 .cardDiscount {

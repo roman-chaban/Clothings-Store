@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { Products } from '@/interfaces/products';
 import Image from 'next/image';
 import styles from './sneakerProduct.module.scss';
-import { FormNext } from 'grommet-icons';
+import { FormNext, Next, Previous } from 'grommet-icons';
 import { ProductInfo } from '../ProductInfo/ProductInfo';
 
 interface SneakerProductProps {
@@ -15,6 +15,7 @@ interface SneakerProductProps {
 // eslint-disable-next-line react/display-name
 export const SneakerProduct: FC<SneakerProductProps> = memo(({ sneakers }) => {
   const [sneakerImage, setSneakerImage] = useState<string>('');
+  const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
 
   const handleThumbnailClick = (image: string) => {
     setSneakerImage(image);
@@ -129,13 +130,23 @@ export const SneakerProduct: FC<SneakerProductProps> = memo(({ sneakers }) => {
                 )}
               </div>
             </div>
-            <Image
-              className={styles.sneakerImage}
-              src={sneakerImage || sneaker.mainImage}
-              width={400}
-              height={500}
-              alt={sneaker.title}
-            />
+            <div className={styles.mainImage__block}>
+              <Image
+                className={styles.sneakerImage}
+                src={sneakerImage || sneaker.mainImage}
+                width={400}
+                height={500}
+                alt={sneaker.title}
+              />
+              <div className={styles.nextPrev__buttons}>
+                <button className={styles.btn} type='button'>
+                  <Previous color='#111111' style={{ width: 20, height: 20 }} />
+                </button>
+                <button className={styles.btn} type='button'>
+                  <Next color='#111111' style={{ width: 20, height: 20 }} />
+                </button>
+              </div>
+            </div>
           </div>
         ))}
         <ProductInfo sneakers={sneakers} />

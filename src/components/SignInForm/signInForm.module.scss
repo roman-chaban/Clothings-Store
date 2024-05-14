@@ -22,7 +22,7 @@
 }
 
 .label__title {
-  color: $primary;
+  color: $light-black;
   font-weight: 600;
 }
 
@@ -32,9 +32,9 @@
   border-radius: rem(8px);
   padding: rem(16px);
   background: $fourth;
-  color: $primary;
+  color: $light-black;
   font-weight: 600;
-  caret-color: $primary;
+  caret-color: $light-black;
 }
 
 .password__label {
@@ -44,7 +44,7 @@
 }
 
 .password__title {
-  color: $primary;
+  color: $light-black;
   font-weight: 600;
 }
 
@@ -54,14 +54,14 @@
   border-radius: rem(8px);
   padding: rem(16px);
   background: $fourth;
-  color: $primary;
+  color: $light-black;
   font-weight: 600;
-  caret-color: $primary;
+  caret-color: $light-black;
 }
 
 .submit__button {
   width: 100%;
-  background: $primary;
+  background: $light-black;
   color: $thirdary;
   font-weight: 600;
   font-size: $five-size;
@@ -78,7 +78,7 @@
 }
 
 .forgot__password {
-  color: $primary;
+  color: $light-black;
   font-weight: 600;
   font-size: $secondary-size;
 }
