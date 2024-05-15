@@ -1,7 +1,7 @@
 'use client';
 
 import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
-import styles from '@/app/home.module.scss';
+import styles from '@/assets/styles/home.module.scss';
 import { FC, useEffect, useState } from 'react';
 
 export const ButtonUp: FC = () => {

@@ -101,11 +101,121 @@
     "mainImage": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/f96f97de-514e-4610-80bd-6644a62a2548/jordan-brooklyn-fleece-mens-pullover-hoodie-vgsrpw.png",
     "images": [
       {
-        "first": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/1a32da4a-e6f2-4e89-864f-30a2fce631e7/jordan-brooklyn-fleece-mens-pullover-hoodie-vgsrpw.png",
-        "second": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/ce16a101-01f8-4f42-a6f3-f6635bdfc828/jordan-brooklyn-fleece-mens-pullover-hoodie-vgsrpw.png",
-        "third": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/ca016eb4-08aa-4ddb-bb98-a4ffcb00905f/jordan-brooklyn-fleece-mens-pullover-hoodie-vgsrpw.png",
+        "one": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/1a32da4a-e6f2-4e89-864f-30a2fce631e7/jordan-brooklyn-fleece-mens-pullover-hoodie-vgsrpw.png",
+        "two": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/ce16a101-01f8-4f42-a6f3-f6635bdfc828/jordan-brooklyn-fleece-mens-pullover-hoodie-vgsrpw.png",
+        "three": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/ca016eb4-08aa-4ddb-bb98-a4ffcb00905f/jordan-brooklyn-fleece-mens-pullover-hoodie-vgsrpw.png",
         "four": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/00b30d56-b4d8-4f0d-993c-af3d18bc32a0/jordan-brooklyn-fleece-mens-pullover-hoodie-vgsrpw.png",
         "five": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/4c20d926-61f7-4df8-91eb-6ac78f7af440/jordan-brooklyn-fleece-mens-sweatpants-nQBq7q.png"
+      }
+    ]
+  },
+  {
+    "productId": 5,
+    "title": "Jordan Flight Essentials",
+    "name": "Jordan-Flight-Essentials",
+    "category": "Men's T-Shirt",
+    "price": 38,
+    "productRating": 4.5,
+    "priceDiscount": 0,
+    "subStyle": "Smoke Grey",
+    "style": "FN6006-084",
+    "about": "You'll have no problem bringing the summer fun in this shirt. Inspired by Pointillism paintings, but recreated in a distinctly Jordan way, this shirt's made of soft cotton for a cozy feel.",
+    "mainImage": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/3ca36443-841c-424e-afe8-2a4b7c4f4b0f/jordan-flight-essentials-mens-t-shirt-Fr1GfW.png",
+    "images": [
+      {
+        "one": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/72e4203b-9876-442b-9103-53d5965ff2d7/jordan-flight-essentials-mens-t-shirt-Fr1GfW.png",
+        "two": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b12108ce-c0cc-417d-a6dc-425d37cf6bb1/jordan-flight-essentials-mens-t-shirt-Fr1GfW.png",
+        "three": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/1b40e1ec-a0a7-48fb-9e7c-11d30bc010cb/jordan-flight-essentials-mens-t-shirt-Fr1GfW.png",
+        "four": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/58d2e3be-9bec-42ff-93a9-be0613d07d4c/jordan-flight-essentials-mens-t-shirt-Fr1GfW.png",
+        "five": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/c3cf9c5b-e11d-4ba5-a592-72ae21003ea4/jordan-flight-essentials-mens-t-shirt-Fr1GfW.png"
+      }
+    ]
+  },
+  {
+    "productId": 6,
+    "title": "Paris Saint-Germain",
+    "name": "Paris-Saint-Germain-third",
+    "category": "Men's Jacket",
+    "price": 300,
+    "productRating": 4.9,
+    "priceDiscount": 210.97,
+    "subStyle": "Black",
+    "style": " FN5320-010",
+    "about": "Rep PSG from top to bottom. This allover-print jacket is insulated to help keep you warm. The chest patch and foldover collar bring your look home.",
+    "mainImage": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b09689fb-812c-41eb-801c-75514b7b8834/paris-saint-germain-mens-jacket-lMSwcT.png",
+    "images": [
+      {
+        "one": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/f30f13fd-280b-4f93-b2b3-d11d6ce0e0a1/paris-saint-germain-mens-jacket-lMSwcT.png",
+        "two": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/28d07596-805a-4a09-90c9-f6421eebac82/paris-saint-germain-mens-jacket-lMSwcT.png",
+        "three": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8442dec2-fd72-4e53-81c2-fea5ba9e3c4e/paris-saint-germain-mens-jacket-lMSwcT.png",
+        "four": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/241cb341-4d71-4008-a24c-d6a5031b5c26/paris-saint-germain-mens-jacket-lMSwcT.png",
+        "five": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/62563268-e692-4584-9e4f-2881efd7425b/paris-saint-germain-mens-jacket-lMSwcT.png"
+      }
+    ]
+  },
+  {
+    "productId": 7,
+    "title": "Jordan Flight MVP",
+    "name": "Jordan-Flight-MVP",
+    "category": "Men's Fleece Pullover Hoodie",
+    "price": 82,
+    "productRating": 4.6,
+    "priceDiscount": 45.97,
+    "subStyle": "Black/Sail",
+    "style": "FB7021-010",
+    "about": "After practice or in the bleachers on a cool night, you're ready in this Jordan hoodie. It's made of soft fleece that's smooth on the outside and plush on the inside for warmth and comfort. Puff print graphics and a woven patch label add texture for a look that pops.",
+    "mainImage": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/fe20f2b9-5bf8-4e79-a535-006b91fd9841/jordan-flight-mvp-mens-fleece-pullover-hoodie-ThTsq1.png",
+    "images": [
+      {
+        "one": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/f18aae72-781a-4176-b521-fbf4788f98c0/jordan-flight-mvp-mens-fleece-pullover-hoodie-ThTsq1.png",
+        "two": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/f8932252-10fa-4005-af6a-50847d83646e/jordan-flight-mvp-mens-fleece-pullover-hoodie-ThTsq1.png",
+        "three": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e8c85aba-5b75-4191-9500-d75b686f19de/jordan-flight-mvp-mens-fleece-pullover-hoodie-ThTsq1.png",
+        "four": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/59d28d5f-d94f-4c45-9824-52a05cd6fab4/jordan-flight-mvp-mens-fleece-pullover-hoodie-ThTsq1.png",
+        "five": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/80ea7496-9e0a-4c1b-9a16-4ee1e8f5ebd4/jordan-flight-mvp-mens-fleece-pullover-hoodie-ThTsq1.png"
+      }
+    ]
+  },
+  {
+    "productId": 8,
+    "title": "Jordan Essentials",
+    "name": "Jordan-Essentials-secondary",
+    "category": "Men's Fleece Pullover Hoodie",
+    "price": 88,
+    "productRating": 4.8,
+    "priceDiscount": 70.97,
+    "subStyle": "Legend Dark Brown/Dune Red/White",
+    "style": "FN4618-231",
+    "about": "Question: What goes with everything? Answer: This hoodie. This one is made of soft fleece with graphics inspired by MJ's championship days.",
+    "mainImage": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8558cf63-5595-4b34-8af4-bcdceb3ffcb0/jordan-essentials-mens-fleece-pullover-hoodie-tCb2Q1.png",
+    "images": [
+      {
+        "one": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/2c742f51-bd59-471e-ba66-03fd546fd306/jordan-essentials-mens-fleece-pullover-hoodie-tCb2Q1.png",
+        "two": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7fda6d66-6c64-44c6-810b-a3dd643985fe/jordan-essentials-mens-fleece-pullover-hoodie-tCb2Q1.png",
+        "three": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/18fb6ce1-edab-4f1b-bd7c-b67397fa53b1/jordan-essentials-mens-fleece-pullover-hoodie-tCb2Q1.png",
+        "four": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/df0d188a-9b21-445f-9d59-d3e07e2282a1/jordan-essentials-mens-fleece-pullover-hoodie-tCb2Q1.png",
+        "five": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/c37ec8ad-a4e8-4979-a095-bec02be98fd1/jordan-essentials-mens-fleece-pullover-hoodie-tCb2Q1.png"
+      }
+    ]
+  },
+  {
+    "productId": 9,
+    "title": "Jordan Brand",
+    "name": "Jordan-Brand",
+    "category": "Men's T-Shirt",
+    "price": 42,
+    "productRating": 4.3,
+    "priceDiscount": 0,
+    "subStyle": "Industrial Blue/Barely Green/White",
+    "style": "FN6025-457",
+    "about": "What's more classic than the Jumpman? A cotton tee, of course. We're giving you both for comfortable style you can rock anywhere.",
+    "mainImage": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b69b1588-4986-4070-a98c-1f92dbf411ce/jordan-brand-mens-t-shirt-DLbnG5.png",
+    "images": [
+      {
+        "one": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/594cb654-5db3-46da-a56a-64951edd6d72/jordan-brand-mens-t-shirt-DLbnG5.png",
+        "two": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/195d7a16-e575-45d0-bc4b-15cee25376ca/jordan-brand-mens-t-shirt-DLbnG5.png",
+        "three": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/cf72e520-5343-472f-9a25-5c462facc7a5/jordan-brand-mens-t-shirt-DLbnG5.png",
+        "four": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/45d85ebc-720f-4d80-b6c2-69e8eb846856/jordan-brand-mens-t-shirt-DLbnG5.png",
+        "five": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/f9713f39-54df-48f8-ac5e-e3fbd387ef48/jordan-brand-mens-t-shirt-DLbnG5.png"
       }
     ]
   }
