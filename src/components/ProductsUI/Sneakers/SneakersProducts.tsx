@@ -22,6 +22,7 @@ export const SneakersProducts: FC<ProductsProps> = ({
       <div className={styles.sneakersContainer}>
         {products.map((product) => (
           <ProductCart
+            images={product.images}
             name={product.name}
             key={product.productId}
             priceDiscount={product.priceDiscount}
