@@ -1,13 +1,15 @@
-export interface Products {
-  productId?: number;
-  title: string;
+export interface Clothings {
+  productId: string;
   name: string;
+  title: string;
   category: string;
-  style: string;
   price: number;
+  priceDiscount: number;
   productRating: number;
   mainImage: string;
-  priceDiscount: number;
+  subStyle: string;
+  style: string;
+  about: string;
   images: {
     one: string;
     two: string;
@@ -15,6 +17,4 @@ export interface Products {
     four: string;
     five: string;
   }[];
-  about?: string;
-  subStyle?: string;
 }

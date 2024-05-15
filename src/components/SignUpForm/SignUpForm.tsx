@@ -5,7 +5,6 @@ import { ChangeEvent, FC, useState } from 'react';
 import { SocialForm } from '@/components/SocialForm/SocialForm';
 import Link from 'next/link';
 import styles from './signUpForm.module.scss';
-import { Input } from '@/components/ui/Input/Input';
 import { InputsFields } from '../InputsFields/InputsFields';
 
 export interface InputsFormData {

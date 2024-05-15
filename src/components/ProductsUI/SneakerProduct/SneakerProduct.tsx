@@ -7,13 +7,14 @@ import Image from 'next/image';
 import styles from './sneakerProduct.module.scss';
 import { FormNext, Next, Previous } from 'grommet-icons';
 import { ProductInfo } from '../ProductInfo/ProductInfo';
+import { Clothings } from '@/interfaces/clothing';
 
 interface SneakerProductProps {
-  sneakers: Products[];
+  products: Products[];
 }
 
 // eslint-disable-next-line react/display-name
-export const SneakerProduct: FC<SneakerProductProps> = memo(({ sneakers }) => {
+export const Product: FC<SneakerProductProps> = memo(({ products }) => {
   const [sneakerImage, setSneakerImage] = useState<string>('');
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
 
@@ -32,97 +33,101 @@ export const SneakerProduct: FC<SneakerProductProps> = memo(({ sneakers }) => {
             Sneakers <FormNext color='gray' />
           </Link>
         </h4>
-        <h5 className={styles.title}>
-          {sneakers[0].category} <FormNext color='gray' />
-        </h5>
-        <h6 className={`${styles.title} ${styles.titleActive}`}>
-          {sneakers[0].title}
-        </h6>
+        {products.length > 0 && (
+          <h5 className={styles.title}>
+            {products[0].category} <FormNext color='gray' />
+          </h5>
+        )}
+        {products.length > 0 && (
+          <h6 className={`${styles.title} ${styles.titleActive}`}>
+            {products[0].title}
+          </h6>
+        )}
       </div>
       <div className={styles.sneakersFlex}>
-        {sneakers.map((sneaker) => (
-          <div key={sneaker.productId} className={styles.sneakerImagesBlock}>
+        {products.map((product) => (
+          <div key={product.productId} className={styles.sneakerImagesBlock}>
             <div className={styles.product__images}>
               <div className={styles.smallImages}>
-                {Array.isArray(sneaker.images) && sneaker.images.length > 0 && (
+                {Array.isArray(product.images) && product.images.length > 0 && (
                   <>
-                    {sneaker.images[0]?.one && (
+                    {product.images[0]?.one && (
                       <Image
                         className={`${styles.smallImage} ${
-                          sneakerImage === sneaker.images[0].one
+                          sneakerImage === product.images[0].one
                             ? styles.active
                             : ''
                         }`}
-                        alt={sneaker.title}
+                        alt={product.title}
                         width={80}
                         height={100}
-                        src={sneaker.images[0].one}
+                        src={product.images[0].one}
                         onClick={() =>
-                          handleThumbnailClick(sneaker.images[0].one)
+                          handleThumbnailClick(product.images[0].one)
                         }
                       />
                     )}
-                    {sneaker.images[0]?.two && (
+                    {product.images[0]?.two && (
                       <Image
                         className={`${styles.smallImage} ${
-                          sneakerImage === sneaker.images[0].two
+                          sneakerImage === product.images[0].two
                             ? styles.active
                             : ''
                         }`}
-                        alt={sneaker.title}
+                        alt={product.title}
                         width={80}
                         height={100}
-                        src={sneaker.images[0].two}
+                        src={product.images[0].two}
                         onClick={() =>
-                          handleThumbnailClick(sneaker.images[0].two)
+                          handleThumbnailClick(product.images[0].two)
                         }
                       />
                     )}
-                    {sneaker.images[0]?.three && (
+                    {product.images[0]?.three && (
                       <Image
                         className={`${styles.smallImage} ${
-                          sneakerImage === sneaker.images[0].three
+                          sneakerImage === product.images[0].three
                             ? styles.active
                             : ''
                         }`}
-                        alt={sneaker.title}
+                        alt={product.title}
                         width={80}
                         height={100}
-                        src={sneaker.images[0].three}
+                        src={product.images[0].three}
                         onClick={() =>
-                          handleThumbnailClick(sneaker.images[0].three)
+                          handleThumbnailClick(product.images[0].three)
                         }
                       />
                     )}
-                    {sneaker.images[0]?.four && (
+                    {product.images[0]?.four && (
                       <Image
                         className={`${styles.smallImage} ${
-                          sneakerImage === sneaker.images[0].four
+                          sneakerImage === product.images[0].four
                             ? styles.active
                             : ''
                         }`}
-                        alt={sneaker.title}
+                        alt={product.title}
                         width={80}
                         height={100}
-                        src={sneaker.images[0].four}
+                        src={product.images[0].four}
                         onClick={() =>
-                          handleThumbnailClick(sneaker.images[0].four)
+                          handleThumbnailClick(product.images[0].four)
                         }
                       />
                     )}
-                    {sneaker.images[0]?.five && (
+                    {product.images[0]?.five && (
                       <Image
                         className={`${styles.smallImage} ${
-                          sneakerImage === sneaker.images[0].five
+                          sneakerImage === product.images[0].five
                             ? styles.active
                             : ''
                         }`}
-                        alt={sneaker.title}
+                        alt={product.title}
                         width={80}
                         height={100}
-                        src={sneaker.images[0].five}
+                        src={product.images[0].five}
                         onClick={() =>
-                          handleThumbnailClick(sneaker.images[0].five)
+                          handleThumbnailClick(product.images[0].five)
                         }
                       />
                     )}
@@ -133,10 +138,10 @@ export const SneakerProduct: FC<SneakerProductProps> = memo(({ sneakers }) => {
             <div className={styles.mainImage__block}>
               <Image
                 className={styles.sneakerImage}
-                src={sneakerImage || sneaker.mainImage}
+                src={sneakerImage || product.mainImage}
                 width={400}
                 height={500}
-                alt={sneaker.title}
+                alt={product.title}
               />
               <div className={styles.nextPrev__buttons}>
                 <button className={styles.btn} type='button'>
@@ -149,7 +154,7 @@ export const SneakerProduct: FC<SneakerProductProps> = memo(({ sneakers }) => {
             </div>
           </div>
         ))}
-        <ProductInfo sneakers={sneakers} />
+        <ProductInfo products={products as unknown as Clothings[]} />
       </div>
     </div>
   );

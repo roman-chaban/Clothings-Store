@@ -1,7 +1,8 @@
 import products from '@/api/products/products.json';
 import styles from './sneaker.module.scss';
-import { SneakerProduct } from '@/components/ProductsUI/SneakerProduct/SneakerProduct';
-import { SneakersProducts } from '@/components/ProductsUI/Products/Products';
+import { Product } from '@/components/ProductsUI/SneakerProduct/SneakerProduct';
+import { ProductsItem } from '@/components/ProductsUI/Products/Products';
+import { Products } from '@/interfaces/products';
 
 interface SneakerProps {
   params: { name: string };
@@ -18,8 +19,8 @@ export default function Sneaker({ params: { name } }: SneakerProps) {
 
   return (
     <div className={styles.sneakerProduct__container}>
-      <SneakerProduct sneakers={filteredSneakers} />
-      <SneakersProducts products={products} />
+      <Product products={filteredSneakers as Products[]} />
+      <ProductsItem products={products as Products[]} productLinkTitle={''} />
     </div>
   );
 }

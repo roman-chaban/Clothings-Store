@@ -11,15 +11,18 @@ import 'swiper/css/pagination';
 import SwiperCore from 'swiper';
 import { Navigation } from 'swiper/modules';
 import { Button } from '@mui/material';
+import { Clothings } from '@/interfaces/clothing';
 
 SwiperCore.use([Navigation]);
 
 interface ProductsProps {
   products: Products[];
+  productLinkTitle: string;
 }
 
-export const SneakersProducts: FC<ProductsProps> = ({
+export const ProductsItem: FC<ProductsProps> = ({
   products,
+  productLinkTitle,
 }: ProductsProps) => {
   const swiperRef = useRef<any>(null);
 
@@ -74,6 +77,7 @@ export const SneakersProducts: FC<ProductsProps> = ({
                 style={product.style}
                 price={product.price}
                 productRating={product.productRating}
+                productLinkTitle={''}
               />
             </SwiperSlide>
           ))}

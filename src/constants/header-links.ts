@@ -17,8 +17,8 @@ export const navBarLinks: HeaderNavLinks[] = [
     href: '/collections',
   },
   {
-    label: 'Clothing',
-    href: '/clothing',
+    label: 'Clothings',
+    href: '/clothings',
   },
   {
     label: 'Accessories',

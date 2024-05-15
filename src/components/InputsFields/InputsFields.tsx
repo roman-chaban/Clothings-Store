@@ -14,14 +14,14 @@ export const InputsFields: FC<InputsFormData> = ({
 }) => {
   return (
     <div className={styles.form__grid}>
-      <label htmlFor='full-name' className={styles.email__label}>
+      <label htmlFor='fullName' className={styles.email__label}>
         <h4 className={styles.label__title}>
           Full name <span style={{ color: '#ea1c0f' }}>*</span>
         </h4>
         <Input
-          id='full-name'
+          id='fullName'
           placeholder='Full name *'
-          name='full-name'
+          name='fullName'
           type='text'
           className={styles.email}
           value={fullName.value}
@@ -30,7 +30,7 @@ export const InputsFields: FC<InputsFormData> = ({
       </label>
       <label htmlFor='userName' className={styles.password__label}>
         <h4 className={styles.password__title}>
-          Password <span style={{ color: '#ea1c0f' }}>*</span>
+          Username <span style={{ color: '#ea1c0f' }}>*</span>
         </h4>
         <Input
           id='userName'
@@ -48,7 +48,7 @@ export const InputsFields: FC<InputsFormData> = ({
         </h4>
         <Input
           id='dateOfBirth'
-          name='userName'
+          name='dateOfBirth'
           type='date'
           className={styles.password}
           value={dateOfBirth.value}

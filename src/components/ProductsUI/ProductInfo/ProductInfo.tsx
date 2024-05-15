@@ -4,23 +4,24 @@ import { Products } from '@/interfaces/products';
 import { FC, useState } from 'react';
 import styles from './productInfo.module.scss';
 import { sizes } from '@/constants/product-sizes';
+import { Clothings } from '@/interfaces/clothing';
 
 interface SneakerProductProps {
-  sneakers: Products[];
+  products: (Clothings | Products)[];
 }
 
-export const ProductInfo: FC<SneakerProductProps> = ({ sneakers }) => {
+export const ProductInfo: FC<SneakerProductProps> = ({ products }) => {
   const [selectedSize, setSelectedSize] = useState<string>('37');
 
   const handleSizeSelect = (size: string) => {
     setSelectedSize(size);
   };
 
-  if (!sneakers || sneakers.length === 0) {
+  if (!products || products.length === 0) {
     return null;
   }
 
-  const firstSneaker = sneakers[0];
+  const firstSneaker = products[0];
 
   if (!firstSneaker) {
     return null;
@@ -67,15 +68,15 @@ export const ProductInfo: FC<SneakerProductProps> = ({ sneakers }) => {
       <article className={styles.aboutProduct}>
         <div className={styles.about__block}>
           <h4 className={styles.about__blockTitle}>
-            About: {sneakers[0].title}{' '}
+            About: <br /> {products[0].title}{' '}
           </h4>
-          <p className={styles.about}>{sneakers[0].about}</p>
+          <p className={styles.about}>{products[0].about}</p>
         </div>
         <ul className={styles.about__list}>
           <li className={styles.about__listItem}>
-            Shown: {sneakers[0].subStyle}
+            Shown: {products[0].subStyle}
           </li>
-          <li className={styles.about__listItem}>{sneakers[0].style}</li>
+          <li className={styles.about__listItem}>{products[0].style}</li>
         </ul>
       </article>
     </div>

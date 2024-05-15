@@ -18,3 +18,76 @@
   padding-bottom: rem(40px);
   border-bottom: 2px solid $decoration-bottom;
 }
+
+.email__field,
+.fullName__field {
+  width: rem(349px);
+  height: rem(49px);
+  border-radius: rem(8px);
+  padding: rem(16px);
+  background: $fourth;
+  color: $light-black;
+  font-weight: 600;
+  caret-color: $light-black;
+}
+
+.email__label {
+  display: flex;
+  flex-direction: column;
+  gap: rem(16px);
+}
+
+.label__title {
+  color: $light-black;
+  font-weight: 600;
+}
+
+.fields {
+  display: flex;
+  align-items: center;
+  gap: rem(31px);
+}
+
+.fieldsContainer {
+  width: rem(729px);
+  display: flex;
+  flex-direction: column;
+  gap: rem(57px);
+  margin-top: rem(65px);
+}
+
+.contactsArea {
+  height: rem(205px);
+  border-radius: rem(8px);
+  background: $input-bg;
+  resize: none;
+  font-weight: 600;
+  padding-top: rem(16px);
+  padding-left: rem(16px);
+  caret-color: $light-black;
+  color: $light-black;
+}
+
+.contactsArea::placeholder {
+  font-weight: 600;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: rem(16px);
+}
+
+.submit__button {
+  width: 100%;
+  background: $light-black;
+  color: $thirdary;
+  font-weight: 600;
+  font-size: $five-size;
+  padding: rem(16px);
+  border-radius: rem(8px);
+  &:hover {
+    background: $yellow;
+    color: $light-black;
+  }
+}

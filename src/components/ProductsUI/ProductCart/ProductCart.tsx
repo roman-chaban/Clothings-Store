@@ -8,7 +8,7 @@ import { Shop, Star } from 'grommet-icons';
 import { Button } from '@mui/material';
 import Link from 'next/link';
 
-export const ProductCart: FC<Products> = ({
+export const ProductCart: FC<Products & { productLinkTitle: string }> = ({
   title,
   name,
   category,
@@ -17,12 +17,13 @@ export const ProductCart: FC<Products> = ({
   mainImage,
   style,
   priceDiscount = 0,
+  productLinkTitle,
 }) => {
   return (
     <div className={styles.productCart}>
       <div className={styles.productCart__container}>
         <div className={styles.productImage}>
-          <Link href={`/sneakers/sneaker/${encodeURIComponent(name)}`}>
+          <Link href={`${productLinkTitle}${encodeURIComponent(name)}`}>
             <Image
               className={styles.productImage}
               src={mainImage}
@@ -71,7 +72,7 @@ export const ProductCart: FC<Products> = ({
                 alignItems: 'start',
                 gap: '0.5rem',
               }}
-              href={`/sneakers/sneaker/${encodeURIComponent(name)}`}
+              href={`${productLinkTitle}${encodeURIComponent(name)}`}
             >
               Show now <Shop style={{ width: 20, height: 20 }} color='white' />
             </Link>

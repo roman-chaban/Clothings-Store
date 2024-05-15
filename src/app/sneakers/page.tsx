@@ -10,7 +10,11 @@ export const metadata: Metadata = {
 export default function Sneakers() {
   return (
     <div>
-      <SneakersProducts products={products as Products[]} />
+      <SneakersProducts
+        productLinkTitle='/sneakers/sneaker/'
+        pageTitle="Men's Sneakers"
+        products={products as Products[]}
+      />
     </div>
   );
 }
