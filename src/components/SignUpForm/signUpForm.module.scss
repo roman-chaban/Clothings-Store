@@ -2,15 +2,16 @@
 @import '../../assets/styles/globals.scss';
 @import '../../assets/styles/functions.scss';
 
-.signIn__form {
+.signUp__form {
   width: rem(729px);
   margin-top: rem(72px);
   margin-bottom: rem(40px);
 }
 
-.form__flex {
-  display: flex;
-  align-items: center;
+.form__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
   gap: rem(31px);
   margin-bottom: rem(32px);
 }
@@ -68,8 +69,8 @@
   padding: rem(16px);
   border-radius: rem(8px);
   &:hover {
-    background: $yellow;
-    color: $light-black;
+   background: $yellow;
+   color: $light-black;
   }
 }
 

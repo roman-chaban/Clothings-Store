@@ -4,8 +4,11 @@
 
 .sneakersContainer {
   display: grid;
-  grid-template-columns: repeat(3, 33%);
-  gap: 2rem;
+  grid-template-columns: repeat(3, 25%);
+  justify-items: center;
+  justify-content: center;
+  column-gap: 6rem;
+  row-gap: 4rem;
 }
 
 .title {

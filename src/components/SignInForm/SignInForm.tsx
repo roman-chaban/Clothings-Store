@@ -3,9 +3,9 @@
 import { ChangeEvent, FC, useState } from 'react';
 import styles from './signInForm.module.scss';
 import { Input } from '@/components/ui/Input/Input';
-import { Button } from '../ui/Button/Button';
 import Link from 'next/link';
 import { SocialForm } from '../SocialForm/SocialForm';
+import { Button } from '@mui/material';
 
 interface FormData {
   email: {
