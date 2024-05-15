@@ -43,7 +43,7 @@ export const ProductInfo: FC<SneakerProductProps> = ({ sneakers }) => {
           </span>
         )}
       <h3 className={styles.priceTitle}>
-        {'$'} {firstSneaker.price}
+        Price: {'$'} {firstSneaker.price}
       </h3>
       <span className={styles.selectSize}>
         Select size: <mark className={styles.markSize}>{selectedSize}</mark>
@@ -57,12 +57,15 @@ export const ProductInfo: FC<SneakerProductProps> = ({ sneakers }) => {
             }`}
             key={size.sizeNumber}
           >
-            {size.sizeNumber}
+            {size.sizeTitle}
           </button>
         ))}
       </div>
       <article className={styles.aboutProduct}>
+        <div className={styles.about__block}>
+          <h4 className={styles.about__blockTitle}>About: {sneakers[0].title} </h4>
         <p className={styles.about}>{sneakers[0].about}</p>
+        </div>
         <ul className={styles.about__list}>
           <li className={styles.about__listItem}>
             Shown: {sneakers[0].subStyle}

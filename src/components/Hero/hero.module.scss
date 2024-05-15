@@ -6,7 +6,8 @@
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  margin-bottom: 100px;
+  margin-bottom: rem(100px);
+  margin-top: rem(150px);
   gap: rem(30px);
   display: flex;
   flex-direction: column;

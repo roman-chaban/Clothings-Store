@@ -48,23 +48,27 @@
 
 .productSize__container {
   margin-top: rem(20px);
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
   gap: rem(10px);
 }
 
 .sizeBtn {
+  width: 120px;
+  height: 50px;
   padding: rem(8px);
-  background: $deep-black;
-  color: $thirdary;
-  font-weight: 600;
-  border-radius: rem(10px);
+  background: $thirdary;
+  color: $light-black;
+  box-shadow: rgb(229, 229, 229) 0px 0px 0px 1px;
+  font-weight: 500;
+  border-radius: rem(5px);
 }
 
 .activeSize {
   background: $thirdary;
   color: $deep-black;
-  border: 2px solid rgba(0, 0, 0, 0.5);
+  border: 2px solid $secondary;
 }
 
 .selectSize {
@@ -79,9 +83,18 @@
 .about {
   line-height: 1.85;
   text-align: justify;
-  font-weight: 500;
+  font-weight: 400;
   font-size: $five-size;
   max-width: 400px;
+}
+
+.about__blockTitle {
+  font-weight: 500;
+  color: $light-black;
+  font-size: $six-size;
+  margin-bottom: rem(10px);
+  padding-bottom: rem(8px);
+  border-bottom: 1.5px solid $light-black;
 }
 
 .about__list {

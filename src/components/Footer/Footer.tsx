@@ -55,7 +55,7 @@ export const Footer: FC = () => {
         </nav>
       </div>
       <div className={styles.footer__copyright}>
-        Copyright 2024. All Right Reserved &copy;
+      &copy; 2024 Nike, inc. All Right Reserved
       </div>
     </footer>
   );

@@ -13,15 +13,15 @@ export const navBarLinks: HeaderNavLinks[] = [
     href: '/sneakers',
   },
   {
-    label: 'Slip On',
-    href: '/slip-on',
+    label: 'Collections',
+    href: '/collections',
   },
   {
-    label: 'Sandals',
-    href: '/sandals',
+    label: 'Clothing',
+    href: '/clothing',
   },
   {
-    label: 'Other',
-    href: '/other',
+    label: 'Accessories',
+    href: '/accessories',
   },
 ];

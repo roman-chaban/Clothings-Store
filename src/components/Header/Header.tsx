@@ -1,6 +1,6 @@
 'use client';
 
-import { FC } from 'react';
+import { FC, useEffect, useState } from 'react';
 import styles from '@/components/Header/header.module.scss';
 import Link from 'next/link';
 import { navBarLinks, HeaderNavLinks } from '@/constants/header-links';
@@ -9,8 +9,28 @@ import { Favorite, Shop, Tooltip } from 'grommet-icons';
 
 export const Header: FC = () => {
   const pathname = usePathname();
+  const [isScrolledNav, setIsScrolledNav] = useState<boolean>(false);
+
+  useEffect(() => {
+    const handleNavScrolled = () => {
+      if (window.scrollY > 0) {
+        setIsScrolledNav(true);
+      } else {
+        setIsScrolledNav(false);
+      }
+    };
+    window.addEventListener('scroll', handleNavScrolled);
+    () => {
+      removeEventListener('scroll', handleNavScrolled);
+    };
+  }, []);
+
   return (
-    <header className={styles.header}>
+    <header
+      className={`${styles.header} ${
+        isScrolledNav ? styles.header__active : ''
+      }`}
+    >
       <div className={styles.empty__blockBg}>
         <svg
           xmlns='http://www.w3.org/2000/svg'
@@ -27,20 +47,20 @@ export const Header: FC = () => {
           ></path>
         </svg>
         <div className={styles.empty__links}>
-        <Link
-          className={`${styles.empty__link} ${styles.decoration__line}`}
-          href='/help'
-        >
-          Help
-        </Link>
-        <Link className={styles.empty__link} href='/store'>
-          Store
-        </Link>
+          <Link
+            className={`${styles.empty__link} ${styles.decoration__line}`}
+            href='/help'
+          >
+            Help
+          </Link>
+          <Link className={styles.empty__link} href='/store'>
+            Store
+          </Link>
         </div>
       </div>
       <div className={styles.header__container}>
         <div className={styles.header__logo}>
-          <strong>Clothing</strong>
+          <strong>Sneakers</strong>
           store
           <svg
             xmlns='http://www.w3.org/2000/svg'

@@ -43,6 +43,14 @@
 
 .header {
   width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 50;
+}
+
+.header__active {
+  background-color: $input-bg;
+  opacity: 0.9;
 }
 
 .header__logo {
@@ -181,9 +189,9 @@
 }
 
 .signIn:active {
-  color: $thirdary;
+  color: $light-black;
 }
 
 .signUp:active {
-  color: $thirdary;
+  color: $light-black;
 }

@@ -13,7 +13,7 @@ const inter = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'Clothing Store | Home',
+  title: 'Sneakers Store | Home',
   description: 'E-Commerce App',
   icons: './favicon/favicon.svg',
 };

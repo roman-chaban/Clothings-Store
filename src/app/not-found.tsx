@@ -4,7 +4,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Clothing Store | Not-Found',
+  title: 'Sneakers Store | Not-Found',
 };
 
 export default function NotFoundPage() {

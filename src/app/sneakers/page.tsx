@@ -4,7 +4,7 @@ import products from '@/api/products/products.json';
 import { Products } from '@/interfaces/products';
 
 export const metadata: Metadata = {
-  title: 'Clothing Store | Sneakers',
+  title: 'Sneakers Store | Sneakers',
 };
 
 export default function Sneakers() {

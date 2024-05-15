@@ -62,7 +62,7 @@ export const SneakerProduct: FC<SneakerProductProps> = memo(({ sneakers }) => {
                         }
                       />
                     )}
-                    {sneaker.images[0].two && (
+                    {sneaker.images[0]?.two && (
                       <Image
                         className={`${styles.smallImage} ${
                           sneakerImage === sneaker.images[0].two
@@ -78,7 +78,7 @@ export const SneakerProduct: FC<SneakerProductProps> = memo(({ sneakers }) => {
                         }
                       />
                     )}
-                    {sneaker.images[0].three && (
+                    {sneaker.images[0]?.three && (
                       <Image
                         className={`${styles.smallImage} ${
                           sneakerImage === sneaker.images[0].three
@@ -94,7 +94,7 @@ export const SneakerProduct: FC<SneakerProductProps> = memo(({ sneakers }) => {
                         }
                       />
                     )}
-                    {sneaker.images[0].four && (
+                    {sneaker.images[0]?.four && (
                       <Image
                         className={`${styles.smallImage} ${
                           sneakerImage === sneaker.images[0].four
@@ -110,7 +110,7 @@ export const SneakerProduct: FC<SneakerProductProps> = memo(({ sneakers }) => {
                         }
                       />
                     )}
-                    {sneaker.images[0].five && (
+                    {sneaker.images[0]?.five && (
                       <Image
                         className={`${styles.smallImage} ${
                           sneakerImage === sneaker.images[0].five
