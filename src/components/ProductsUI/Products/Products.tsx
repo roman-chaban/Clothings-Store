@@ -18,11 +18,13 @@ SwiperCore.use([Navigation]);
 interface ProductsProps {
   products: Products[];
   productLinkTitle: string;
+  productTitle: string;
 }
 
 export const ProductsItem: FC<ProductsProps> = ({
   products,
   productLinkTitle,
+  productTitle,
 }: ProductsProps) => {
   const swiperRef = useRef<any>(null);
 
@@ -37,7 +39,7 @@ export const ProductsItem: FC<ProductsProps> = ({
   return (
     <div className={styles.products}>
       <div className={styles.productBlock}>
-        <h2 className={styles.shoesTitle}>Most Popular</h2>
+        <h2 className={styles.shoesTitle}>{productTitle}</h2>
         <div className={styles.navigationButtons}>
           <Button className={styles.prevButton} onClick={slidePrev}>
             Previous

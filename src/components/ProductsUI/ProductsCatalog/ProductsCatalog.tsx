@@ -12,7 +12,7 @@ interface ProductsProps {
   productLinkTitle: string;
 }
 
-export const SneakersProducts: FC<ProductsProps> = ({
+export const ProductsCatalog: FC<ProductsProps> = ({
   products,
   pageTitle,
   productLinkTitle,

@@ -1,7 +1,7 @@
-import { SneakersProducts } from '@/components/ProductsUI/Sneakers/SneakersProducts';
 import { Metadata } from 'next';
 import products from '@/api/products/products.json';
 import { Products } from '@/interfaces/products';
+import { ProductsCatalog } from '@/components/ProductsUI/ProductsCatalog/ProductsCatalog';
 
 export const metadata: Metadata = {
   title: 'Sneakers Store | Sneakers',
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function Sneakers() {
   return (
     <div>
-      <SneakersProducts
+      <ProductsCatalog
         productLinkTitle='/sneakers/sneaker/'
         pageTitle="Men's Sneakers"
         products={products as Products[]}
