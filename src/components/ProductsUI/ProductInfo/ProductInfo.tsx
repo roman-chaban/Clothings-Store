@@ -36,6 +36,9 @@ export const ProductInfo: FC<SneakerProductProps> = ({ sneakers }) => {
           </h4>
         )}
       <h2 className={styles.sneakerTitle}>{firstSneaker.title}</h2>
+      <h4 className={styles.categoryTitle}>
+        Category: {firstSneaker.category}
+      </h4>
       {firstSneaker.priceDiscount !== undefined &&
         firstSneaker.priceDiscount > 0 && (
           <span className={styles.infoDiscount__title}>
@@ -63,8 +66,10 @@ export const ProductInfo: FC<SneakerProductProps> = ({ sneakers }) => {
       </div>
       <article className={styles.aboutProduct}>
         <div className={styles.about__block}>
-          <h4 className={styles.about__blockTitle}>About: {sneakers[0].title} </h4>
-        <p className={styles.about}>{sneakers[0].about}</p>
+          <h4 className={styles.about__blockTitle}>
+            About: {sneakers[0].title}{' '}
+          </h4>
+          <p className={styles.about}>{sneakers[0].about}</p>
         </div>
         <ul className={styles.about__list}>
           <li className={styles.about__listItem}>

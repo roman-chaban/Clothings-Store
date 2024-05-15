@@ -76,12 +76,36 @@
   color: $thirdary;
 }
 
-.menu__ListLink {
+.menu__ListLink,
+.menu__ListItem {
   color: $thirdary;
   display: flex;
   align-items: center;
   gap: rem(8px);
-  text-decoration: underline;
+  position: relative;
+  transition: all 0.4s ease-in-out 0s;
+  &:hover {
+    color: $yellow;
+  }
+}
+
+.menu__ListItem::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  border-radius: 2px;
+  background-color: $yellow;
+  transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out,
+    left 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.menu__ListItem:hover::after {
+  opacity: 1;
+  width: 100%;
 }
 
 .footer__copyright {

@@ -4,7 +4,7 @@ import { FC } from 'react';
 import styles from './product.module.scss';
 import { Products } from '@/interfaces/products';
 import Image from 'next/image';
-import { Star } from 'grommet-icons';
+import { Shop, Star } from 'grommet-icons';
 import { Button } from '@mui/material';
 import Link from 'next/link';
 
@@ -22,7 +22,7 @@ export const ProductCart: FC<Products> = ({
     <div className={styles.productCart}>
       <div className={styles.productCart__container}>
         <div className={styles.productImage}>
-          <Link href={`/sneakers/${encodeURIComponent(name)}`}>
+          <Link href={`/sneakers/sneaker/${encodeURIComponent(name)}`}>
             <Image
               className={styles.productImage}
               src={mainImage}
@@ -64,7 +64,17 @@ export const ProductCart: FC<Products> = ({
             <strong className={styles.productCart__category}>{category}</strong>
           </h3>
           <Button variant='contained' type='button' className={styles.shopBtn}>
-            Show now!
+            <Link
+              style={{
+                color: '#fff',
+                display: 'flex',
+                alignItems: 'start',
+                gap: '0.5rem',
+              }}
+              href={`/sneakers/sneaker/${encodeURIComponent(name)}`}
+            >
+              Show now <Shop style={{ width: 20, height: 20 }} color='white' />
+            </Link>
           </Button>
         </div>
       </div>

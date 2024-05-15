@@ -44,13 +44,7 @@ export const List: FC<ListProps> = ({ title, listItems }) => {
             href=''
             className={styles.menu__ListLink}
             style={{
-              textDecoration:
-                !listItem.label
-                  .toLowerCase()
-                  .startsWith('R'.toLocaleLowerCase()) &&
-                !listItem.label.toLowerCase().startsWith('P'.toLowerCase())
-                  ? 'underline'
-                  : 'none',
+              textDecoration: 'none',
             }}
           >
             {listItem.icon && listItem.icon}

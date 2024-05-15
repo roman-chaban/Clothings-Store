@@ -93,11 +93,13 @@ export const Header: FC = () => {
             })}
           </ul>
           <div className={styles.nav__icons}>
-            <button className={styles.nav__icon}>
-              <Tooltip color='#111111' />
+            <button className={styles.nav__icon} title='Contacts'>
+              <Link href='/contacts'>
+                <Tooltip color='#111111' />
+              </Link>
               <span className={styles.counter__icon}>0</span>
             </button>
-            <button className={styles.nav__icon}>
+            <button className={styles.nav__icon} title='Favorite'>
               <Link href='/favorite'>
                 <Favorite
                   color='#111111'
@@ -106,7 +108,7 @@ export const Header: FC = () => {
               </Link>
               <span className={styles.counter__icon}>0</span>
             </button>
-            <button className={styles.nav__icon}>
+            <button className={styles.nav__icon} title='Shopping Cart'>
               <Link href='/cart'>
                 <Shop
                   color='#111111'

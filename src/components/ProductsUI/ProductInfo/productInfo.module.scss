@@ -46,6 +46,11 @@
   font-size: $six-size;
 }
 
+.categoryTitle {
+  font-weight: 500;
+  font-size: $five-size;
+}
+
 .productSize__container {
   margin-top: rem(20px);
   display: grid;
@@ -68,11 +73,11 @@
 .activeSize {
   background: $thirdary;
   color: $deep-black;
-  border: 2px solid $secondary;
+  border: 2px solid $light-black;
 }
 
 .selectSize {
-  font-weight: 600;
+  font-weight: 400;
   font-size: $four-size;
 }
 

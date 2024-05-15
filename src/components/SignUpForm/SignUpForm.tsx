@@ -76,7 +76,7 @@ export const SignUpForm: FC = () => {
       />
       <div className={styles.submit}>
         <Button id='button' type='submit' className={styles.submit__button}>
-          Sign In
+          Sign Up
         </Button>
         <div className={styles.forgot__links}>
           <Link className={styles.forgot__password} href='/forgot-password'>

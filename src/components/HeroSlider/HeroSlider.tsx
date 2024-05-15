@@ -60,6 +60,7 @@ export const HeroSlider: FC = () => {
         <SwiperSlide>
           <Image
             src={ThirdBanner}
+            className={styles.slide__img}
             width={1080}
             height={500}
             alt='Video Banner'

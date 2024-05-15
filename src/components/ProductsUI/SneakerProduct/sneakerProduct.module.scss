@@ -61,10 +61,8 @@
 }
 
 .active {
-  opacity: 0.8;
-  filter: blur(1px);
+  filter: brightness(50%);
 }
-
 
 .nextPrev__buttons {
   display: flex;

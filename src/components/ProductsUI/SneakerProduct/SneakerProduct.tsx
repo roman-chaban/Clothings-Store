@@ -25,7 +25,7 @@ export const SneakerProduct: FC<SneakerProductProps> = memo(({ sneakers }) => {
     <div className={styles.sneakerContainer}>
       <div className={styles.sneakersNav__block}>
         <h3 className={styles.title}>
-          Clothing Store <FormNext color='gray' />
+          Sneakers Store <FormNext color='gray' />
         </h3>
         <h4 className={styles.title}>
           <Link className={styles.title} href='/sneakers'>
