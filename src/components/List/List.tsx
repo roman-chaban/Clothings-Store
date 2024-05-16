@@ -20,17 +20,17 @@ export const listItemsSocialMedia = [
   {
     id: 0,
     label: 'Github',
-    icon: <Github color='white' style={{ width: 14, height: 14 }} />,
+    icon: <Github color='#858585' style={{ width: 14, height: 14 }} />,
   },
   {
     id: 1,
     label: 'LinkedIn',
-    icon: <Linkedin color='white' style={{ width: 14, height: 14 }} />,
+    icon: <Linkedin color='#858585' style={{ width: 14, height: 14 }} />,
   },
   {
     id: 2,
     label: 'Telegram',
-    icon: <Send color='white' style={{ width: 16, height: 14 }} />,
+    icon: <Send color='#858585' style={{ width: 16, height: 14 }} />,
   },
 ];
 

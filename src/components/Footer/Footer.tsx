@@ -6,7 +6,6 @@ import { Input } from '../ui/Input/Input';
 import { List, listItemsSocialMedia } from '../List/List';
 import { listItemsContacts } from '../List/contacts/contacts';
 import { listItemsCompany, listItemsHelp } from '../List/lists/lists';
-import { Next } from 'grommet-icons';
 
 export const Footer: FC = () => {
   const [value, setValue] = useState<string>('');
@@ -39,12 +38,22 @@ export const Footer: FC = () => {
               onChange={(event) => setValue(event.target.value)}
               placeholder='Subscribe to our newsletter ...'
             />
-            <Next
-              className={styles.footer__arrow}
+            <svg
+              aria-hidden='true'
               color='#111111'
-              width={20}
-              height={20}
-            />
+              focusable='false'
+              viewBox='0 0 24 24'
+              role='img'
+              width='30px'
+              height='30px'
+              fill='none'
+            >
+              <path
+                stroke='currentColor'
+                stroke-width='1.5'
+                d='M13.962 16.296a6.716 6.716 0 01-3.462.954 6.728 6.728 0 01-4.773-1.977A6.728 6.728 0 013.75 10.5c0-1.864.755-3.551 1.977-4.773A6.728 6.728 0 0110.5 3.75c1.864 0 3.551.755 4.773 1.977A6.728 6.728 0 0117.25 10.5a6.726 6.726 0 01-.921 3.407c-.517.882-.434 1.988.289 2.711l3.853 3.853'
+              ></path>
+            </svg>
           </form>
         </div>
         <nav className={styles.footer__nav}>
@@ -55,7 +64,7 @@ export const Footer: FC = () => {
         </nav>
       </div>
       <div className={styles.footer__copyright}>
-      &copy; 2024 Nike, inc. All Right Reserved
+        &copy; 2024 Nike, inc. All Right Reserved
       </div>
     </footer>
   );

@@ -61,7 +61,7 @@ export const ProductCart: FC<Products & { productLinkTitle: string }> = ({
           <span className={styles.productCart__style}>{style}</span>
           <br />
           <h3 className={styles.categoryBlock}>
-            Category:
+            Category: <br />
             <strong className={styles.productCart__category}>{category}</strong>
           </h3>
           <Button variant='contained' type='button' className={styles.shopBtn}>

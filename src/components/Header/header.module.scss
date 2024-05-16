@@ -39,6 +39,10 @@
 .empty__link {
   font-weight: 500;
   color: $thirdary;
+  transition: color 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+  &:hover {
+    color: $secondary;
+  }
 }
 
 .header {
@@ -61,7 +65,7 @@
   color: $light-black;
   font-weight: 600;
   cursor: pointer;
-  transition: transform .8s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
   &:hover {
     transform: scale(1.1);
   }
@@ -132,8 +136,8 @@
 
 .nav__icon > .counter__icon {
   position: absolute;
-  top: -6px;
-  right: -8px;
+  top: -5px;
+  right: -14px;
   display: flex;
   align-items: center;
   justify-content: center;

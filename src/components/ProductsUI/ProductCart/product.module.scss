@@ -4,7 +4,7 @@
 
 .productCart {
   height: 540px;
-  width: 300px;
+  width: 290px;
   background: $thirdary;
   border-radius: rem(20px);
   box-shadow: rgba(0, 64, 128, 0.2) 2px 2px 5px 0px;
@@ -22,7 +22,7 @@
 }
 
 .productImage {
-  width: 300px;
+  width: 290px;
   height: 300px;
   object-position: top;
   object-fit: cover;
@@ -78,8 +78,9 @@
 }
 
 .shopBtn {
-  margin: 10px 10px;
-  padding: rem(10px);
+  max-width: 200px;
+  margin: 10px 20px;
+  padding: rem(8px);
   border-radius: rem(20px);
   background: $light-black;
   color: $thirdary;
@@ -92,7 +93,7 @@
 .cardDiscount {
   position: relative;
   bottom: 280px;
-  left: 220px;
+  left: 200px;
   font-size: rem(14px);
   background: $light-black;
   font-weight: 600;
