@@ -22,6 +22,39 @@ export const Product: FC<SneakerProductProps> = memo(({ products }) => {
     setSneakerImage(image);
   };
 
+  const handleNextImageClick = (product: Products) => {
+    const nextIndex = (currentImageIndex + 1) % product.images.length;
+    setCurrentImageIndex(nextIndex);
+    const nextImage = product.images[nextIndex];
+    const nextImageUrl =
+      nextImage &&
+      (nextImage.one ||
+        nextImage.two ||
+        nextImage.three ||
+        nextImage.four ||
+        nextImage.five);
+    if (nextImageUrl) {
+      setSneakerImage(nextImageUrl);
+    }
+  };
+
+  const handlePrevImageClick = (product: Products) => {
+    const prevIndex =
+      (currentImageIndex - 1 + product.images.length) % product.images.length;
+    setCurrentImageIndex(prevIndex);
+    const prevImage = product.images[prevIndex];
+    const prevImageUrl =
+      prevImage &&
+      (prevImage.one ||
+        prevImage.two ||
+        prevImage.three ||
+        prevImage.four ||
+        prevImage.five);
+    if (prevImageUrl) {
+      setSneakerImage(prevImageUrl);
+    }
+  };
+
   return (
     <div className={styles.sneakerContainer}>
       <div className={styles.sneakersNav__block}>
@@ -53,6 +86,7 @@ export const Product: FC<SneakerProductProps> = memo(({ products }) => {
                   <>
                     {product.images[0]?.one && (
                       <Image
+                        loading='lazy'
                         className={`${styles.smallImage} ${
                           sneakerImage === product.images[0].one
                             ? styles.active
@@ -69,6 +103,7 @@ export const Product: FC<SneakerProductProps> = memo(({ products }) => {
                     )}
                     {product.images[0]?.two && (
                       <Image
+                        loading='lazy'
                         className={`${styles.smallImage} ${
                           sneakerImage === product.images[0].two
                             ? styles.active
@@ -85,6 +120,7 @@ export const Product: FC<SneakerProductProps> = memo(({ products }) => {
                     )}
                     {product.images[0]?.three && (
                       <Image
+                        loading='lazy'
                         className={`${styles.smallImage} ${
                           sneakerImage === product.images[0].three
                             ? styles.active
@@ -101,6 +137,7 @@ export const Product: FC<SneakerProductProps> = memo(({ products }) => {
                     )}
                     {product.images[0]?.four && (
                       <Image
+                        loading='lazy'
                         className={`${styles.smallImage} ${
                           sneakerImage === product.images[0].four
                             ? styles.active
@@ -117,6 +154,7 @@ export const Product: FC<SneakerProductProps> = memo(({ products }) => {
                     )}
                     {product.images[0]?.five && (
                       <Image
+                        loading='lazy'
                         className={`${styles.smallImage} ${
                           sneakerImage === product.images[0].five
                             ? styles.active
@@ -137,6 +175,7 @@ export const Product: FC<SneakerProductProps> = memo(({ products }) => {
             </div>
             <div className={styles.mainImage__block}>
               <Image
+                loading='lazy'
                 className={styles.sneakerImage}
                 src={sneakerImage || product.mainImage}
                 width={400}
@@ -144,10 +183,18 @@ export const Product: FC<SneakerProductProps> = memo(({ products }) => {
                 alt={product.title}
               />
               <div className={styles.nextPrev__buttons}>
-                <button className={styles.btn} type='button'>
+                <button
+                  className={styles.btn}
+                  type='button'
+                  onClick={() => handlePrevImageClick(product)}
+                >
                   <Previous color='#111111' style={{ width: 20, height: 20 }} />
                 </button>
-                <button className={styles.btn} type='button'>
+                <button
+                  className={styles.btn}
+                  type='button'
+                  onClick={() => handleNextImageClick(product)}
+                >
                   <Next color='#111111' style={{ width: 20, height: 20 }} />
                 </button>
               </div>

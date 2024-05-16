@@ -36,10 +36,8 @@
   object-fit: cover;
   border-radius: rem(20px);
   cursor: pointer;
-  // transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
-  // &:hover {
-  //   transform: scale(0.9);
-  // }
+  width: auto;
+  height: auto;
 }
 
 .sneakerImagesBlock {
@@ -54,6 +52,7 @@
 }
 
 .smallImage {
+
   cursor: pointer;
   object-fit: cover;
   border-radius: rem(16px);

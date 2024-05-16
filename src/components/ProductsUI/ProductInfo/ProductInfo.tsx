@@ -3,7 +3,7 @@
 import { Products } from '@/interfaces/products';
 import { FC, useState } from 'react';
 import styles from './productInfo.module.scss';
-import { sizes } from '@/constants/product-sizes';
+import { clothesSizes, sizes } from '@/constants/product-sizes';
 import { Clothings } from '@/interfaces/clothing';
 
 interface SneakerProductProps {
@@ -53,17 +53,33 @@ export const ProductInfo: FC<SneakerProductProps> = ({ products }) => {
         Select size: <mark className={styles.markSize}>{selectedSize}</mark>
       </span>
       <div className={styles.productSize__container}>
-        {sizes.map((size) => (
-          <button
-            onClick={() => handleSizeSelect(String(size.sizeNumber))}
-            className={`${styles.sizeBtn} ${
-              selectedSize === String(size.sizeNumber) ? styles.activeSize : ''
-            }`}
-            key={size.sizeNumber}
-          >
-            {size.sizeTitle}
-          </button>
-        ))}
+        {firstSneaker.category.includes('Shoes')
+          ? sizes.map((size) => (
+              <button
+                onClick={() => handleSizeSelect(String(size.sizeNumber))}
+                className={`${styles.sizeBtn} ${
+                  selectedSize === String(size.sizeNumber)
+                    ? styles.activeSize
+                    : ''
+                }`}
+                key={size.sizeNumber}
+              >
+                {size.sizeTitle}
+              </button>
+            ))
+          : clothesSizes.map((size) => (
+              <button
+                onClick={() => handleSizeSelect(String(size.sizeNumbers))}
+                className={`${styles.sizeBtn} ${
+                  selectedSize === String(size.sizeNumbers)
+                    ? styles.activeSize
+                    : ''
+                }`}
+                key={size.sizeNumbers}
+              >
+                {size.sizeTitle} {size.sizeNumbers}
+              </button>
+            ))}
       </div>
       <article className={styles.aboutProduct}>
         <div className={styles.about__block}>

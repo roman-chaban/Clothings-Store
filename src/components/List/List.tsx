@@ -20,17 +20,35 @@ export const listItemsSocialMedia = [
   {
     id: 0,
     label: 'Github',
-    icon: <Github color='#858585' style={{ width: 14, height: 14 }} />,
+    icon: (
+      <Github
+        className={styles.hoverFooter__icon}
+        color='#858585'
+        style={{ width: 14, height: 14 }}
+      />
+    ),
   },
   {
     id: 1,
     label: 'LinkedIn',
-    icon: <Linkedin color='#858585' style={{ width: 14, height: 14 }} />,
+    icon: (
+      <Linkedin
+        className={styles.hoverFooter__icon}
+        color='#858585'
+        style={{ width: 14, height: 14 }}
+      />
+    ),
   },
   {
     id: 2,
     label: 'Telegram',
-    icon: <Send color='#858585' style={{ width: 16, height: 14 }} />,
+    icon: (
+      <Send
+        className={styles.hoverFooter__icon}
+        color='#858585'
+        style={{ width: 16, height: 14 }}
+      />
+    ),
   },
 ];
 

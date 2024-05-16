@@ -19,6 +19,7 @@ export const ProductCart: FC<Products & { productLinkTitle: string }> = ({
   priceDiscount = 0,
   productLinkTitle,
 }) => {
+  const discount = price - priceDiscount;
   return (
     <div className={styles.productCart}>
       <div className={styles.productCart__container}>
@@ -36,7 +37,7 @@ export const ProductCart: FC<Products & { productLinkTitle: string }> = ({
             ''
           ) : (
             <span className={styles.cardDiscount}>
-              Disc: {Math.floor((priceDiscount / price) * 100)}%
+              Disc: {Math.floor((discount / price) * 100)}%
             </span>
           )}
         </div>

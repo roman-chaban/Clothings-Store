@@ -218,5 +218,26 @@
         "five": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/f9713f39-54df-48f8-ac5e-e3fbd387ef48/jordan-brand-mens-t-shirt-DLbnG5.png"
       }
     ]
+  },
+  {
+    "productId": 10,
+    "title": "Nike ACG",
+    "name": "Nike-ACG",
+    "category": "Men's Dri-FIT T-Shirt",
+    "price": 55,
+    "productRating": 5,
+    "priceDiscount": 0,
+    "subStyle": "Dark Stucco",
+    "style": "FV3492-053",
+    "about": "A mix of heavyweight blended fabric and a roomy fit makes this ACG tee the GOAT. Nike Dri-FIT technology moves sweat away from your skin for quicker evaporation, helping you stay dry and comfortable.",
+    "mainImage": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/1f3db1aa-5d1c-417d-b158-146f47549b42/acg-mens-dri-fit-t-shirt-63zrCD.png",
+    "images": [
+      {
+        "one": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fea088fe-015e-46ab-907d-f59f26cface4/acg-mens-dri-fit-t-shirt-63zrCD.png",
+        "two": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0b9e1149-0a4d-4a1a-8aa7-e0dd29b7099f/acg-mens-dri-fit-t-shirt-63zrCD.png",
+        "three": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/aaf798d8-d6d5-4a82-adba-3390ea926558/acg-mens-dri-fit-t-shirt-63zrCD.png",
+        "four": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/24289fc2-0169-4ea4-8148-5755813896a8/acg-mens-dri-fit-t-shirt-63zrCD.png"
+      }
+    ]
   }
 ]

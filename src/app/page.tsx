@@ -5,7 +5,7 @@ import products from '@/api/products/products.json';
 import { Products } from '@/interfaces/products';
 
 export const metadata: Metadata = {
-  title: 'Sneakers Store | Home',
+  title: 'Sneakers Store | Just Do It. Home',
 };
 
 export default function Home() {

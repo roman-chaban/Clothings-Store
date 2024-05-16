@@ -3,6 +3,11 @@ interface ProductSize {
   sizeTitle: string;
 }
 
+interface ClothingSize {
+  sizeNumbers: string;
+  sizeTitle: string;
+}
+
 export const sizes: ProductSize[] = [
   { sizeNumber: 36, sizeTitle: '36 (EU) / 5 (US)' },
   { sizeNumber: 37, sizeTitle: '37 (EU) / 6 (US)' },
@@ -14,4 +19,12 @@ export const sizes: ProductSize[] = [
   { sizeNumber: 43, sizeTitle: '43 (EU) / 12 (US)' },
   { sizeNumber: 44, sizeTitle: '44 (EU) / 13 (US)' },
   { sizeNumber: 45, sizeTitle: '45 (EU) / 14 (US)' },
+];
+
+export const clothesSizes: ClothingSize[] = [
+  { sizeNumbers: '(0-2)', sizeTitle: 'XS' },
+  { sizeNumbers: '(4-6)', sizeTitle: 'S' },
+  { sizeNumbers: '(8-10)', sizeTitle: 'M' },
+  { sizeNumbers: '(12-14)', sizeTitle: 'L' },
+  { sizeNumbers: '(16-18)', sizeTitle: 'XL' },
 ];
