@@ -79,7 +79,7 @@ export const ProductsItem: FC<ProductsProps> = ({
                 style={product.style}
                 price={product.price}
                 productRating={product.productRating}
-                productLinkTitle={'/sneakers/sneaker/'}
+                productLinkTitle={productLinkTitle}
               />
             </SwiperSlide>
           ))}

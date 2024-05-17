@@ -69,15 +69,15 @@ export const ProductInfo: FC<SneakerProductProps> = ({ products }) => {
             ))
           : clothesSizes.map((size) => (
               <button
-                onClick={() => handleSizeSelect(String(size.sizeNumbers))}
+                onClick={() => handleSizeSelect(String(size.sizeTitle))}
                 className={`${styles.sizeBtn} ${
-                  selectedSize === String(size.sizeNumbers)
+                  selectedSize === String(size.sizeTitle)
                     ? styles.activeSize
                     : ''
                 }`}
-                key={size.sizeNumbers}
+                key={size.sizeTitle}
               >
-                {size.sizeTitle} {size.sizeNumbers}
+                {size.sizeTitle}
               </button>
             ))}
       </div>

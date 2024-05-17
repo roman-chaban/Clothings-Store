@@ -30,7 +30,7 @@ export const ProductCart: FC<Products & { productLinkTitle: string }> = ({
               src={mainImage}
               width={300}
               height={300}
-              alt='sneakers photo'
+              alt={`product ${title} photo`}
             />
           </Link>
           {priceDiscount < 1 ? (

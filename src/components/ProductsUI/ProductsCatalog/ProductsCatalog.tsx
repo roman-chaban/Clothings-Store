@@ -4,7 +4,7 @@ import { ProductCart } from '@/components/ProductsUI/ProductCart/ProductCart';
 import { Products } from '@/interfaces/products';
 import { FC } from 'react';
 import styles from './sneakersProducts.module.scss';
-import { Clothings } from '@/interfaces/clothing';
+import { redirect } from 'next/navigation';
 
 interface ProductsProps {
   products: Products[];
@@ -18,7 +18,7 @@ export const ProductsCatalog: FC<ProductsProps> = ({
   productLinkTitle,
 }: ProductsProps) => {
   if (!products) {
-    return <h1>Not found...404</h1>;
+    return redirect('/not-found');
   }
 
   return (

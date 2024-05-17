@@ -4,7 +4,6 @@ interface ProductSize {
 }
 
 interface ClothingSize {
-  sizeNumbers: string;
   sizeTitle: string;
 }
 
@@ -22,9 +21,9 @@ export const sizes: ProductSize[] = [
 ];
 
 export const clothesSizes: ClothingSize[] = [
-  { sizeNumbers: '(0-2)', sizeTitle: 'XS' },
-  { sizeNumbers: '(4-6)', sizeTitle: 'S' },
-  { sizeNumbers: '(8-10)', sizeTitle: 'M' },
-  { sizeNumbers: '(12-14)', sizeTitle: 'L' },
-  { sizeNumbers: '(16-18)', sizeTitle: 'XL' },
+  { sizeTitle: 'XS / (0-2)' },
+  { sizeTitle: 'S / (4-6)' },
+  { sizeTitle: 'M / (8-10)' },
+  { sizeTitle: 'L / (12-14)' },
+  { sizeTitle: 'XL / (16-18)' },
 ];

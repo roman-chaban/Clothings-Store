@@ -14,7 +14,7 @@ export default function Home() {
       <Hero />
       <ProductsItem
         products={products as Products[]}
-        productLinkTitle={''}
+        productLinkTitle={'/sneakers/sneaker/'}
         productTitle={'Most Popular'}
       />
     </>
