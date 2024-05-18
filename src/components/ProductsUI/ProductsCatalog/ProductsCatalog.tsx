@@ -5,6 +5,11 @@ import { Products } from '@/interfaces/products';
 import { FC } from 'react';
 import styles from './sneakersProducts.module.scss';
 import { redirect } from 'next/navigation';
+import { useAppDispatch } from '@/hooks/useAppDispatch';
+import {
+  addProductToFavorite,
+  deleteProductFromFavorite,
+} from '@/redux/slices/favoriteSlice';
 
 interface ProductsProps {
   products: Products[];
@@ -20,6 +25,17 @@ export const ProductsCatalog: FC<ProductsProps> = ({
   if (!products) {
     return redirect('/not-found');
   }
+
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const dispatch = useAppDispatch();
+
+  const handleAddToFavorites = (product: Products) => {
+    dispatch(addProductToFavorite(product));
+  };
+
+  const handleDeleteFromFavorites = (productId: number) => {
+    dispatch(deleteProductFromFavorite(productId));
+  };
 
   return (
     <div>
@@ -38,6 +54,9 @@ export const ProductsCatalog: FC<ProductsProps> = ({
             style={product.style}
             price={product.price}
             productRating={product.productRating}
+            onAddToFavorite={() => handleAddToFavorites(product)}
+            onDeleteProduct={() => handleDeleteFromFavorites(product.productId)}
+            productId={product.productId}
           />
         ))}
       </div>

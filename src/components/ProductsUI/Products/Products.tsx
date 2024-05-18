@@ -12,6 +12,12 @@ import SwiperCore from 'swiper';
 import { Navigation } from 'swiper/modules';
 import { Button } from '@mui/material';
 import { Clothings } from '@/interfaces/clothing';
+import { useAppSelector } from '@/hooks/useAppSelector';
+import { useAppDispatch } from '@/hooks/useAppDispatch';
+import {
+  addProductToFavorite,
+  deleteProductFromFavorite,
+} from '@/redux/slices/favoriteSlice';
 
 SwiperCore.use([Navigation]);
 
@@ -34,6 +40,16 @@ export const ProductsItem: FC<ProductsProps> = ({
 
   const slidePrev = () => {
     swiperRef.current?.swiper?.slidePrev();
+  };
+
+  const dispatch = useAppDispatch();
+
+  const handleAddToFavorites = (product: Products) => {
+    dispatch(addProductToFavorite(product));
+  };
+
+  const handleDeleteFromFavorites = (productId: number) => {
+    dispatch(deleteProductFromFavorite(productId));
   };
 
   return (
@@ -70,6 +86,7 @@ export const ProductsItem: FC<ProductsProps> = ({
           {products.map((product) => (
             <SwiperSlide key={product.productId} className={styles.slide}>
               <ProductCart
+                productId={product.productId}
                 images={product.images}
                 name={product.name}
                 priceDiscount={product.priceDiscount}
@@ -79,7 +96,11 @@ export const ProductsItem: FC<ProductsProps> = ({
                 style={product.style}
                 price={product.price}
                 productRating={product.productRating}
-                productLinkTitle={productLinkTitle}
+                productLinkTitle={''}
+                onAddToFavorite={() => handleAddToFavorites(product)}
+                onDeleteProduct={() =>
+                  handleDeleteFromFavorites(product.productId)
+                }
               />
             </SwiperSlide>
           ))}

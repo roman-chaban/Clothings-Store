@@ -1,0 +1,24 @@
+@import '../../assets/styles/colors.scss';
+@import '../../assets/styles/globals.scss';
+@import '../../assets/styles/functions.scss';
+
+.favorite__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: rem(40px);
+  margin-top: rem(50px);
+}
+
+.favorite__title {
+  font-size: $thirdary-size;
+  font-weight: 600;
+  color: $light-black;
+  margin-bottom: rem(20px);
+}
+
+.itemsCounter {
+  color: $light-black;
+  font-size: $six-size;
+  font-weight: 500;
+}

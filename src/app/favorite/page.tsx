@@ -9,6 +9,7 @@ import {
   deleteProductFromFavorite,
 } from '@/redux/slices/favoriteSlice';
 import { Products } from '@/interfaces/products';
+import styles from './favorite.module.scss';
 
 const Favorite: FC = () => {
   const dispatch = useAppDispatch();
@@ -31,25 +32,50 @@ const Favorite: FC = () => {
     return null;
   }
 
+  const favoritesCounter = favoriteProducts.length;
+
   return (
-    <div>
-      {favoriteProducts.map((favorite) => (
-        <ProductCart
-          key={favorite.productId}
-          category={favorite.category}
-          productLinkTitle=''
-          onAddToFavorite={() => handleAddToFavorites(favorite)}
-          onDeleteProduct={() => handleRemoveFromFavorites(favorite.productId)}
-          productId={favorite.productId}
-          title={favorite.title}
-          name={favorite.name}
-          style={favorite.style}
-          price={favorite.price}
-          productRating={favorite.productRating}
-          mainImage={favorite.mainImage}
-          images={[]}
-        />
-      ))}
+    <div className={styles.favorite}>
+      <h1 className={styles.favorite__title}>Favorites</h1>
+      {favoritesCounter === 0 ? (
+        ''
+      ) : (
+        <h4 className={styles.itemsCounter}>
+          Products in favorites:
+          <strong className={styles.counter__marker}>
+            {' '}
+            {favoritesCounter}
+          </strong>
+        </h4>
+      )}
+      <div>
+        <br />
+        {favoriteProducts.length === 0 ? (
+          <h2 className={styles.empty__title}>Your favorites list is empty</h2>
+        ) : (
+          <div className={styles.favorite__container}>
+            {favoriteProducts.map((favorite) => (
+              <ProductCart
+                key={favorite.productId}
+                category={favorite.category}
+                productLinkTitle=''
+                onAddToFavorite={() => handleAddToFavorites(favorite)}
+                onDeleteProduct={() =>
+                  handleRemoveFromFavorites(favorite.productId)
+                }
+                productId={favorite.productId}
+                title={favorite.title}
+                name={favorite.name}
+                style={favorite.style}
+                price={favorite.price}
+                productRating={favorite.productRating}
+                mainImage={favorite.mainImage}
+                images={[]}
+              />
+            ))}
+          </div>
+        )}
+      </div>
     </div>
   );
 };
