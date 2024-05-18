@@ -96,7 +96,7 @@ export const ProductsItem: FC<ProductsProps> = ({
                 style={product.style}
                 price={product.price}
                 productRating={product.productRating}
-                productLinkTitle={''}
+                productLinkTitle={productLinkTitle}
                 onAddToFavorite={() => handleAddToFavorites(product)}
                 onDeleteProduct={() =>
                   handleDeleteFromFavorites(product.productId)

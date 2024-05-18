@@ -53,16 +53,17 @@
   height: auto;
   display: flex;
   flex-direction: column;
-  gap: rem(12px);
+  gap: rem(18px);
 }
 
 .smallImage {
-  max-width: 100%;
+  max-width: 100px;
+  max-height: 100px;
   width: auto;
   height: auto;
   cursor: pointer;
   object-fit: cover;
-  border-radius: rem(16px);
+  border-radius: rem(10px);
   box-shadow: 2px 2px 5px #00408033;
 }
 
