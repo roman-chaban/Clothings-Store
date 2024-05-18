@@ -2,6 +2,12 @@
 @import '../../../assets/styles/globals.scss';
 @import '../../../assets/styles/functions.scss';
 
+.products {
+  display: flex;
+  flex-direction: column;
+  gap: rem(40px);
+}
+
 .productsWrapper {
   display: flex;
   gap: rem(20px);
@@ -34,14 +40,14 @@
   color: $light-black;
 }
 
-
 .navigationButtons {
   display: flex;
   align-items: center;
   gap: rem(20px);
 }
 
-.prevButton , .nextButton {
+.prevButton,
+.nextButton {
   padding: 10px;
   font-weight: 600;
   border-radius: rem(20px);

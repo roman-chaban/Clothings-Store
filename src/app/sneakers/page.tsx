@@ -4,7 +4,7 @@ import { Products } from '@/interfaces/products';
 import { ProductsCatalog } from '@/components/ProductsUI/ProductsCatalog/ProductsCatalog';
 
 export const metadata: Metadata = {
-  title: 'Sneakers Store | Sneakers',
+  title: 'Clothings Store | Sneakers',
 };
 
 export default function Sneakers() {

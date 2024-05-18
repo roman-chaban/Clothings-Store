@@ -58,16 +58,16 @@ export const Product: FC<SneakerProductProps> = memo(({ products }) => {
     <div className={styles.sneakerContainer}>
       <div className={styles.sneakersNav__block}>
         <h3 className={styles.title}>
-          Sneakers Store <FormNext color='gray' />
+          Clothing Store <FormNext color='gray' />
         </h3>
         <h4 className={styles.title}>
           <Link className={styles.title} href='/sneakers'>
-            Sneakers <FormNext color='gray' />
+            {products[0].category} <FormNext color='gray' />
           </Link>
         </h4>
         {products.length > 0 && (
           <h5 className={styles.title}>
-            {products[0].category} <FormNext color='gray' />
+            {products[0].style} <FormNext color='gray' />
           </h5>
         )}
         {products.length > 0 && (

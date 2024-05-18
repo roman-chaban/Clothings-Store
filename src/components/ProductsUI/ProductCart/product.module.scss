@@ -3,8 +3,8 @@
 @import '../../../assets/styles/functions.scss';
 
 .productCart {
-  height: 560px;
-  width: 290px;
+  height: 540px;
+  width: 280px;
   background: $thirdary;
   border-radius: rem(20px);
   box-shadow: rgba(0, 64, 128, 0.2) 2px 2px 5px 0px;
@@ -24,7 +24,7 @@
 .productImage {
   width: 100%;
   height: auto;
-  max-width: 290px;
+  max-width: 280px;
   max-height: 300px;
   object-position: top;
   object-fit: cover;
@@ -43,7 +43,7 @@
   padding-left: 10px;
   display: flex;
   flex-direction: column;
-  gap: rem(10px);
+  gap: rem(6px);
 }
 
 .productCart__title {

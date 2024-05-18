@@ -17,6 +17,10 @@ const Favorite: FC = () => {
   const [isHydrated, setIsHydrated] = useState(false);
 
   useEffect(() => {
+    document.title = 'Favorite | Just Do It.';
+  }, []);
+
+  useEffect(() => {
     setIsHydrated(true);
   }, []);
 
@@ -58,7 +62,13 @@ const Favorite: FC = () => {
               <ProductCart
                 key={favorite.productId}
                 category={favorite.category}
-                productLinkTitle=''
+                productLinkTitle={`${
+                  favorite.category.includes('Shoes')
+                    ? '/sneakers/sneaker/'
+                    : favorite.category.includes("Men's")
+                    ? '/clothings/'
+                    : '/accessories/'
+                }`}
                 onAddToFavorite={() => handleAddToFavorites(favorite)}
                 onDeleteProduct={() =>
                   handleRemoveFromFavorites(favorite.productId)

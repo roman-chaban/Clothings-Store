@@ -28,8 +28,9 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 };
 
 export const metadata: Metadata = {
-  title: 'Sneakers Store | Just Do It | Home',
-  description: 'E-Commerce App',
+  title: 'Clothings Store | Just Do It | Home',
+  description:
+    'Clothings-Store - your ultimate destination for all things related to fashionable apparel! We are true enthusiasts in the world of clothing, where each piece reflects the latest fashion trends and technologies.',
   icons: './favicon/favicon.svg',
 };
 

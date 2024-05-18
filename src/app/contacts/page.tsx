@@ -3,7 +3,7 @@ import styles from './contacts.module.scss';
 import { ContactsForm } from '@/components/ContactsForm/ContactsForm';
 
 export const metadata: Metadata = {
-  title: 'Sneakers Store | Contacts',
+  title: 'Clothings Store | Contacts',
 };
 
 export default function Contacts() {
