@@ -8,6 +8,7 @@ interface ButtonProps {
   children: ReactNode;
   type: 'submit' | 'button';
   product: Products;
+  id?: string;
   onClick: (product: Products) => void;
   onDeleteProduct?: (productId: number) => void;
 }
@@ -16,6 +17,7 @@ export const Button: FC<ButtonProps> = ({
   children,
   className,
   type,
+  id,
   product = null,
   onClick = () => {},
   onDeleteProduct = () => {},
@@ -36,7 +38,12 @@ export const Button: FC<ButtonProps> = ({
   };
 
   return (
-    <button onClick={handleToggleFavorite} className={className} type={type}>
+    <button
+      id={id}
+      onClick={handleToggleFavorite}
+      className={className}
+      type={type}
+    >
       {children}
     </button>
   );
