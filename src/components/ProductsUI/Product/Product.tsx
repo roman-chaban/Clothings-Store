@@ -7,7 +7,6 @@ import Image from 'next/image';
 import styles from './sneakerProduct.module.scss';
 import { FormNext, Next, Previous } from 'grommet-icons';
 import { ProductInfo } from '../ProductInfo/ProductInfo';
-import { Clothings } from '@/interfaces/clothing';
 
 interface SneakerProductProps {
   products: Products[];
