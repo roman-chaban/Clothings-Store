@@ -4,12 +4,12 @@ import { Products } from '@/interfaces/products';
 import { FC, ReactNode, useState } from 'react';
 
 interface ButtonProps {
-  className: string;
-  children: ReactNode;
-  type: 'submit' | 'button';
-  product: Products;
+  className?: string;
+  children?: ReactNode;
+  type?: 'submit' | 'button';
+  product?: Products;
   id?: string;
-  onClick: (product: Products) => void;
+  onClick?: (product: Products) => void;
   onDeleteProduct?: (productId: number) => void;
 }
 
