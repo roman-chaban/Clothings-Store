@@ -1,18 +1,42 @@
 'use client';
 
-import { CSSProperties, FC, ReactNode } from 'react';
+import { Products } from '@/interfaces/products';
+import { FC, ReactNode, useState } from 'react';
 
 interface ButtonProps {
-  id?: string;
   className: string;
   children: ReactNode;
-  style?: CSSProperties;
   type: 'submit' | 'button';
+  product: Products;
+  onClick: (product: Products) => void;
+  onDeleteProduct?: (productId: number) => void;
 }
 
-export const Button: FC<ButtonProps> = ({ children, className, id, type }) => {
+export const Button: FC<ButtonProps> = ({
+  children,
+  className,
+  type,
+  product = null,
+  onClick = () => {},
+  onDeleteProduct = () => {},
+}) => {
+  const [isActive, setIsActive] = useState<boolean>(false);
+
+  const handleToggleFavorite = () => {
+    if (product) {
+      setIsActive(!isActive);
+      if (isActive) {
+        onDeleteProduct(
+          product?.productId !== undefined ? product.productId : 0
+        );
+      } else {
+        onClick(product);
+      }
+    }
+  };
+
   return (
-    <button className={className} id={id} type={type}>
+    <button onClick={handleToggleFavorite} className={className} type={type}>
       {children}
     </button>
   );

@@ -201,7 +201,7 @@ export const Product: FC<SneakerProductProps> = memo(({ products }) => {
             </div>
           </div>
         ))}
-        <ProductInfo products={products as unknown as Clothings[]} />
+        <ProductInfo products={products} />
       </div>
     </div>
   );

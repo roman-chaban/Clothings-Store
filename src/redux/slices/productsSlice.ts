@@ -1,22 +1,47 @@
+import { getProducts } from '@/common/getProducts/getProducts';
 import { Products } from '@/interfaces/products';
-import { createSlice } from '@reduxjs/toolkit';
+import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
-export interface ProductsState {
+interface ProductsProps {
   products: Products[];
-  favoriteCounter: number;
-  basketCounter: number;
+  error: string | null;
+  loading: boolean;
 }
-
-const initialState: ProductsState = {
+const ProductsState: ProductsProps = {
   products: [],
-  favoriteCounter: 0,
-  basketCounter: 0,
+  error: null,
+  loading: false,
 };
 
+const initialState = ProductsState;
+
+export const fetchProducts = createAsyncThunk(
+  'products/fetchProducts',
+  async () => {
+    const products = await getProducts();
+    return products;
+  }
+);
+
 const productsSlice = createSlice({
-  name: 'products',
+  name: 'products/setProducts',
   initialState,
   reducers: {},
+  extraReducers: (builder) => {
+    builder
+      .addCase(fetchProducts.pending, (state) => {
+        state.loading = true;
+        state.error = null;
+      })
+      .addCase(fetchProducts.fulfilled, (state, action) => {
+        state.products = action.payload;
+        state.loading = false;
+      })
+      .addCase(fetchProducts.rejected, (state, action) => {
+        state.loading = false;
+        state.error = action.error.message as unknown as string;
+      });
+  },
 });
 
 export default productsSlice.reducer;

@@ -16,10 +16,10 @@ export async function generateMetadata({ params: { name } }: AccessoriesProps) {
 export default function Accessor({ params: { name } }: AccessoriesProps) {
   const filteredAccessories = accessories.filter(
     (accessor) => accessor.name === name
-  );
+  ) as Products[];
   return (
     <div>
-      <Product products={filteredAccessories as Products[]} />
+      <Product products={filteredAccessories} />
       <ProductsItem
         products={accessories as Products[]}
         productTitle='Most Popular Accessories'

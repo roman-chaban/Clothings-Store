@@ -19,9 +19,9 @@ export default function Sneaker({ params: { name } }: SneakerProps) {
 
   return (
     <div className={styles.sneakerProduct__container}>
-      <Product products={filteredSneakers as Products[]} />
+      <Product products={filteredSneakers} />
       <ProductsItem
-        products={products as Products[]}
+        products={products}
         productTitle='Most Popular'
         productLinkTitle={''}
       />

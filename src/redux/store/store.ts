@@ -1,17 +1,26 @@
-import { configureStore, EnhancedStore } from '@reduxjs/toolkit';
-import rootReducer from '@/redux/rootReducer/rootReducer';
-import { RootState } from '@/redux/rootReducer/rootReducer';
-import { createWrapper } from 'next-redux-wrapper';
+import { configureStore } from '@reduxjs/toolkit';
+import { persistStore, persistReducer } from 'redux-persist';
+import storage from 'redux-persist/lib/storage';
+import rootReducer from '../rootReducer/rootReducer';
 
-export const makeStore = () =>
-  configureStore({
-    reducer: rootReducer,
-  }) as EnhancedStore<RootState>;
+const persistConfig = {
+  key: 'root',
+  storage,
+};
 
-export const wrapper = createWrapper(makeStore, { debug: true });
+const persistedReducer = persistReducer(persistConfig, rootReducer);
 
-export const store = configureStore({
-  reducer: rootReducer,
+const store = configureStore({
+  reducer: persistedReducer,
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck: {
+        ignoredActions: ['persist/PERSIST', 'persist/REHYDRATE'],
+      },
+    }),
 });
 
+const persistor = persistStore(store);
+
+export { store, persistor };
 export type AppDispatch = typeof store.dispatch;

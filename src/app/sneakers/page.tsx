@@ -13,7 +13,7 @@ export default function Sneakers() {
       <ProductsCatalog
         productLinkTitle='/sneakers/sneaker/'
         pageTitle="Men's Sneakers"
-        products={products as Products[]}
+        products={products}
       />
     </div>
   );

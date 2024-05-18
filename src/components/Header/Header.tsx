@@ -6,10 +6,13 @@ import Link from 'next/link';
 import { navBarLinks, HeaderNavLinks } from '@/constants/header-links';
 import { usePathname } from 'next/navigation';
 import { Tooltip } from 'grommet-icons';
+import { useAppSelector } from '@/hooks/useAppSelector';
+import dynamic from 'next/dynamic';
 
-export const Header: FC = () => {
+const Header: FC = () => {
   const pathname = usePathname();
   const [isScrolledNav, setIsScrolledNav] = useState<boolean>(false);
+  const favorite = useAppSelector((state) => state.favorite.favoriteCounter);
 
   useEffect(() => {
     const handleNavScrolled = () => {
@@ -120,7 +123,7 @@ export const Header: FC = () => {
                   ></path>
                 </svg>
               </Link>
-              <span className={styles.counter__icon}>0</span>
+              <span className={styles.counter__icon}>{favorite}</span>
             </button>
             <button className={styles.nav__icon} title='Shopping Cart'>
               <Link href='/cart'>
@@ -189,3 +192,6 @@ export const Header: FC = () => {
     </header>
   );
 };
+
+export default dynamic(() => Promise.resolve(Header), { ssr: false });
+

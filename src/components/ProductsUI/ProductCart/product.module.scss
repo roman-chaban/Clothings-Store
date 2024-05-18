@@ -3,7 +3,7 @@
 @import '../../../assets/styles/functions.scss';
 
 .productCart {
-  height: 540px;
+  height: 560px;
   width: 290px;
   background: $thirdary;
   border-radius: rem(20px);
@@ -22,8 +22,10 @@
 }
 
 .productImage {
-  width: 290px;
-  height: 300px;
+  width: 100%;
+  height: auto;
+  max-width: 290px;
+  max-height: 300px;
   object-position: top;
   object-fit: cover;
   border-radius: 1rem 1rem 0 0;
@@ -31,8 +33,9 @@
 
 .categoryBlock {
   display: flex;
-  align-items: center;
+  justify-content: center;
   gap: 0.5rem;
+  flex-direction: column;
 }
 
 .productCart__Info {
@@ -78,6 +81,10 @@
 }
 
 .shopBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(8px);
   max-width: 200px;
   margin: 10px 20px;
   padding: rem(8px);
@@ -85,6 +92,7 @@
   background: $light-black;
   color: $thirdary;
   font-weight: 600;
+  transition: background 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
   &:hover {
     background: $yellow;
   }

@@ -5,10 +5,16 @@ import styles from './product.module.scss';
 import { Products } from '@/interfaces/products';
 import Image from 'next/image';
 import { Shop, Star } from 'grommet-icons';
-import { Button } from '@mui/material';
 import Link from 'next/link';
+import { Button } from '@/components/ui/Button/Button';
 
-export const ProductCart: FC<Products & { productLinkTitle: string }> = ({
+interface ProductCartProps extends Products {
+  productLinkTitle: string;
+  onAddToFavorite: () => void;
+  onDeleteProduct: () => void;
+}
+
+export const ProductCart: FC<ProductCartProps> = ({
   title,
   name,
   category,
@@ -18,13 +24,19 @@ export const ProductCart: FC<Products & { productLinkTitle: string }> = ({
   style,
   priceDiscount = 0,
   productLinkTitle,
+  onAddToFavorite,
+  onDeleteProduct,
 }) => {
   const discount = price - priceDiscount;
+
   return (
     <div className={styles.productCart}>
       <div className={styles.productCart__container}>
         <div className={styles.productImage}>
-          <Link href={`${productLinkTitle}${encodeURIComponent(name)}`}>
+          <Link
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            href={`${productLinkTitle}${encodeURIComponent(name)}`}
+          >
             <Image
               className={styles.productImage}
               src={mainImage}
@@ -65,18 +77,25 @@ export const ProductCart: FC<Products & { productLinkTitle: string }> = ({
             Category: <br />
             <strong className={styles.productCart__category}>{category}</strong>
           </h3>
-          <Button variant='contained' type='button' className={styles.shopBtn}>
-            <Link
-              style={{
-                color: '#fff',
-                display: 'flex',
-                alignItems: 'start',
-                gap: '0.5rem',
-              }}
-              href={`${productLinkTitle}${encodeURIComponent(name)}`}
-            >
-              Show now <Shop style={{ width: 20, height: 20 }} color='white' />
-            </Link>
+          <Button
+            onClick={onAddToFavorite}
+            onDeleteProduct={onDeleteProduct}
+            type='button'
+            className={styles.shopBtn}
+            product={{
+              category,
+              images: [],
+              mainImage,
+              name,
+              price,
+              productId: 0,
+              productRating,
+              priceDiscount,
+              title,
+              style,
+            }}
+          >
+            Show now <Shop style={{ width: 20, height: 20 }} color='white' />
           </Button>
         </div>
       </div>
