@@ -1,4 +1,4 @@
-# Project-Stack: HTML5, CSS3, JavaScript, Next.js , React.js, TypeScript, Redux Toolkit.js, Swiper, Grommet Icons, MUI icons, scss.modules, React Loader.
+# Project-Stack: HTML5, CSS3, JavaScript, Next.js , React.js, TypeScript, Redux Toolkit.js, Swiper.js, Grommet Icons, MUI icons, scss.modules, React Loader.
 
 # Project Name: Clothings-Store
 
