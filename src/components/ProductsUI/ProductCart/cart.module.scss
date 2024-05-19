@@ -21,13 +21,20 @@
 .cartContainer {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: rem(30px);
   width: 100%;
-  width: 900px;
+  max-width: rem(1200px);
   height: auto;
-  padding: 20px;
+  padding: 20px 40px;
   box-shadow: 2px 2px 5px #00408033;
   border-radius: rem(50px);
+}
+
+.blockCard {
+  display: flex;
+  align-items: center;
+  gap: rem(30px);
 }
 
 .cart__image {
@@ -83,9 +90,7 @@
   align-items: center;
   gap: 1rem;
   justify-content: space-between;
-  position: relative;
   width: rem(220px);
-  left: rem(200px);
 }
 
 .plus,

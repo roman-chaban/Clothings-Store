@@ -51,27 +51,29 @@ export const ProductCart: FC<ProductCartProps> = ({
   return (
     <div className={styles.cart}>
       <div className={styles.cartContainer}>
-        <Checkbox
-          color='success'
-          checked={checkedValue}
-          onChange={(event) => setCheckedValue(event.target.checked)}
-          inputProps={{ 'aria-label': 'controlled' }}
-        />
-        <Image
-          src={mainImage}
-          alt={`${title}`}
-          width={150}
-          height={200}
-          className={styles.cart__image}
-        />
-        <div className={styles.cartInfo}>
-          <div className={styles.cart__titlesBlock}>
-            <h2 className={styles.cartTitle}>{title}</h2>
-            <p className={styles.cartName}>{style}</p>
-            <p className={styles.cartPrice}>Price: ${price}</p>
-            <p className={styles.cartAbout}>
-              {productRating} / 5 <Star color='gold' />
-            </p>{' '}
+        <div className={styles.blockCard}>
+          <Checkbox
+            color='success'
+            checked={checkedValue}
+            onChange={(event) => setCheckedValue(event.target.checked)}
+            inputProps={{ 'aria-label': 'controlled' }}
+          />
+          <Image
+            src={mainImage}
+            alt={`${title}`}
+            width={150}
+            height={200}
+            className={styles.cart__image}
+          />
+          <div className={styles.cartInfo}>
+            <div className={styles.cart__titlesBlock}>
+              <h2 className={styles.cartTitle}>{title}</h2>
+              <p className={styles.cartName}>{style}</p>
+              <p className={styles.cartPrice}>Price: ${price}</p>
+              <p className={styles.cartAbout}>
+                {productRating} / 5 <Star color='gold' />
+              </p>{' '}
+            </div>
           </div>
         </div>
         <div className={styles.counterPhone__block}>
