@@ -8,10 +8,11 @@ import { usePathname } from 'next/navigation';
 import { Tooltip } from 'grommet-icons';
 import { useAppSelector } from '@/hooks/useAppSelector';
 import dynamic from 'next/dynamic';
+import { ScrolledNav } from '@/constants/header';
 
 const Header: FC = () => {
   const pathname = usePathname();
-  const [isScrolledNav, setIsScrolledNav] = useState<boolean>(false);
+  const [isScrolledNav, setIsScrolledNav] = useState<ScrolledNav>(false);
   const favorite = useAppSelector((state) => state.favorite.favoriteCounter);
   const shoppingCart = useAppSelector(
     (state) => state.shoppingCart.shoppingCartCounter

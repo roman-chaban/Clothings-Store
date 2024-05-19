@@ -7,6 +7,7 @@ import Image from 'next/image';
 import styles from './sneakerProduct.module.scss';
 import { FormNext, Next, Previous } from 'grommet-icons';
 import { ProductInfo } from '../ProductInfo/ProductInfo';
+import { CurrentIndex, SneakerImage } from '@/constants/types';
 
 interface SneakerProductProps {
   products: Products[];
@@ -14,8 +15,8 @@ interface SneakerProductProps {
 
 // eslint-disable-next-line react/display-name
 export const Product: FC<SneakerProductProps> = memo(({ products }) => {
-  const [sneakerImage, setSneakerImage] = useState<string>('');
-  const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
+  const [sneakerImage, setSneakerImage] = useState<SneakerImage>('');
+  const [currentImageIndex, setCurrentImageIndex] = useState<CurrentIndex>(0);
 
   const handleThumbnailClick = (image: string) => {
     setSneakerImage(image);

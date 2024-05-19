@@ -15,9 +15,10 @@ import SecondBanner from '@/images/banner/second.jpg';
 import ThirdBanner from '@/images/banner/third.jpg';
 
 import styles from './heroSlider.module.scss';
+import { ActiveIndex } from '@/constants/types';
 
 export const HeroSlider: FC = () => {
-  const [activeIndex, setActiveIndex] = useState<number>(0);
+  const [activeIndex, setActiveIndex] = useState<ActiveIndex>(0);
 
   const handleSliderChange = (swiper: any) => {
     setActiveIndex(swiper.activeIndex);
@@ -83,11 +84,6 @@ export const HeroSlider: FC = () => {
             activeIndex === 2 ? styles.active : ''
           }`}
         ></button>
-        {/* <button
-          className={`${styles.slider__circle} ${
-            activeIndex === 3 ? styles.active : ''
-          }`}
-        ></button> */}
       </div>
     </div>
   );

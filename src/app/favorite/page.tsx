@@ -55,7 +55,7 @@ const Favorite: FC = () => {
       <div>
         <br />
         {favoriteProducts.length === 0 ? (
-          <h2 className={styles.favorite__title}>
+          <h2 className={styles.favorite__subTitle}>
             Your favorites list is empty
           </h2>
         ) : (

@@ -4,9 +4,10 @@ import { FC, useState } from 'react';
 import styles from './hero.module.scss';
 import { Input } from '../ui/Input/Input';
 import { HeroSlider } from '../HeroSlider/HeroSlider';
+import { TypeValue } from '@/constants/types';
 
 export const Hero: FC = () => {
-  const [value, setValue] = useState<string>('Search...');
+  const [value, setValue] = useState<TypeValue>('Search...');
 
   return (
     <div className={styles.hero}>

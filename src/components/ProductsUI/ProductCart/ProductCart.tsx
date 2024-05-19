@@ -4,19 +4,14 @@ import { Products } from '@/interfaces/products';
 import { FC, useState } from 'react';
 import styles from './cart.module.scss';
 import Image from 'next/image';
-import Checkbox, { CheckboxProps } from '@mui/material/Checkbox';
-import {
-  AddCircle,
-  CircleInformation,
-  FormClose,
-  Star,
-  Subscript,
-} from 'grommet-icons';
+import Checkbox from '@mui/material/Checkbox';
+import { FormClose, Star } from 'grommet-icons';
 import { useAppDispatch } from '@/hooks/useAppDispatch';
 import { addProductsFromCart } from '@/redux/slices/shoppingCartSlice';
 import { useCount } from '@/hooks/useCount';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 import RemoveCircleIcon from '@mui/icons-material/RemoveCircle';
+import { CheckedValue, Counter, ProductItem } from '@/constants/types';
 
 interface ProductCartProps extends Products {
   productLinkTitle: string;
@@ -25,22 +20,15 @@ interface ProductCartProps extends Products {
 }
 
 export const ProductCart: FC<ProductCartProps> = ({
-  category,
-  images,
   mainImage,
-  name,
   price,
   style,
   title,
-  about,
-  priceDiscount,
-  productId,
-  productLinkTitle,
   productRating,
   onDeleteFromCart,
 }) => {
-  const [checkedValue, setCheckedValue] = useState<boolean>(false);
-  const [productItemCounter, setProductCounter] = useState<number>(0);
+  const [checkedValue, setCheckedValue] = useState<CheckedValue>(false);
+  const [productItemCounter, setProductCounter] = useState<ProductItem>(0);
   const dispatch = useAppDispatch();
   const { productPrice, onAddProduct, onDeleteProduct } = useCount(price);
 

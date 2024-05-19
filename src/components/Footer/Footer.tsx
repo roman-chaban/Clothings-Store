@@ -6,9 +6,10 @@ import { Input } from '../ui/Input/Input';
 import { List, listItemsSocialMedia } from '../List/List';
 import { listItemsContacts } from '../List/contacts/contacts';
 import { listItemsCompany, listItemsHelp } from '../List/lists/lists';
+import { TypeValue } from '@/constants/types';
 
 export const Footer: FC = () => {
-  const [value, setValue] = useState<string>('');
+  const [value, setValue] = useState<TypeValue>('');
   return (
     <footer className={styles.footer}>
       <div className={styles.footer__container}>

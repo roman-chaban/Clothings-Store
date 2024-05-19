@@ -19,13 +19,20 @@
   border-bottom: 2px solid #d9d9d9;
 }
 
+.favorite__subTitle {
+  font-size: $thirdary-size;
+  font-weight: 700;
+  color: $light-black;
+}
+
 .itemsCounter {
   color: $light-black;
   font-size: $six-size;
   font-weight: 500;
 }
 
-.favorite {
+.favorite,
+.shoppingCartContainer {
   min-height: 100vh;
 }
 

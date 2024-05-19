@@ -42,7 +42,7 @@ const ShoppingCart: FC = () => {
   };
 
   return (
-    <div>
+    <div className={styles.shoppingCartContainer}>
       <h1 className={styles.favorite__title}>Shopping Cart</h1>
       {shoppingCartCounter === 0 ? (
         ''
@@ -58,7 +58,7 @@ const ShoppingCart: FC = () => {
       <div>
         <br />
         {shoppingCartProducts.length === 0 ? (
-          <h2 className={styles.favorite__title}>
+          <h2 className={styles.favorite__subTitle}>
             Your Shopping Cart is empty
           </h2>
         ) : (
