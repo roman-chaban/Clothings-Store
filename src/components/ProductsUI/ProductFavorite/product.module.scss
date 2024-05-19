@@ -29,6 +29,10 @@
   object-position: top;
   object-fit: cover;
   border-radius: 1rem 1rem 0 0;
+  transition: opacity 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  &:hover {
+    opacity: 0.9;
+  }
 }
 
 .categoryBlock {
@@ -108,4 +112,27 @@
   padding: rem(6px);
   color: $thirdary;
   border-radius: rem(10px);
+}
+
+.productButtons__block {
+  margin-top: rem(10px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: rem(20px);
+}
+
+.shoppingCart {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  position: relative;
+  left: -40px;
+}
+
+
+.shopBtn {
+  width: 130px;
+  margin: 0;
 }

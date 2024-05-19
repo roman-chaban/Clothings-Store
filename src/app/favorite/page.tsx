@@ -1,7 +1,6 @@
 'use client';
 
 import { FC, useEffect, useState } from 'react';
-import { ProductCart } from '@/components/ProductsUI/ProductCart/ProductCart';
 import { useAppDispatch } from '@/hooks/useAppDispatch';
 import { useAppSelector } from '@/hooks/useAppSelector';
 import {
@@ -10,6 +9,7 @@ import {
 } from '@/redux/slices/favoriteSlice';
 import { Products } from '@/interfaces/products';
 import styles from './favorite.module.scss';
+import { ProductFavorite } from '@/components/ProductsUI/ProductFavorite/ProductFavorite';
 
 const Favorite: FC = () => {
   const dispatch = useAppDispatch();
@@ -55,11 +55,13 @@ const Favorite: FC = () => {
       <div>
         <br />
         {favoriteProducts.length === 0 ? (
-          <h2 className={styles.empty__title}>Your favorites list is empty</h2>
+          <h2 className={styles.favorite__title}>
+            Your favorites list is empty
+          </h2>
         ) : (
           <div className={styles.favorite__container}>
             {favoriteProducts.map((favorite) => (
-              <ProductCart
+              <ProductFavorite
                 key={favorite.productId}
                 category={favorite.category}
                 productLinkTitle={`${

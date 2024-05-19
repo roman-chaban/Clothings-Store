@@ -1,0 +1,78 @@
+@import '../../../assets/styles/colors.scss';
+@import '../../../assets/styles/globals.scss';
+@import '../../../assets/styles/functions.scss';
+
+.cart {
+  display: flex;
+  &.fade-out {
+    animation: fadeOut 0.5s forwards;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.cartContainer {
+  display: flex;
+  align-items: center;
+  gap: rem(30px);
+  width: 100%;
+  width: 1000px;
+  height: auto;
+  padding: 20px;
+  box-shadow: 2px 2px 5px #00408033;
+  border-radius: rem(50px);
+}
+
+.cart__image {
+  border-radius: rem(20px);
+  cursor: pointer;
+  object-fit: cover;
+  transition: opacity 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.cartInfo {
+  display: flex;
+  flex-direction: column;
+  gap: rem(30px);
+}
+
+.cartTitle {
+  color: $light-black;
+  font-weight: 600;
+  font-size: $four-size;
+  margin-bottom: rem(10px);
+}
+
+.cartName {
+  font-weight: 600;
+  font-size: $primary-size;
+  color: $gray;
+}
+
+.cartPrice {
+  color: $light-black;
+  font-weight: 700;
+}
+
+.check {
+  padding: 5px;
+  width: rem(25px);
+  height: rem(25px);
+}
+
+.cartClosed {
+  position: relative;
+  right: rem(60px);
+  top: rem(10px);
+  cursor: pointer;
+}

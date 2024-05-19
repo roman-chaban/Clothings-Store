@@ -13,6 +13,9 @@ const Header: FC = () => {
   const pathname = usePathname();
   const [isScrolledNav, setIsScrolledNav] = useState<boolean>(false);
   const favorite = useAppSelector((state) => state.favorite.favoriteCounter);
+  const shoppingCart = useAppSelector(
+    (state) => state.shoppingCart.shoppingCartCounter
+  );
 
   useEffect(() => {
     const handleNavScrolled = () => {
@@ -145,7 +148,7 @@ const Header: FC = () => {
                   ></path>
                 </svg>
               </Link>
-              <span className={styles.counter__icon}>0</span>
+              <span className={styles.counter__icon}>{shoppingCart}</span>
             </button>
           </div>
           <div className={styles.nav__buttonsBlock}>
@@ -194,4 +197,3 @@ const Header: FC = () => {
 };
 
 export default dynamic(() => Promise.resolve(Header), { ssr: false });
-

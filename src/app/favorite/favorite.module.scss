@@ -26,3 +26,10 @@
 .favorite {
   min-height: 100vh;
 }
+
+.cart__container {
+  margin-top: rem(30px);
+  display: flex;
+  flex-direction: column;
+  gap: rem(40px);
+}

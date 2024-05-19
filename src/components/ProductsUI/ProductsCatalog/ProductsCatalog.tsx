@@ -1,6 +1,5 @@
 'use client';
 
-import { ProductCart } from '@/components/ProductsUI/ProductCart/ProductCart';
 import { Products } from '@/interfaces/products';
 import { FC } from 'react';
 import styles from './sneakersProducts.module.scss';
@@ -10,6 +9,7 @@ import {
   addProductToFavorite,
   deleteProductFromFavorite,
 } from '@/redux/slices/favoriteSlice';
+import { ProductFavorite } from '../ProductFavorite/ProductFavorite';
 
 interface ProductsProps {
   products: Products[];
@@ -42,7 +42,7 @@ export const ProductsCatalog: FC<ProductsProps> = ({
       <h1 className={styles.title}>{pageTitle}</h1>
       <div className={styles.sneakersContainer}>
         {products.map((product) => (
-          <ProductCart
+          <ProductFavorite
             productLinkTitle={productLinkTitle}
             images={product.images}
             name={product.name}

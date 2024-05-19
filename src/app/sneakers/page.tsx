@@ -1,6 +1,5 @@
 import { Metadata } from 'next';
 import products from '@/api/products/products.json';
-import { Products } from '@/interfaces/products';
 import { ProductsCatalog } from '@/components/ProductsUI/ProductsCatalog/ProductsCatalog';
 
 export const metadata: Metadata = {

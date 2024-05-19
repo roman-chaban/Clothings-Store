@@ -2,10 +2,11 @@ import { ChangeEvent, FC, ReactNode } from 'react';
 
 interface InputProps {
   type: string;
-  value: string;
+  value?: string;
   name?: string;
   placeholder?: string;
   className: string;
+  checked?: boolean
   id?: string;
   onChange: (event: ChangeEvent<HTMLInputElement>) => void;
 }
@@ -18,6 +19,7 @@ export const Input: FC<InputProps> = ({
   className,
   name,
   id,
+  checked
 }) => {
   return (
     <input
@@ -28,6 +30,7 @@ export const Input: FC<InputProps> = ({
       type={type}
       value={value}
       onChange={onChange}
+      checked={checked}
     />
   );
 };

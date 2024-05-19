@@ -2,7 +2,7 @@
 
 import { Products } from '@/interfaces/products';
 import React, { FC, useRef } from 'react';
-import { ProductCart } from '../ProductCart/ProductCart';
+import { ProductFavorite } from '../ProductFavorite/ProductFavorite';
 import styles from './products.module.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -11,8 +11,6 @@ import 'swiper/css/pagination';
 import SwiperCore from 'swiper';
 import { Navigation } from 'swiper/modules';
 import { Button } from '@mui/material';
-import { Clothings } from '@/interfaces/clothing';
-import { useAppSelector } from '@/hooks/useAppSelector';
 import { useAppDispatch } from '@/hooks/useAppDispatch';
 import {
   addProductToFavorite,
@@ -85,7 +83,7 @@ export const ProductsItem: FC<ProductsProps> = ({
         >
           {products.map((product) => (
             <SwiperSlide key={product.productId} className={styles.slide}>
-              <ProductCart
+              <ProductFavorite
                 productId={product.productId}
                 images={product.images}
                 name={product.name}
