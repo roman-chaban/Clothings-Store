@@ -23,7 +23,7 @@
   align-items: center;
   gap: rem(30px);
   width: 100%;
-  width: 1000px;
+  width: 800px;
   height: auto;
   padding: 20px;
   box-shadow: 2px 2px 5px #00408033;
@@ -34,9 +34,10 @@
   border-radius: rem(20px);
   cursor: pointer;
   object-fit: cover;
-  transition: opacity 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
   &:hover {
     opacity: 0.8;
+    transform: scale(0.8);
   }
 }
 
@@ -73,6 +74,51 @@
 .cartClosed {
   position: relative;
   right: rem(60px);
-  top: rem(10px);
+  top: rem(20px);
   cursor: pointer;
+}
+
+.counterPhone__block {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+  position: relative;
+  width: rem(220px);
+  left: rem(200px);
+}
+
+.plus,
+.minus {
+  background: transparent;
+}
+
+.cart__titlesBlock {
+  display: flex;
+  flex-direction: column;
+  gap: rem(10px);
+}
+
+.favorite__cardPrice {
+  font-weight: 600;
+  font-size: $five-size;
+}
+
+.buttonsPlusMinus {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cartBtn__number {
+  font-weight: 600;
+  font-size: $four-size;
+}
+
+.cartAbout {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  font-weight: 500;
+  font-size: $primary-size;
 }

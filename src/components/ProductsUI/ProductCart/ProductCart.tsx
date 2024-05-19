@@ -5,9 +5,18 @@ import { FC, useState } from 'react';
 import styles from './cart.module.scss';
 import Image from 'next/image';
 import Checkbox, { CheckboxProps } from '@mui/material/Checkbox';
-import { FormClose } from 'grommet-icons';
+import {
+  AddCircle,
+  CircleInformation,
+  FormClose,
+  Star,
+  Subscript,
+} from 'grommet-icons';
 import { useAppDispatch } from '@/hooks/useAppDispatch';
 import { addProductsFromCart } from '@/redux/slices/shoppingCartSlice';
+import { useCount } from '@/hooks/useCount';
+import AddCircleIcon from '@mui/icons-material/AddCircle';
+import RemoveCircleIcon from '@mui/icons-material/RemoveCircle';
 
 interface ProductCartProps extends Products {
   productLinkTitle: string;
@@ -23,6 +32,7 @@ export const ProductCart: FC<ProductCartProps> = ({
   price,
   style,
   title,
+  about,
   priceDiscount,
   productId,
   productLinkTitle,
@@ -30,8 +40,9 @@ export const ProductCart: FC<ProductCartProps> = ({
   onDeleteFromCart,
 }) => {
   const [checkedValue, setCheckedValue] = useState<boolean>(false);
-
+  const [productItemCounter, setProductCounter] = useState<number>(0);
   const dispatch = useAppDispatch();
+  const { productPrice, onAddProduct, onDeleteProduct } = useCount(price);
 
   const handleAddToShoppingCart = (product: Products) => {
     dispatch(addProductsFromCart(product));
@@ -57,8 +68,45 @@ export const ProductCart: FC<ProductCartProps> = ({
           <div className={styles.cart__titlesBlock}>
             <h2 className={styles.cartTitle}>{title}</h2>
             <p className={styles.cartName}>{style}</p>
+            <p className={styles.cartPrice}>Price: ${price}</p>
+            <p className={styles.cartAbout}>
+              {productRating} / 5 <Star color='gold' />
+            </p>{' '}
           </div>
-          <p className={styles.cartPrice}>Price: ${price}</p>
+        </div>
+        <div className={styles.counterPhone__block}>
+          <span className={styles.favorite__cardPrice}>
+            {productPrice} {'$'}
+          </span>
+          <div className={styles.buttonsPlusMinus}>
+            <button
+              className={styles.plus}
+              onClick={() => {
+                onAddProduct();
+                setProductCounter((prevCounter) => prevCounter + 1);
+              }}
+            >
+              <AddCircleIcon style={{ color: '#65C466' }} fontSize='large' />
+            </button>
+            <span className={styles.cartBtn__number}>{productItemCounter}</span>
+            <button
+              className={styles.minus}
+              disabled={productPrice < 1 ? true : false}
+              style={{
+                opacity: productPrice < 1 ? '0.5' : '1',
+                cursor: productPrice > 1 ? 'pointer' : 'not-allowed',
+              }}
+              onClick={() => {
+                onDeleteProduct();
+                setProductCounter((prevCounter) => prevCounter - 1);
+              }}
+            >
+              <RemoveCircleIcon
+                style={{ color: 'rgba(199, 53, 8, 0.8352941176)' }}
+                fontSize='large'
+              />
+            </button>
+          </div>
         </div>
       </div>
       <FormClose

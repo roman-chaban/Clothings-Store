@@ -1,20 +1,28 @@
 'use client';
 
-import { useCallback, useState } from 'react';
+import { useState, useCallback } from 'react';
 
-type InitialValue = number;
+export const useCount = (productPrice: number): CounterProps => {
+  const [itemCount, setItemCount] = useState<number>(0);
 
-export const useCount = (initialValue = 0) => {
-  const [counter, setCounter] = useState<InitialValue>(initialValue);
-
-  const incrementCounter = useCallback(() => {
-    setCounter((prevCount) => prevCount + 1);
+  const onAddProduct = useCallback(() => {
+    setItemCount((prevCount) => prevCount + 1);
   }, []);
 
-  const decrementCounter = useCallback(() => {
-    if (counter < 1) return;
-    setCounter((prevCounter) => prevCounter - 1);
-  }, [counter]);
+  const onDeleteProduct = useCallback(() => {
+    if (itemCount < 1) return;
+    setItemCount((prevCount) => prevCount - 1);
+  }, [itemCount]);
 
-  return { initialValue, incrementCounter, decrementCounter };
+  return {
+    productPrice: productPrice * itemCount,
+    onAddProduct,
+    onDeleteProduct,
+  };
 };
+
+interface CounterProps {
+  productPrice: number;
+  onAddProduct: () => void;
+  onDeleteProduct: () => void;
+}
