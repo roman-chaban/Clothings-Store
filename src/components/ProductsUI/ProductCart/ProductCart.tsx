@@ -6,12 +6,10 @@ import styles from './cart.module.scss';
 import Image from 'next/image';
 import Checkbox from '@mui/material/Checkbox';
 import { FormClose, Star } from 'grommet-icons';
-import { useAppDispatch } from '@/hooks/useAppDispatch';
-import { addProductsFromCart } from '@/redux/slices/shoppingCartSlice';
 import { useCount } from '@/hooks/useCount';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 import RemoveCircleIcon from '@mui/icons-material/RemoveCircle';
-import { CheckedValue, Counter, ProductItem } from '@/constants/types';
+import { CheckedValue, ProductItem } from '@/constants/types';
 
 interface ProductCartProps extends Products {
   productLinkTitle: string;
@@ -29,12 +27,7 @@ export const ProductCart: FC<ProductCartProps> = ({
 }) => {
   const [checkedValue, setCheckedValue] = useState<CheckedValue>(false);
   const [productItemCounter, setProductCounter] = useState<ProductItem>(0);
-  const dispatch = useAppDispatch();
   const { productPrice, onAddProduct, onDeleteProduct } = useCount(price);
-
-  const handleAddToShoppingCart = (product: Products) => {
-    dispatch(addProductsFromCart(product));
-  };
 
   return (
     <div className={styles.cart}>

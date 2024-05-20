@@ -1,5 +1,36 @@
-
+@import '../../assets/styles/colors.scss';
+@import '../../assets/styles/globals.scss';
+@import '../../assets/styles/functions.scss';
 
 .collections {
-   display: grid;
+  display: grid;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.category__button {
+  padding: 0.625rem;
+  background: $light-black;
+  border-radius: 1.25rem;
+  color: $thirdary;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s, color 0.3s;
+
+  &:hover {
+    background: darken($light-black, 10%);
+    transform: scale(1.05);
+  }
+
+  &.active {
+    background: $thirdary;
+    color: $light-black;
+    font-weight: 700;
+    border: 1.5px solid $light-black;
+    transform: scale(1.1);
+  }
 }

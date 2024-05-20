@@ -1,0 +1,43 @@
+@import '../../assets/styles/colors.scss';
+@import '../../assets/styles/globals.scss';
+@import '../../assets/styles/functions.scss';
+
+.pagination__isRounded {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.pagination__next {
+  padding: 7px 15px;
+  order: 3;
+  background: $light-black;
+  color: $thirdary;
+  border-radius: rem(20px);
+}
+
+.pagination__previous {
+  padding: 7px 15px;
+  background: $light-black;
+  color: $thirdary;
+  border-radius: rem(20px);
+}
+
+.pagination__list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.paginationLink__isCurrent {
+  color: $light-black;
+  padding: 7px 13px;
+  border-radius: rem(10px);
+  background: $input-bg;
+}
+
+.pagination__link {
+  color: gray;
+}
