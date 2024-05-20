@@ -1,4 +1,4 @@
-interface Images {
+export interface Images {
   one: string;
   two: string;
   three: string;
