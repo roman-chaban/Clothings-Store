@@ -80,7 +80,10 @@
     "images": [
       {
         "one": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/60781c8f-f8a2-4613-bfe5-b4cfc4acd564/icon-air-force-1-card-wallet-bZWbBP.png",
-        "two": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/1bf6b6ce-4955-4758-8a91-472a8863e659/icon-air-force-1-card-wallet-bZWbBP.png"
+        "two": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/1bf6b6ce-4955-4758-8a91-472a8863e659/icon-air-force-1-card-wallet-bZWbBP.png",
+        "three": "",
+        "four": "",
+        "five": ""
       }
     ]
   },
@@ -99,7 +102,10 @@
     "images": [
       {
         "one": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7eef8b03-f114-4564-92e7-fd047c7a8877/icon-air-max-90-card-wallet-pM8bFq.png",
-        "two": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9aba4907-c91e-4b72-8001-958610740d75/icon-air-max-90-card-wallet-pM8bFq.png"
+        "two": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9aba4907-c91e-4b72-8001-958610740d75/icon-air-max-90-card-wallet-pM8bFq.png",
+        "three": "",
+        "four": "",
+        "five": ""
       }
     ]
   },
@@ -114,7 +120,16 @@
     "subStyle": "Orange",
     "style": " N1011048-806",
     "about": "Give your keys the Swoosh of approval with this premium key holder. Designed to hold your keys, its metal hardware easily attaches to your bag or other accessories for convenient carrying.",
-    "mainImage": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f6236c17-3c55-43b8-b9ad-5429a1bd11a5/premium-key-holder-pDBSWm.png"
+    "mainImage": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f6236c17-3c55-43b8-b9ad-5429a1bd11a5/premium-key-holder-pDBSWm.png",
+    "images": [
+      {
+        "one": "",
+        "two": "",
+        "three": "",
+        "four": "",
+        "five": ""
+      }
+    ]
   },
   {
     "productId": 6,

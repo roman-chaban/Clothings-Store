@@ -1,3 +1,11 @@
+interface Images {
+  one: string;
+  two: string;
+  three: string;
+  four?: string;
+  five?: string;
+}
+
 export interface Products {
   productId: number;
   title: string;
@@ -8,13 +16,7 @@ export interface Products {
   productRating: number;
   mainImage: string;
   priceDiscount?: number;
-  images: {
-    one: string;
-    two: string;
-    three: string;
-    four: string;
-    five: string;
-  }[];
+  images: Images[];
   about?: string;
   subStyle?: string;
 }
