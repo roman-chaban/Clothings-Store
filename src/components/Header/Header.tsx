@@ -8,7 +8,7 @@ import { usePathname } from 'next/navigation';
 import { Tooltip } from 'grommet-icons';
 import { useAppSelector } from '@/hooks/useAppSelector';
 import dynamic from 'next/dynamic';
-import { ScrolledNav } from '@/constants/header';
+import { ScrolledNav } from '@/constants/types';
 
 const Header: FC = () => {
   const pathname = usePathname();
