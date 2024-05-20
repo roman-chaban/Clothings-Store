@@ -2,8 +2,8 @@ interface Images {
   one: string;
   two: string;
   three: string;
-  four?: string;
-  five?: string;
+  four: string;
+  five: string;
 }
 
 export interface Products {
