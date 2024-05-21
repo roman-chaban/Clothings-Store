@@ -70,7 +70,7 @@ export const ProductsItem: FC<ProductsProps> = ({
           pagination={{
             dynamicBullets: true,
           }}
-          spaceBetween={105}
+          spaceBetween={35}
           navigation={{
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',

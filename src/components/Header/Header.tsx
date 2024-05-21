@@ -56,12 +56,19 @@ const Header: FC = () => {
         </svg>
         <div className={styles.empty__links}>
           <Link
+            style={{ color: pathname === DEFAULT__LINKS.HELP ? '#ffb800' : '' }}
             className={`${styles.empty__link} ${styles.decoration__line}`}
             href={DEFAULT__LINKS.HELP}
           >
             Help
           </Link>
-          <Link className={styles.empty__link} href={DEFAULT__LINKS.STORE}>
+          <Link
+            style={{
+              color: pathname === DEFAULT__LINKS.STORE ? '#ffb800' : '',
+            }}
+            className={styles.empty__link}
+            href={DEFAULT__LINKS.STORE}
+          >
             Store
           </Link>
         </div>
@@ -89,7 +96,10 @@ const Header: FC = () => {
         <nav className={styles.header__navBar}>
           <ul className={styles.header__menu}>
             {NAVBAR__LINKS.map((link: HeaderNavLinks) => {
-              const isActive = pathname === link.href;
+              const isActive =
+                pathname === link.href ||
+                pathname === link.slugRef ||
+                (link.href !== '/' && pathname.startsWith(link.href));
               return (
                 <li key={link.href}>
                   <Link

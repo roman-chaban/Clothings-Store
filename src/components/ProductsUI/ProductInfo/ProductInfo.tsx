@@ -5,10 +5,8 @@ import { FC, useEffect, useState } from 'react';
 import styles from './productInfo.module.scss';
 import { CLOTHES__SIZES, SIZES } from '@/constants/product-sizes';
 import { notFound, redirect } from 'next/navigation';
-import { ShoppingCartButton } from '@/components/UI components/ShoppingButton/ShoppingButton';
 import { useAppDispatch } from '@/hooks/useAppDispatch';
 import { addProductsFromCart } from '@/redux/slices/shoppingCartSlice';
-import { Button } from '@/components/UI components/Button/Button';
 
 interface SneakerProductProps {
   products: Products[];
@@ -79,9 +77,10 @@ export const ProductInfo: FC<SneakerProductProps> = ({ products }) => {
       <h3 className={styles.priceTitle}>
         Price: {'$'}{' '}
         {Math.floor(
-          firstSneaker.priceDiscount !== undefined
+          firstSneaker.priceDiscount !== undefined &&
+            firstSneaker.priceDiscount > 0
             ? firstSneaker.priceDiscount
-            : 0
+            : firstSneaker.price
         )}
       </h3>
       <span className={styles.selectSize}>

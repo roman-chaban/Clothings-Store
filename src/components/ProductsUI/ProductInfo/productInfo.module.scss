@@ -55,9 +55,9 @@
 .productSize__container {
   margin-top: rem(20px);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, fit-content(300px));
   grid-template-rows: auto;
-  gap: rem(10px);
+  gap: rem(18px);
 }
 
 .sizeBtn {
@@ -135,8 +135,6 @@
   left: -40px;
 }
 
-
-
 .shopBtn {
   display: flex;
   align-items: center;
@@ -153,3 +151,4 @@
     background: $yellow;
   }
 }
+
