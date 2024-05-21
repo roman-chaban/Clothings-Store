@@ -57,39 +57,46 @@ export const ProductCart: FC<ProductCartProps> = ({
             </div>
           </div>
         </div>
-        <div className={styles.counterPhone__block}>
-          <span className={styles.favorite__cardPrice}>
-            {productPrice} {'$'}
-          </span>
-          <div className={styles.buttonsPlusMinus}>
-            <button
-              className={styles.plus}
-              onClick={() => {
-                onAddProduct();
-                setProductCounter((prevCounter) => prevCounter + 1);
-              }}
-            >
-              <AddCircleIcon style={{ color: '#65C466' }} fontSize='large' />
-            </button>
-            <span className={styles.cartBtn__number}>{productItemCounter}</span>
-            <button
-              className={styles.minus}
-              disabled={productPrice < 1 ? true : false}
-              style={{
-                opacity: productPrice < 1 ? '0.5' : '1',
-                cursor: productPrice > 1 ? 'pointer' : 'not-allowed',
-              }}
-              onClick={() => {
-                onDeleteProduct();
-                setProductCounter((prevCounter) => prevCounter - 1);
-              }}
-            >
-              <RemoveCircleIcon
-                style={{ color: 'rgba(199, 53, 8, 0.8352941176)' }}
-                fontSize='large'
-              />
-            </button>
+        <div className={styles.counterProduct}>
+          <div className={styles.counterProduct__block}>
+            <span className={styles.favorite__cardPrice}>
+              {productPrice} {'$'}
+            </span>
+            <div className={styles.buttonsPlusMinus}>
+              <button
+                className={styles.plus}
+                onClick={() => {
+                  onAddProduct();
+                  setProductCounter((prevCounter) => prevCounter + 1);
+                }}
+              >
+                <AddCircleIcon style={{ color: '#65C466' }} fontSize='large' />
+              </button>
+              <span className={styles.cartBtn__number}>
+                {productItemCounter}
+              </span>
+              <button
+                className={styles.minus}
+                disabled={productPrice < 1 ? true : false}
+                style={{
+                  opacity: productPrice < 1 ? '0.5' : '1',
+                  cursor: productPrice > 1 ? 'pointer' : 'not-allowed',
+                }}
+                onClick={() => {
+                  onDeleteProduct();
+                  setProductCounter((prevCounter) => prevCounter - 1);
+                }}
+              >
+                <RemoveCircleIcon
+                  style={{ color: 'rgba(199, 53, 8, 0.8352941176)' }}
+                  fontSize='large'
+                />
+              </button>
+            </div>
           </div>
+          <p className={styles.alreadyTitle}>
+            Products already to buy {productPrice} {'$'}
+          </p>
         </div>
       </div>
       <FormClose

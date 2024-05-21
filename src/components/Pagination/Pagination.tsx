@@ -64,6 +64,10 @@ export const Pagination: FC<PaginationProps> = ({
           className={styles.pagination__previous}
           onClick={() => onPageChange(currentPage - 1)}
           disabled={currentPage === 1}
+          style={{
+            opacity: currentPage === 1 ? 0.7 : 1,
+            cursor: currentPage === 1 ? 'not-allowed' : '',
+          }}
         >
           Previous
         </button>
@@ -72,6 +76,10 @@ export const Pagination: FC<PaginationProps> = ({
           className={styles.pagination__next}
           onClick={() => onPageChange(currentPage + 1)}
           disabled={currentPage === totalPages}
+          style={{
+            opacity: currentPage === totalPages ? 0.7 : 1,
+            cursor: currentPage === totalPages ? 'not-allowed' : '',
+          }}
         >
           Next page
         </button>

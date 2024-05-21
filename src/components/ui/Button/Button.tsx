@@ -1,6 +1,8 @@
+'use client';
+
 import { Products } from '@/interfaces/products';
 import { Shop } from 'grommet-icons';
-import { FC, Fragment, useEffect, useState } from 'react';
+import { FC, Fragment, useState, useEffect } from 'react';
 
 interface ButtonProps {
   className?: string;
@@ -12,8 +14,8 @@ interface ButtonProps {
 }
 
 export const Button: FC<ButtonProps> = ({
-  className,
-  type,
+  className = '',
+  type = 'button',
   id,
   product = null,
   onClick = () => {},
@@ -22,28 +24,23 @@ export const Button: FC<ButtonProps> = ({
   const [isActive, setIsActive] = useState<boolean>(false);
 
   useEffect(() => {
-    if (typeof window !== 'undefined' && product) {
-      const savedState = localStorage.getItem(`favorite-${product.productId}`);
-      setIsActive(savedState === 'true');
+    if (product) {
+      const savedColor = localStorage.getItem(
+        `catalogButtonColor_${product.productId}`
+      );
+      setIsActive(savedColor === '#66CDAA');
     }
   }, [product]);
 
-  useEffect(() => {
-    if (typeof window !== 'undefined' && product) {
-      localStorage.setItem(`favorite-${product.productId}`, String(isActive));
-    }
-  }, [product, isActive]);
-
-  const handleToggleFavorite = () => {
+  const handleAddToCart = () => {
     if (product) {
-      const newState = !isActive;
-      setIsActive(newState);
-      if (newState) {
+      const newColor = isActive ? '#313237' : '#66CDAA';
+      setIsActive(!isActive);
+      localStorage.setItem(`catalogButtonColor_${product.productId}`, newColor);
+      if (!isActive) {
         onClick(product);
       } else {
-        onDeleteProduct(
-          product.productId !== undefined ? product.productId : 0
-        );
+        onDeleteProduct(product.productId);
       }
     }
   };
@@ -51,16 +48,16 @@ export const Button: FC<ButtonProps> = ({
   return (
     <button
       id={id}
-      onClick={handleToggleFavorite}
+      onClick={handleAddToCart}
       className={className}
       type={type}
-      style={{ background: isActive ? '#737373' : '' }}
+      style={{ background: isActive ? '#66CDAA' : '#313237', color: '#ffffff' }}
     >
       {isActive ? (
         'Added to Favorite'
       ) : (
         <Fragment>
-          Show now! <Shop style={{ width: 16, height: 16 }} color='#ffff' />
+          Show now! <Shop style={{ width: 16, height: 16 }} color='#ffffff' />
         </Fragment>
       )}
     </button>

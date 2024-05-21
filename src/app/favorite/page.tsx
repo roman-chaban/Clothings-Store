@@ -17,7 +17,7 @@ const Favorite: FC = () => {
   const [isHydrated, setIsHydrated] = useState(false);
 
   useEffect(() => {
-    document.title = 'Favorite | Just Do It.';
+    document.title = 'Clothings Store | Favorite';
   }, []);
 
   useEffect(() => {

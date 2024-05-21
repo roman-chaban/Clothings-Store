@@ -14,9 +14,9 @@
   gap: rem(5px);
   padding: rem(10px);
   color: $thirdary;
-  background: $light-black;
+  background: $discount-color;
   opacity: 0.9;
-  max-width: 140px;
+  max-width: rem(135px);
   border-radius: rem(20px);
   font-weight: 600;
 }
@@ -39,6 +39,7 @@
   text-decoration: line-through;
   font-weight: 600;
   font-size: $four-size;
+  color: $discount-color;
 }
 
 .priceTitle {
@@ -116,4 +117,39 @@
   list-style-type: disc;
   font-weight: 500;
   font-size: $five-size;
+}
+
+.productButtons__block {
+  margin-top: rem(10px);
+  display: flex;
+  align-items: center;
+  gap: rem(100px);
+}
+
+.shoppingCart {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  position: relative;
+  left: -40px;
+}
+
+
+
+.shopBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(8px);
+  max-width: 200px;
+  padding: rem(8px);
+  border-radius: rem(20px);
+  background: $light-black;
+  color: $thirdary;
+  font-weight: 600;
+  transition: background 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+  &:hover {
+    background: $yellow;
+  }
 }

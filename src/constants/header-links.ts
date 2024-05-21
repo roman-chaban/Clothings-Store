@@ -3,7 +3,7 @@ export interface HeaderNavLinks {
   href: string;
 }
 
-export const navBarLinks: HeaderNavLinks[] = [
+export const NAVBAR__LINKS: HeaderNavLinks[] = [
   {
     label: 'Home',
     href: '/',

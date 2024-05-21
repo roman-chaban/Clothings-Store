@@ -17,6 +17,7 @@ const ShoppingCart: FC = () => {
   const shoppingCartProducts = useAppSelector(
     (state) => state.shoppingCart.products
   );
+
   const shoppingCartCounter = useAppSelector(
     (state) => state.shoppingCart.shoppingCartCounter
   );
@@ -68,9 +69,9 @@ const ShoppingCart: FC = () => {
                 key={shoppingCart.productId}
                 category={shoppingCart.category}
                 productLinkTitle={`${
-                  shoppingCart.category.includes('Shoes')
+                  shoppingCart?.category?.includes('Shoes')
                     ? '/sneakers/sneaker/'
-                    : shoppingCart.category.includes("Men's")
+                    : shoppingCart?.category?.includes("Men's")
                     ? '/clothings/'
                     : '/accessories/'
                 }`}

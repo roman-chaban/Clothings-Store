@@ -85,12 +85,20 @@
   cursor: pointer;
 }
 
-.counterPhone__block {
+.counterProduct {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
+  flex-direction: column;
   justify-content: space-between;
-  width: rem(220px);
+  width: rem(320px);
+}
+
+
+.counterProduct__block {
+  display: flex;
+  align-items: center;
+  gap: rem(30px);
 }
 
 .plus,
@@ -126,4 +134,11 @@
   gap: 0.2rem;
   font-weight: 500;
   font-size: $primary-size;
+}
+
+
+.alreadyTitle {
+  font-weight: 600;
+  font-size: $primary-size;
+  color: $gray;
 }

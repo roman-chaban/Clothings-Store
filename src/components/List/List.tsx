@@ -9,6 +9,7 @@ interface ListItem {
   id: number;
   label: string;
   icon?: JSX.Element;
+  href?: string;
 }
 
 interface ListProps {
@@ -16,7 +17,7 @@ interface ListProps {
   listItems: ListItem[];
 }
 
-export const listItemsSocialMedia = [
+export const listItemsSocialMedia: ListItem[] = [
   {
     id: 0,
     label: 'Github',
@@ -27,6 +28,7 @@ export const listItemsSocialMedia = [
         style={{ width: 14, height: 14 }}
       />
     ),
+    href: 'https://github.com/Chaban1001',
   },
   {
     id: 1,
@@ -38,7 +40,9 @@ export const listItemsSocialMedia = [
         style={{ width: 14, height: 14 }}
       />
     ),
+    href: 'https://www.linkedin.com/in/chaban100',
   },
+
   {
     id: 2,
     label: 'Telegram',
@@ -49,6 +53,7 @@ export const listItemsSocialMedia = [
         style={{ width: 16, height: 14 }}
       />
     ),
+    href: 'https://t.me/romanchaban',
   },
 ];
 
@@ -58,16 +63,19 @@ export const List: FC<ListProps> = ({ title, listItems }) => {
       <h3 className={styles.menu__title}>{title}</h3>
       {listItems.map((listItem) => (
         <li key={listItem.id} className={styles.menu__ListItem}>
-          <Link
-            href=''
+          <a
+            target='_blank'
+            href={listItem.href}
             className={styles.menu__ListLink}
             style={{
               textDecoration: 'none',
+              cursor: 'pointer'
             }}
+            rel='noopener noreferrer'
           >
             {listItem.icon && listItem.icon}
             {listItem.label}
-          </Link>
+          </a>
         </li>
       ))}
     </ul>

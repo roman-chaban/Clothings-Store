@@ -1,32 +1,37 @@
-import { FC, useState } from 'react';
+'use client';
+
+import { FC, useEffect, useState } from 'react';
 import styles from '@/components/ProductsUI/ProductFavorite/product.module.scss';
 import { Products } from '@/interfaces/products';
 
 interface ShoppingCartButtonProps {
   product: Products;
   onClick: (product: Products) => void;
+  onDelete?: (productId: number) => void;
 }
 
 export const ShoppingCartButton: FC<ShoppingCartButtonProps> = ({
   product,
   onClick,
+  onDelete,
 }) => {
-  const [isActiveButton, setIsActiveButton] = useState<boolean>(() => {
-    if (typeof window !== 'undefined') {
+  const [isActiveButton, setIsActiveButton] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (product) {
       const savedColor = localStorage.getItem(
-        `shoppingButtonBackground_${product.productId}`
+        `favoriteBackgroundColor_${product?.productId}`
       );
-      return savedColor ? savedColor === '#66CDAA' : false;
+      setIsActiveButton(savedColor === '#66CDAA');
     }
-    return false;
-  });
+  }, [product]);
 
   const handleAddToShoppingCart = () => {
-    if (typeof window !== 'undefined') {
+    if (product) {
       const newColor = isActiveButton ? '#313237' : '#66CDAA';
       setIsActiveButton(!isActiveButton);
       localStorage.setItem(
-        `shoppingCartBackground_${product.productId}`,
+        `favoriteBackgroundColor_${product?.productId}`,
         newColor
       );
       onClick(product);

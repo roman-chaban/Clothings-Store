@@ -3,7 +3,7 @@
 import { FC, useEffect, useState } from 'react';
 import styles from '@/components/Header/header.module.scss';
 import Link from 'next/link';
-import { navBarLinks, HeaderNavLinks } from '@/constants/header-links';
+import { NAVBAR__LINKS, HeaderNavLinks } from '@/constants/header-links';
 import { usePathname } from 'next/navigation';
 import { Tooltip } from 'grommet-icons';
 import { useAppSelector } from '@/hooks/useAppSelector';
@@ -68,7 +68,7 @@ const Header: FC = () => {
       <div className={styles.header__container}>
         <div className={styles.header__logo}>
           <Link href='/' className={styles.header__logo}>
-            <strong>Sneakers</strong>
+            <strong>Clothings</strong>
             store
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -87,7 +87,7 @@ const Header: FC = () => {
         </div>
         <nav className={styles.header__navBar}>
           <ul className={styles.header__menu}>
-            {navBarLinks.map((link: HeaderNavLinks) => {
+            {NAVBAR__LINKS.map((link: HeaderNavLinks) => {
               const isActive = pathname === link.href;
               return (
                 <li key={link.href}>

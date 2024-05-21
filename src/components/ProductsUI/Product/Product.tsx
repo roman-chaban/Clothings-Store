@@ -63,12 +63,12 @@ export const Product: FC<SneakerProductProps> = memo(({ products }) => {
         </h3>
         <h4 className={styles.title}>
           <Link className={styles.title} href='/sneakers'>
-            {products[0].category} <FormNext color='gray' />
+            {products[0].category} <FormNext color='#111111' />
           </Link>
         </h4>
         {products.length > 0 && (
-          <h5 className={styles.title}>
-            {products[0].style} <FormNext color='gray' />
+          <h5 className={styles.categoryTitle}>
+            {products[0].style} <FormNext color='#111111' />
           </h5>
         )}
         {products.length > 0 && (

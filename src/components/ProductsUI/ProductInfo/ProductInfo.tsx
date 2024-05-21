@@ -3,7 +3,7 @@
 import { Products } from '@/interfaces/products';
 import { FC, useEffect, useState } from 'react';
 import styles from './productInfo.module.scss';
-import { clothesSizes, sizes } from '@/constants/product-sizes';
+import { CLOTHES__SIZES, SIZES } from '@/constants/product-sizes';
 
 interface SneakerProductProps {
   products: Products[];
@@ -30,7 +30,7 @@ export const ProductInfo: FC<SneakerProductProps> = ({ products }) => {
       if (isShoesCategory) {
         setSelectedSize('37 (EU) / 6 (US)');
       } else {
-        setSelectedSize(clothesSizes[0].sizeTitle);
+        setSelectedSize(CLOTHES__SIZES[0].sizeTitle);
       }
     }
   }, [products]);
@@ -61,18 +61,23 @@ export const ProductInfo: FC<SneakerProductProps> = ({ products }) => {
       </h4>
       {discount > 0 && (
         <span className={styles.infoDiscount__title}>
-          {'$'} {firstSneaker.priceDiscount}
+          {'$'} {firstSneaker.price}
         </span>
       )}
       <h3 className={styles.priceTitle}>
-        Price: {'$'} {firstSneaker.price}
+        Price: {'$'}{' '}
+        {Math.floor(
+          firstSneaker.priceDiscount !== undefined
+            ? firstSneaker.priceDiscount
+            : 0
+        )}
       </h3>
       <span className={styles.selectSize}>
         Select size: <mark className={styles.markSize}>{selectedSize}</mark>
       </span>
       <div className={styles.productSize__container}>
         {isShoes
-          ? sizes.map((size) => (
+          ? SIZES.map((size) => (
               <button
                 onClick={() => handleSizeSelect(size.sizeTitle)}
                 className={`${styles.sizeBtn} ${
@@ -83,7 +88,7 @@ export const ProductInfo: FC<SneakerProductProps> = ({ products }) => {
                 {size.sizeTitle}
               </button>
             ))
-          : clothesSizes.map((size) => (
+          : CLOTHES__SIZES.map((size) => (
               <button
                 onClick={() => handleSizeSelect(size.sizeTitle)}
                 className={`${styles.sizeBtn} ${

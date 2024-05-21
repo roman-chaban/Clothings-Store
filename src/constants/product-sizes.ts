@@ -6,7 +6,7 @@ interface ClothingSize {
   sizeTitle: string;
 }
 
-export const sizes: ProductSize[] = [
+export const SIZES: ProductSize[] = [
   { sizeTitle: '36 (EU) / 5 (US)' },
   { sizeTitle: '37 (EU) / 6 (US)' },
   { sizeTitle: '38 (EU) / 7 (US)' },
@@ -19,7 +19,7 @@ export const sizes: ProductSize[] = [
   { sizeTitle: '45 (EU) / 14 (US)' },
 ];
 
-export const clothesSizes: ClothingSize[] = [
+export const CLOTHES__SIZES: ClothingSize[] = [
   { sizeTitle: 'XS / (0-2)' },
   { sizeTitle: 'S / (4-6)' },
   { sizeTitle: 'M / (8-10)' },

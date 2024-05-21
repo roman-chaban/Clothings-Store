@@ -9,7 +9,7 @@ interface ClothingProps {
 
 export async function generateMetadata({ params: { name } }: ClothingProps) {
   return {
-    title: `Sneaker | ${name.replaceAll('-', ' ')}`,
+    title: `Clothing | ${name.replaceAll('-', ' ')}`,
   };
 }
 
