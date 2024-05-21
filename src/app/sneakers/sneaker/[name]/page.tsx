@@ -5,12 +5,13 @@ import { Products } from '@/interfaces/products';
 import { ProductsItem } from '@/components/ProductsUI/Products/Products';
 
 interface SneakerProps {
-  params: { name: string };
+  params: { name: string; icons: string };
 }
 
 export async function generateMetadata({ params: { name } }: SneakerProps) {
   return {
     title: `Sneaker | ${name.replaceAll('-', ' ')}`,
+    icons: './favicon/favicon.svg',
   };
 }
 

@@ -3,7 +3,7 @@
 import { Products } from '@/interfaces/products';
 import { FC } from 'react';
 import styles from './sneakersProducts.module.scss';
-import { redirect } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 import { useAppDispatch } from '@/hooks/useAppDispatch';
 import {
   addProductToFavorite,
@@ -22,12 +22,10 @@ export const ProductsCatalog: FC<ProductsProps> = ({
   pageTitle,
   productLinkTitle,
 }: ProductsProps) => {
-  if (!products) {
-    return redirect('/not-found');
-  }
-
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const dispatch = useAppDispatch();
+  if (!products) {
+    return redirect(notFound());
+  }
 
   const handleAddToFavorites = (product: Products) => {
     dispatch(addProductToFavorite(product));

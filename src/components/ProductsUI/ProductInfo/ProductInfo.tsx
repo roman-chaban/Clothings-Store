@@ -4,14 +4,26 @@ import { Products } from '@/interfaces/products';
 import { FC, useEffect, useState } from 'react';
 import styles from './productInfo.module.scss';
 import { CLOTHES__SIZES, SIZES } from '@/constants/product-sizes';
+import { notFound, redirect } from 'next/navigation';
+import { ShoppingCartButton } from '@/components/UI components/ShoppingButton/ShoppingButton';
+import { useAppDispatch } from '@/hooks/useAppDispatch';
+import { addProductsFromCart } from '@/redux/slices/shoppingCartSlice';
+import { Button } from '@/components/UI components/Button/Button';
 
 interface SneakerProductProps {
   products: Products[];
+  onAddToFavorite?: () => void;
+  onDeleteProduct?: () => void;
 }
 
 export const ProductInfo: FC<SneakerProductProps> = ({ products }) => {
   const [selectedSize, setSelectedSize] = useState<string>('');
   const [isShoes, setIsShoes] = useState<boolean>(false);
+  const dispatch = useAppDispatch();
+
+  const handleAddToShoppingCart = (product: Products) => {
+    dispatch(addProductsFromCart(product));
+  };
 
   const firstSneaker = products[0];
 
@@ -40,11 +52,11 @@ export const ProductInfo: FC<SneakerProductProps> = ({ products }) => {
   };
 
   if (!products || products.length === 0) {
-    return null;
+    return redirect('/');
   }
 
   if (!firstSneaker) {
-    return null;
+    return redirect(notFound());
   }
 
   return (

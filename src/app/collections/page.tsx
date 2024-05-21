@@ -1,11 +1,12 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ProductsCatalog } from '@/components/ProductsUI/ProductsCatalog/ProductsCatalog';
 import { Products } from '@/interfaces/products';
 import styles from './collections.module.scss';
 import { Pagination } from '@/components/Pagination/Pagination';
 import { categories } from '@/constants/categories';
+import { CurrentPage } from '@/constants/types';
 
 const ITEMS_PER_PAGE = 10;
 
@@ -13,7 +14,11 @@ type Category = keyof typeof categories;
 
 export default function Collections() {
   const [currentCategory, setCurrentCategory] = useState<Category>('products');
-  const [currentPage, setCurrentPage] = useState(1);
+  const [currentPage, setCurrentPage] = useState<CurrentPage>(1);
+
+  useEffect(() => {
+    document.title = 'Clothings Store | Collections';
+  }, []);
 
   const currentData = categories[currentCategory].data;
   const totalPages = Math.ceil(currentData.length / ITEMS_PER_PAGE);

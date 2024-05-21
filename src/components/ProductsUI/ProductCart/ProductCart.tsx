@@ -95,7 +95,7 @@ export const ProductCart: FC<ProductCartProps> = ({
             </div>
           </div>
           <p className={styles.alreadyTitle}>
-            Products already to buy {productPrice} {'$'}
+            Product already to buy {productPrice} {'$'}
           </p>
         </div>
       </div>

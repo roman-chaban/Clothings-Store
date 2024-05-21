@@ -13,14 +13,15 @@
   gap: rem(20px);
   width: 100%;
   margin: 0 auto;
-  max-width: 1920px;
+  max-width: 1440px;
   overflow: hidden;
   margin-bottom: rem(50px);
   height: 600px;
 }
 
 .slide {
-  width: 300px;
+  width: 100%;
+  max-width: rem(300px);
 }
 
 .productBlock {
@@ -59,5 +60,5 @@
 }
 
 .swiper__wrapper {
-  gap: rem(70px);
+  gap: rem(35px);
 }

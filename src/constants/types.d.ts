@@ -10,3 +10,4 @@ export type Counter = {
 };
 export type CheckedValue = boolean;
 export type ProductItem = number;
+export type CurrentPage = number;
