@@ -2,7 +2,7 @@
 
 import { FC, useState } from 'react';
 import styles from './hero.module.scss';
-import { Input } from '../ui/Input/Input';
+import { Input } from '../UI components/Input/Input';
 import { HeroSlider } from '../HeroSlider/HeroSlider';
 import { TypeValue } from '@/constants/types';
 

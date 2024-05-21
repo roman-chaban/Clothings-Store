@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { Input } from '../ui/Input/Input';
+import { Input } from '../UI components/Input/Input';
 import styles from '../SignUpForm/signUpForm.module.scss';
 import { InputsFormData } from '../SignUpForm/SignUpForm';
 

@@ -6,8 +6,8 @@ import { Products } from '@/interfaces/products';
 import Image from 'next/image';
 import { Shop, Star } from 'grommet-icons';
 import Link from 'next/link';
-import { Button } from '@/components/ui/Button/Button';
-import { ShoppingCartButton } from '@/components/ui/ShoppingButton/ShoppingButton';
+import { Button } from '@/components/UI components/Button/Button';
+import { ShoppingCartButton } from '@/components/UI components/ShoppingButton/ShoppingButton';
 import { useAppDispatch } from '@/hooks/useAppDispatch';
 import { addProductsFromCart } from '@/redux/slices/shoppingCartSlice';
 

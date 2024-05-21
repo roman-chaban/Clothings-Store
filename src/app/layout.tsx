@@ -4,7 +4,7 @@ import '@/assets/styles/main.scss';
 import Header from '@/components/Header/Header';
 import styles from '@/assets/styles/layout.module.scss';
 import { Footer } from '@/components/Footer/Footer';
-import { ButtonUp } from '@/components/ui/buttonUp/ButtonUp';
+import { ButtonUp } from '@/components/UI components/buttonUp/ButtonUp';
 import { Providers } from '@/redux/provider/provider';
 
 const inter = DM_Sans({

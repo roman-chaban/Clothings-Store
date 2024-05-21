@@ -2,7 +2,7 @@
 
 import { ChangeEvent, FC, useState } from 'react';
 import styles from '../../app/contacts/contacts.module.scss';
-import { Input } from '@/components/ui/Input/Input';
+import { Input } from '@/components/UI components/Input/Input';
 import { Button } from '@mui/material';
 
 interface ContactsData {

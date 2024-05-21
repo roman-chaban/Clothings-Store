@@ -1,7 +1,7 @@
 'use client';
 
 import { Products } from '@/interfaces/products';
-import { Shop } from 'grommet-icons';
+import { Like, Shop } from 'grommet-icons';
 import { FC, Fragment, useState, useEffect } from 'react';
 
 interface ButtonProps {
@@ -52,10 +52,19 @@ export const Button: FC<ButtonProps> = ({
       onClick={handleAddToCart}
       className={className}
       type={type}
-      style={{ background: isActive ? '#ffb800' : '#313237', color: '#ffffff' }}
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        background: isActive ? '#ffb800' : '#313237',
+        color: '#ffffff',
+        width: 300,
+      }}
     >
       {isActive ? (
-        'Added to Favorite'
+        <Fragment>
+          Added to Favorite{' '}
+          <Like color='#ffffff' style={{ width: 20, height: 20 }} />
+        </Fragment>
       ) : (
         <Fragment>
           Show now! <Shop style={{ width: 16, height: 16 }} color='#ffffff' />

@@ -2,7 +2,7 @@
 
 import { FC, useState } from 'react';
 import styles from '@/components/Footer/footer.module.scss';
-import { Input } from '../ui/Input/Input';
+import { Input } from '../UI components/Input/Input';
 import { List, listItemsSocialMedia } from '../List/List';
 import { listItemsContacts } from '../List/contacts/contacts';
 import { listItemsCompany, listItemsHelp } from '../List/lists/lists';
