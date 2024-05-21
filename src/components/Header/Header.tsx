@@ -9,6 +9,7 @@ import { Tooltip } from 'grommet-icons';
 import { useAppSelector } from '@/hooks/useAppSelector';
 import dynamic from 'next/dynamic';
 import { ScrolledNav } from '@/constants/types';
+import { DEFAULT__LINKS } from '@/constants/default-links';
 
 const Header: FC = () => {
   const pathname = usePathname();
@@ -56,18 +57,18 @@ const Header: FC = () => {
         <div className={styles.empty__links}>
           <Link
             className={`${styles.empty__link} ${styles.decoration__line}`}
-            href='/help'
+            href={DEFAULT__LINKS.HELP}
           >
             Help
           </Link>
-          <Link className={styles.empty__link} href='/store'>
+          <Link className={styles.empty__link} href={DEFAULT__LINKS.STORE}>
             Store
           </Link>
         </div>
       </div>
       <div className={styles.header__container}>
         <div className={styles.header__logo}>
-          <Link href='/' className={styles.header__logo}>
+          <Link href={DEFAULT__LINKS.LOGO} className={styles.header__logo}>
             <strong>Clothings</strong>
             store
             <svg
@@ -103,12 +104,12 @@ const Header: FC = () => {
           </ul>
           <div className={styles.nav__icons}>
             <button className={styles.nav__icon} title='Contacts'>
-              <Link href='/contacts'>
+              <Link href={DEFAULT__LINKS.CONTACTS}>
                 <Tooltip color='#111111' style={{ width: 26, height: 26 }} />
               </Link>
             </button>
             <button className={styles.nav__icon} title='Favorite'>
-              <Link href='/favorite'>
+              <Link href={DEFAULT__LINKS.FAVORITE}>
                 <svg
                   style={{ position: 'relative', bottom: 2 }}
                   aria-hidden='true'
@@ -130,7 +131,7 @@ const Header: FC = () => {
               <span className={styles.counter__icon}>{favorite}</span>
             </button>
             <button className={styles.nav__icon} title='Shopping Cart'>
-              <Link href='/cart'>
+              <Link href={DEFAULT__LINKS.CART}>
                 <svg
                   style={{ position: 'relative', bottom: 5 }}
                   aria-hidden='true'
@@ -156,7 +157,7 @@ const Header: FC = () => {
             <button
               type='button'
               className={
-                pathname === '/auth/signUp'
+                pathname === DEFAULT__LINKS.SIGN__UP
                   ? `${styles.nav__signUp} ${styles.active__button}`
                   : styles.nav__signUp
               }
@@ -164,9 +165,9 @@ const Header: FC = () => {
               <Link
                 className={`
       ${styles.signUp}
-      ${pathname === '/auth/signUp' ? styles.active__link : ''}
+      ${pathname === DEFAULT__LINKS.SIGN__UP ? styles.active__link : ''}
     `}
-                href='/auth/signUp'
+                href={DEFAULT__LINKS.SIGN__UP}
               >
                 Sign Up
               </Link>
@@ -175,7 +176,7 @@ const Header: FC = () => {
             <button
               type='button'
               className={
-                pathname === '/auth/signIn'
+                pathname === DEFAULT__LINKS.SIGN__IN
                   ? `${styles.nav__signIn} ${styles.active__button}`
                   : styles.nav__signIn
               }
@@ -183,9 +184,9 @@ const Header: FC = () => {
               <Link
                 className={`
       ${styles.signIn}
-      ${pathname === '/auth/signIn' ? styles.active__link : ''}
+      ${pathname === DEFAULT__LINKS.SIGN__IN ? styles.active__link : ''}
     `}
-                href='/auth/signIn'
+                href={DEFAULT__LINKS.SIGN__IN}
               >
                 Sign In
               </Link>

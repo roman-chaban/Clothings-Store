@@ -2,32 +2,12 @@
 
 import { useState } from 'react';
 import { ProductsCatalog } from '@/components/ProductsUI/ProductsCatalog/ProductsCatalog';
-import products from '@/api/products/products.json';
-import clothings from '@/api/clothing/clothing.json';
-import accessories from '@/api/accessories/accessories.json';
 import { Products } from '@/interfaces/products';
 import styles from './collections.module.scss';
 import { Pagination } from '@/components/Pagination/Pagination';
+import { categories } from '@/constants/categories';
 
 const ITEMS_PER_PAGE = 10;
-
-const categories = {
-  products: {
-    data: products,
-    title: "Men's Sneakers",
-    link: '/sneakers/sneaker/',
-  },
-  clothings: {
-    data: clothings,
-    title: 'Clothings',
-    link: '/clothing/',
-  },
-  accessories: {
-    data: accessories,
-    title: 'Accessories',
-    link: '/accessories/',
-  },
-};
 
 type Category = keyof typeof categories;
 
@@ -71,7 +51,7 @@ export default function Collections() {
       </div>
       <ProductsCatalog
         productLinkTitle={categories[currentCategory].link}
-        pageTitle={categories[currentCategory].title}
+        pageTitle={categories[currentCategory].pageTitle}
         products={paginatedItems}
       />
       <Pagination

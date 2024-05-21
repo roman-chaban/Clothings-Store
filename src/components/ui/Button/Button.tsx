@@ -28,13 +28,13 @@ export const Button: FC<ButtonProps> = ({
       const savedColor = localStorage.getItem(
         `catalogButtonColor_${product.productId}`
       );
-      setIsActive(savedColor === '#66CDAA');
+      setIsActive(savedColor === '#ffb800');
     }
   }, [product]);
 
   const handleAddToCart = () => {
     if (product) {
-      const newColor = isActive ? '#313237' : '#66CDAA';
+      const newColor = isActive ? '#313237' : '#ffb800';
       setIsActive(!isActive);
       localStorage.setItem(`catalogButtonColor_${product.productId}`, newColor);
       if (!isActive) {
@@ -47,11 +47,12 @@ export const Button: FC<ButtonProps> = ({
 
   return (
     <button
+      title='Delete from Favorite'
       id={id}
       onClick={handleAddToCart}
       className={className}
       type={type}
-      style={{ background: isActive ? '#66CDAA' : '#313237', color: '#ffffff' }}
+      style={{ background: isActive ? '#ffb800' : '#313237', color: '#ffffff' }}
     >
       {isActive ? (
         'Added to Favorite'
