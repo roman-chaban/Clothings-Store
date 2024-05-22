@@ -3,6 +3,7 @@
 @import '../../../assets/styles/functions.scss';
 
 .productCart {
+  display: flex;
   height: 560px;
   width: 280px;
   background: $thirdary;
@@ -90,6 +91,7 @@
 }
 
 .shopBtn {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -132,8 +134,7 @@
   border-radius: 50%;
   width: 34px;
   height: 34px;
-  position: relative;
-  left: -40px;
+  margin-right: rem(20px);
 }
 
 .shopBtn {
@@ -143,4 +144,40 @@
 
 .cardDiscount {
   background: $discount-color;
+}
+
+@media screen and (max-width: rem(1070px)) {
+  .productImage {
+    width: 100%;
+    max-width: rem(300px);
+  }
+  .productCart {
+    max-width: rem(300px);
+  }
+  .cardDiscount {
+    left: rem(200px);
+  }
+  .shopBtn {
+    max-width: rem(150px);
+  }
+  .productButtons__block {
+    justify-content: flex-start;
+    gap: rem(80px);
+  }
+}
+
+@media screen and (max-width: rem(650px)) {
+  .productImage {
+    max-width: rem(280px);
+  }
+  .productCart {
+    max-width: rem(280px);
+  }
+  .cardDiscount {
+    left: rem(160px);
+  }
+  .productCart__container {
+    justify-content: center;
+    align-items: baseline;
+  }
 }

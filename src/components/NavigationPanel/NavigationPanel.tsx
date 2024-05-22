@@ -16,10 +16,6 @@ export const NavigationPanel: FC = () => {
     (state) => state.shoppingCart.shoppingCartCounter
   );
 
-  function handleToggleMenu(): void {
-    throw new Error('Function not implemented.');
-  }
-
   return (
     <nav className={styles.header__navBar}>
       <ul className={styles.header__menu}>

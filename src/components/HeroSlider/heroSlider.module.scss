@@ -38,3 +38,14 @@
 .active {
   background: $light-black;
 }
+
+@media screen and (max-width: rem(850px)) {
+  .slider__circle {
+    max-width: 12px;
+    max-height: 12px;
+    background: $yellow;
+  }
+  .active {
+    background: $light-black;
+  }
+}

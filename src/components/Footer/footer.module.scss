@@ -117,3 +117,38 @@
   font-size: $primary-size;
   background: $light;
 }
+
+@media screen and (max-width: rem(975px)) {
+  .footer__nav {
+    gap: 6rem;
+    justify-content: space-between;
+  }
+  .menu__title {
+    font-size: clamp(1rem, 1.3rem, 2rem);
+  }
+  .menu__ListLink {
+    font-size: clamp(1rem, 1.1rem, 1.5rem);
+  }
+  #shortestTitle {
+    font-size: 1rem;
+  }
+  .footer__logoContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: rem(750px)) {
+  .footer__nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: rem(35px) 0;
+  }
+  .footer__menu {
+    max-width: rem(300px);
+  }
+  .menu__title {
+    font-size: 1.5rem;
+    padding-bottom: rem(8px);
+  }
+}

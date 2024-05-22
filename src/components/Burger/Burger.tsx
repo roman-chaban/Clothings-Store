@@ -7,6 +7,7 @@ import { HeaderNavLinks, NAVBAR__LINKS } from '@/constants/header-links';
 import { FormClose } from 'grommet-icons';
 import { DEFAULT__LINKS } from '@/constants/default-links';
 import { usePathname } from 'next/navigation';
+import { IsActive } from '@/constants/types';
 
 interface BurgerProps {
   onClose: () => void;
@@ -14,20 +15,20 @@ interface BurgerProps {
 
 export const Burger: FC<BurgerProps> = ({ onClose }) => {
   const pathname = usePathname();
-  const [isActive, setIsActive] = useState(false);
+  const [isActive, setIsActive] = useState<IsActive>(false);
 
   useEffect(() => {
     setIsActive(true);
     return () => setIsActive(false);
   }, []);
 
-  const handleClosedMenu = () => {
+  const handleCloseMenu = () => {
     setIsActive(false);
   };
 
-  const handleClosedMenuForKeyEscape: React.KeyboardEventHandler<
-    HTMLDivElement
-  > = (event) => {
+  const handleMenuCloseOnEscape: KeyboardEventHandler<HTMLDivElement> = (
+    event
+  ) => {
     if (event.code === 'Escape' || event.code === 'Esc') {
       setIsActive(false);
     }
@@ -36,7 +37,7 @@ export const Burger: FC<BurgerProps> = ({ onClose }) => {
   return (
     <div
       tabIndex={0}
-      onKeyDown={handleClosedMenuForKeyEscape}
+      onKeyDown={handleMenuCloseOnEscape}
       className={`${styles.burgerContainer} ${isActive && styles.active}`}
     >
       <div className={styles.burger__logo}>
@@ -74,7 +75,7 @@ export const Burger: FC<BurgerProps> = ({ onClose }) => {
             {NAVBAR__LINKS.map((link: HeaderNavLinks) => (
               <li key={link.href} className={styles.menu__listItem}>
                 <Link
-                  onClick={handleClosedMenu}
+                  onClick={handleCloseMenu}
                   className={styles.listItem__link}
                   href={link.href}
                 >
@@ -92,7 +93,7 @@ export const Burger: FC<BurgerProps> = ({ onClose }) => {
                 }
               >
                 <Link
-                  onClick={handleClosedMenu}
+                  onClick={handleCloseMenu}
                   className={`
 ${styles.signUp}
 ${pathname === DEFAULT__LINKS.SIGN__UP ? styles.active__link : ''}
@@ -112,7 +113,7 @@ ${pathname === DEFAULT__LINKS.SIGN__UP ? styles.active__link : ''}
                 }
               >
                 <Link
-                  onClick={handleClosedMenu}
+                  onClick={handleCloseMenu}
                   className={`
 ${styles.signIn}
 ${pathname === DEFAULT__LINKS.SIGN__IN ? styles.active__link : ''}

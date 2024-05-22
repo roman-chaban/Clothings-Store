@@ -8,6 +8,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import 'swiper/swiper-bundle.css';
+import 'swiper/css/effect-fade';
+import 'swiper/css/effect-flip';
 import SwiperCore from 'swiper';
 import { Navigation } from 'swiper/modules';
 import { Button } from '@mui/material';
@@ -66,11 +69,11 @@ export const ProductsItem: FC<ProductsProps> = ({
       <div className={styles.productsWrapper}>
         <Swiper
           ref={swiperRef}
-          wrapperClass={styles.swiper__wrapper}
+          className={styles.swiper__wrapper}
           pagination={{
             dynamicBullets: true,
           }}
-          spaceBetween={35}
+          spaceBetween={55}
           navigation={{
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -80,6 +83,17 @@ export const ProductsItem: FC<ProductsProps> = ({
           }}
           slidesPerView={4}
           style={{ cursor: 'grab' }}
+          breakpoints={{
+            1050: {
+              slidesPerView: 3,
+            },
+            930: {
+              slidesPerView: 2,
+            },
+            600: {
+              slidesPerView: 1,
+            },
+          }}
         >
           {products.map((product) => (
             <SwiperSlide key={product.productId} className={styles.slide}>

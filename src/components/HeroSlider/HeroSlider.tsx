@@ -28,6 +28,7 @@ export const HeroSlider: FC = () => {
     <div className={styles.slider}>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+        className={styles.borderNone}
         spaceBetween={50}
         slidesPerView={1}
         grabCursor={true}

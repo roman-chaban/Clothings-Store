@@ -213,13 +213,20 @@
   gap: 3rem;
 }
 
-
-
 @media screen and (max-width: rem(1050px)) {
   .header__menu {
     display: none;
   }
   .header__container {
     padding-right: rem(40px);
+  }
+  .nav__buttonsBlock {
+    display: none;
+  }
+}
+
+@media screen and (max-width: rem(515px)) {
+  .header__navBar {
+    display: none;
   }
 }

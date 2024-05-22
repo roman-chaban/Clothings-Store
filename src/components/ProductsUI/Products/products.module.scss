@@ -60,5 +60,30 @@
 }
 
 .swiper__wrapper {
-  gap: rem(60px);
+  gap: rem(90px);
+}
+
+@media screen and (max-width: rem(1050px)) {
+  .swiper__wrapper {
+    max-width: rem(1000px);
+    gap: rem(20px);
+  }
+  .products {
+    padding-left: rem(40px);
+    padding-right: rem(40px);
+  }
+  .shoesTitle {
+    font-size: 1.5rem;
+  }
+  .nextButton,
+  .prevButton {
+    font-size: 0.6rem;
+    padding: rem(7px);
+  }
+}
+
+@media screen and (max-width: rem(600px)) {
+  .swiper__wrapper {
+    max-width: rem(600px);
+  }
 }

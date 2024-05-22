@@ -60,7 +60,9 @@ export const listItemsSocialMedia: ListItem[] = [
 export const List: FC<ListProps> = ({ title, listItems }) => {
   return (
     <ul className={styles.footer__menu}>
-      <h3 className={styles.menu__title}>{title}</h3>
+      <h3 className={styles.menu__title} id={styles.shortestTitle}>
+        {title}
+      </h3>
       {listItems.map((listItem) => (
         <li key={listItem.id} className={styles.menu__ListItem}>
           <a
@@ -69,7 +71,7 @@ export const List: FC<ListProps> = ({ title, listItems }) => {
             className={styles.menu__ListLink}
             style={{
               textDecoration: 'none',
-              cursor: 'pointer'
+              cursor: 'pointer',
             }}
             rel='noopener noreferrer'
           >

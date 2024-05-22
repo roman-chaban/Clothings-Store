@@ -1,3 +1,11 @@
+export interface Images {
+  one: string;
+  two: string;
+  three: string;
+  four: string;
+  five: string;
+}
+
 export interface Clothings {
   productId: string;
   name: string;
@@ -10,11 +18,5 @@ export interface Clothings {
   subStyle: string;
   style: string;
   about: string;
-  images: {
-    one: string;
-    two: string;
-    three: string;
-    four: string;
-    five: string;
-  }[];
+  images: Images[];
 }
