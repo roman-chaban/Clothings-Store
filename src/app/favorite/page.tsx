@@ -76,6 +76,7 @@ const Favorite: FC = () => {
           <div className={styles.favorite__container}>
             {favoriteProducts.map((favorite) => (
               <ProductFavorite
+                about={favorite.about}
                 key={favorite.productId}
                 category={favorite.category}
                 productLinkTitle={`${
