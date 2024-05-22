@@ -78,12 +78,14 @@
   justify-content: space-between;
   max-width: 1440px;
   padding: 10px 40px;
+  padding-right: 0;
   margin: 0 auto;
 }
 
 .header__navBar {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: rem(32px);
 }
 
@@ -203,4 +205,19 @@
 
 .signUp:active {
   color: $light-black;
+}
+
+.navPanel {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+@media screen and (max-width: rem(1050px)) {
+  .header__menu {
+    display: none;
+  }
+  .header__container {
+    padding-right: rem(40px);
+  }
 }

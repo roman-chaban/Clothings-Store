@@ -1,0 +1,46 @@
+@import '../../../assets/styles/colors.scss';
+@import '../../../assets/styles/globals.scss';
+@import '../../../assets/styles/functions.scss';
+
+.burgerButton__wrapper {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  cursor: pointer;
+}
+
+.buttonLine {
+  display: block;
+  width: rem(35px);
+  height: rem(4px);
+  background-color: $gray;
+  position: relative;
+  border-radius: rem(20px);
+}
+
+.buttonLine::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: rem(8px);
+  width: rem(30px);
+  height: rem(4px);
+  background: $gray;
+  border-radius: rem(20px);
+}
+.buttonLine::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: rem(8px);
+  width: rem(25px);
+  height: rem(3.5px);
+  background: $gray;
+  border-radius: rem(20px);
+}
+
+@media screen and (min-width: rem(1050px)) {
+  .burgerButton__wrapper {
+    display: none;
+  }
+}
