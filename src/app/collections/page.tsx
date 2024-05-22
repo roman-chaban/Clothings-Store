@@ -8,7 +8,7 @@ import { Pagination } from '@/components/Pagination/Pagination';
 import { categories } from '@/constants/categories';
 import { CurrentPage } from '@/constants/types';
 
-const ITEMS_PER_PAGE = 10;
+const ITEMS_PER_PAGE = 6;
 
 type Category = keyof typeof categories;
 

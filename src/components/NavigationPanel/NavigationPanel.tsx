@@ -31,6 +31,7 @@ export const NavigationPanel: FC = () => {
           return (
             <li key={link.href}>
               <Link
+                title={link.title}
                 className={isActive ? styles.active : styles.menu__listItem}
                 href={link.href}
               >

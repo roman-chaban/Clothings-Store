@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   gap: rem(20px);
+  width: rem(500px);
 }
 
 .productDiscount {
@@ -45,6 +46,7 @@
 .priceTitle {
   font-weight: 700;
   font-size: $six-size;
+  color: $green-color;
 }
 
 .categoryTitle {
@@ -88,7 +90,7 @@
 }
 
 .about {
-  line-height: 1.85;
+  line-height: 150%;
   text-align: justify;
   font-weight: 400;
   font-size: $five-size;
@@ -98,7 +100,7 @@
 .about__blockTitle {
   font-weight: 500;
   color: $light-black;
-  font-size: $six-size;
+  font-size: $four-size;
   margin-bottom: rem(10px);
   padding-bottom: rem(8px);
   line-height: 120%;
@@ -151,4 +153,3 @@
     background: $yellow;
   }
 }
-

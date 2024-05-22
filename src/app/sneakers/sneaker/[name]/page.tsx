@@ -10,7 +10,7 @@ interface SneakerProps {
 
 export async function generateMetadata({ params: { name } }: SneakerProps) {
   return {
-    title: `Sneaker | ${name.replaceAll('-', ' ')}`,
+    title: `${name.replaceAll('-', ' ')}`,
     icons: './favicon/favicon.svg',
   };
 }

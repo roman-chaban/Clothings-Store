@@ -114,7 +114,7 @@ export const ProductInfo: FC<SneakerProductProps> = ({ products }) => {
       <article className={styles.aboutProduct}>
         <div className={styles.about__block}>
           <h4 className={styles.about__blockTitle}>
-            About: <br /> {firstSneaker.title}{' '}
+            About Product: {firstSneaker.title}{' '}
           </h4>
           <p className={styles.about}>{firstSneaker.about}</p>
         </div>
