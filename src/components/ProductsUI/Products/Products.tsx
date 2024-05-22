@@ -72,16 +72,16 @@ export const ProductsItem: FC<ProductsProps> = ({
           className={styles.swiper__wrapper}
           pagination={{
             dynamicBullets: true,
+            dynamicMainBullets: 2,
           }}
           spaceBetween={55}
           navigation={{
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
           }}
-          scrollbar={{
-            hide: true,
-          }}
-          slidesPerView={4}
+          slidesPerView={'auto'}
+          mousewheel={true}
+          speed={900}
           style={{ cursor: 'grab' }}
           breakpoints={{
             1050: {
