@@ -8,6 +8,7 @@ import {
 } from '@headlessui/react';
 import { FC, useState } from 'react';
 import styles from './modal.module.scss';
+import { Cursor } from 'grommet-icons';
 
 export const Modal: FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,6 +17,7 @@ export const Modal: FC = () => {
     <>
       <button className={styles.modalButton} onClick={() => setIsOpen(true)}>
         Open to read about project
+        <Cursor color='white' />
       </button>
       <Dialog
         open={isOpen}
@@ -25,7 +27,7 @@ export const Modal: FC = () => {
         <div className={styles.fixedModal}>
           <DialogPanel className={styles.modalPanel}>
             <DialogTitle className={styles.modalTitle}>
-              About Clothings store{' '}
+              About Clothings Store{' '}
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='150'
