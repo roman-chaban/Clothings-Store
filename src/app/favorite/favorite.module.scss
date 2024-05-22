@@ -20,6 +20,8 @@
 }
 
 .favorite__subTitle {
+  display: flex;
+  align-items: center;
   font-size: $thirdary-size;
   font-weight: 700;
   color: $light-black;
@@ -29,6 +31,10 @@
   color: $light-black;
   font-size: $six-size;
   font-weight: 500;
+}
+
+.counter__marker {
+  color: $gray;
 }
 
 .favorite,

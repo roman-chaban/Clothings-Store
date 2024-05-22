@@ -39,6 +39,7 @@
   display: flex;
   justify-content: center;
   gap: 0.5rem;
+  font-weight: 500;
   flex-direction: column;
 }
 
@@ -135,4 +136,8 @@
 .shopBtn {
   width: 130px;
   margin: 0;
+}
+
+.cardDiscount {
+  background: $discount-color;
 }

@@ -17,6 +17,6 @@ export interface Products {
   mainImage: string;
   priceDiscount?: number;
   images: Images[];
-  about?: string;
+  about: string;
   subStyle?: string;
 }

@@ -94,6 +94,7 @@ export const ProductFavorite: FC<ProductCartProps> = ({
               type='button'
               className={styles.shopBtn}
               product={{
+                about: '',
                 category,
                 images: [],
                 mainImage,
@@ -108,6 +109,7 @@ export const ProductFavorite: FC<ProductCartProps> = ({
             />
             <ShoppingCartButton
               product={{
+                about: '',
                 category,
                 images: [],
                 mainImage,

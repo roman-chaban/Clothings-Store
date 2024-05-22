@@ -84,6 +84,7 @@ export const ProductsItem: FC<ProductsProps> = ({
           {products.map((product) => (
             <SwiperSlide key={product.productId} className={styles.slide}>
               <ProductFavorite
+                about={product.about}
                 productId={product.productId}
                 images={product.images}
                 name={product.name}

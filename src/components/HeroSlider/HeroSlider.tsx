@@ -10,9 +10,9 @@ import {
   Scrollbar,
 } from 'swiper/modules';
 import Image from 'next/image';
-import FirstBanner from '@/images/banner/first.jpg';
-import SecondBanner from '@/images/banner/second.jpg';
-import ThirdBanner from '@/images/banner/third.jpg';
+import FirstBanner from '../../../public/images/banner/first.jpg';
+import SecondBanner from '../../../public/images/banner/second.jpg';
+import ThirdBanner from '../../../public/images/banner/third.jpg';
 
 import styles from './heroSlider.module.scss';
 import { ActiveIndex } from '@/constants/types';

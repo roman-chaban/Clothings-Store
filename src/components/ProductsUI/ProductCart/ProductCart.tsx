@@ -22,6 +22,7 @@ export const ProductCart: FC<ProductCartProps> = ({
   price,
   style,
   title,
+  about = 'Information not available',
   productRating,
   onDeleteFromCart,
 }) => {
@@ -54,6 +55,7 @@ export const ProductCart: FC<ProductCartProps> = ({
               <p className={styles.cartAbout}>
                 {productRating} / 5 <Star color='gold' />
               </p>{' '}
+              <p className={styles.about}>About Product: {about}</p>
             </div>
           </div>
         </div>
@@ -95,7 +97,7 @@ export const ProductCart: FC<ProductCartProps> = ({
             </div>
           </div>
           <p className={styles.alreadyTitle}>
-            Product already to buy {productPrice} {'$'}
+            Product already to buy {productItemCounter} goods
           </p>
         </div>
       </div>

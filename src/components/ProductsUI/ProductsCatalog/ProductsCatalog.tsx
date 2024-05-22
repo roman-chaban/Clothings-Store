@@ -51,6 +51,7 @@ export const ProductsCatalog: FC<ProductsProps> = ({
             category={product.category}
             style={product.style}
             price={product.price}
+            about={product.about}
             productRating={product.productRating}
             onAddToFavorite={() => handleAddToFavorites(product)}
             onDeleteProduct={() => handleDeleteFromFavorites(product.productId)}
