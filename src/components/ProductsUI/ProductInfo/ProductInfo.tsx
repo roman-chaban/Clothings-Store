@@ -8,13 +8,24 @@ import { notFound, redirect } from 'next/navigation';
 import { useAppDispatch } from '@/hooks/useAppDispatch';
 import { addProductsFromCart } from '@/redux/slices/shoppingCartSlice';
 
-interface SneakerProductProps {
+interface SneakerProductProps extends Products {
   products: Products[];
   onAddToFavorite?: () => void;
   onDeleteProduct?: () => void;
 }
 
-export const ProductInfo: FC<SneakerProductProps> = ({ products }) => {
+export const ProductInfo: FC<SneakerProductProps> = ({
+  products,
+  title,
+  name,
+  category,
+  price,
+  productRating,
+  mainImage,
+  style,
+  productId,
+  priceDiscount = 0,
+}) => {
   const [selectedSize, setSelectedSize] = useState<string>('');
   const [isShoes, setIsShoes] = useState<boolean>(false);
   const dispatch = useAppDispatch();
@@ -86,6 +97,7 @@ export const ProductInfo: FC<SneakerProductProps> = ({ products }) => {
       <span className={styles.selectSize}>
         Select size: <mark className={styles.markSize}>{selectedSize}</mark>
       </span>
+
       <div className={styles.productSize__container}>
         {isShoes
           ? SIZES.map((size) => (

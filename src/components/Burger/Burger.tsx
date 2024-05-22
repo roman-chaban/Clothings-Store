@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, FC } from 'react';
+import { useState, useEffect, FC, KeyboardEventHandler } from 'react';
 import styles from './burger.module.scss';
 import Link from 'next/link';
 import { HeaderNavLinks, NAVBAR__LINKS } from '@/constants/header-links';
@@ -25,8 +25,20 @@ export const Burger: FC<BurgerProps> = ({ onClose }) => {
     setIsActive(false);
   };
 
+  const handleClosedMenuForKeyEscape: React.KeyboardEventHandler<
+    HTMLDivElement
+  > = (event) => {
+    if (event.code === 'Escape' || event.code === 'Esc') {
+      setIsActive(false);
+    }
+  };
+
   return (
-    <div className={`${styles.burgerContainer} ${isActive && styles.active}`}>
+    <div
+      tabIndex={0}
+      onKeyDown={handleClosedMenuForKeyEscape}
+      className={`${styles.burgerContainer} ${isActive && styles.active}`}
+    >
       <div className={styles.burger__logo}>
         <div className={styles.burger__logo__wrapper}>
           <h3 className={styles.burgerLogo__title}>Clothings store</h3>
@@ -46,6 +58,7 @@ export const Burger: FC<BurgerProps> = ({ onClose }) => {
           </svg>
         </div>
         <FormClose
+          className={styles.burgerClosed__icon}
           onClick={onClose}
           color='#fff'
           style={{ width: 40, height: 40, cursor: 'pointer' }}

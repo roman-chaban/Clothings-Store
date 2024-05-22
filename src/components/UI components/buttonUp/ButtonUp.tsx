@@ -36,7 +36,7 @@ export const ButtonUp: FC = () => {
     >
       <DoubleArrowIcon
         className={styles.arrow__top}
-        style={{ transform: 'rotate(-90deg)', color: '#fff', fontSize: 25 }}
+        style={{ transform: 'rotate(-90deg)', color: '#fff', fontSize: 20 }}
       />
     </button>
   );
