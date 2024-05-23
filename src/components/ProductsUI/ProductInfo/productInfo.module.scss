@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   gap: rem(20px);
-  width: rem(500px);
+  width: 100%;
 }
 
 .productDiscount {
@@ -90,11 +90,11 @@
 }
 
 .about {
+  width: 100%;
   line-height: 150%;
   text-align: justify;
   font-weight: 400;
   font-size: $five-size;
-  max-width: 400px;
 }
 
 .about__blockTitle {
@@ -152,4 +152,28 @@
   &:hover {
     background: $yellow;
   }
+}
+
+@media screen and (min-width: rem(1440px)) {
+  .productInfo {
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: rem(1440px)) {
+  .productInfo {
+    max-width: rem(500px);
+  }
+}
+
+
+@media screen and (max-width: rem(600px)) {
+    .sneakerTitle {
+      font-size: 1.6em;
+    }
+    .productSize__container {
+      display: grid;
+      place-items: center;
+      grid-template-columns: repeat(2, 1fr);
+    }
 }
