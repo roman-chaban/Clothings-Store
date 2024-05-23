@@ -67,7 +67,6 @@
   box-shadow: 2px 2px 5px #00408033;
 }
 
-
 .categoryTitle {
   color: $light-black;
   display: flex;
@@ -97,4 +96,46 @@
   height: 40px;
   background: $thirdary;
   border-radius: 100%;
+}
+
+@media screen and (min-width: rem(1440px)) {
+  .sneakersFlex {
+    gap: 10rem;
+  }
+  .sneakerImagesBlock {
+    gap: 5rem;
+  }
+}
+
+@media screen and (max-width: rem(1050px)) {
+  .sneakersFlex {
+    flex-direction: column;
+  }
+  .sneakerContainer {
+    padding-left: rem(30px);
+    padding-right: rem(30px);
+  }
+}
+
+@media screen and (max-width: rem(900px)) {
+  .sneakersNav__block {
+    flex-wrap: wrap;
+  }
+  .smallImage {
+    max-width: rem(80px);
+    max-height: rem(80px);
+  }
+}
+
+
+@media screen and (max-width: rem(550px)) {
+    .nextPrev__buttons {
+      display: none;
+    }
+    .sneakerImagesBlock {
+      flex-direction: column-reverse;
+    }
+    .smallImages {
+      flex-direction: row;
+    }
 }
