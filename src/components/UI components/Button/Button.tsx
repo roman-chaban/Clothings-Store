@@ -1,5 +1,6 @@
 'use client';
 
+import { IsActive } from '@/constants/types';
 import { Products } from '@/interfaces/products';
 import { Like, Shop } from 'grommet-icons';
 import { FC, Fragment, useState, useEffect } from 'react';
@@ -21,7 +22,7 @@ export const Button: FC<ButtonProps> = ({
   onClick = () => {},
   onDeleteProduct = () => {},
 }) => {
-  const [isActive, setIsActive] = useState<boolean>(false);
+  const [isActive, setIsActive] = useState<IsActive>(false);
 
   useEffect(() => {
     if (product) {

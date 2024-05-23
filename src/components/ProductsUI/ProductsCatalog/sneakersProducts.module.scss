@@ -18,3 +18,16 @@
   color: $light-black;
   font-weight: 500;
 }
+
+@media screen and (max-width: rem(950px)) {
+  .sneakersContainer {
+    grid-template-columns: repeat(2, 50%);
+    column-gap: 0;
+  }
+}
+
+@media screen and (max-width: rem(550px)) {
+  .sneakersContainer {
+    grid-template-columns: repeat(1, 100%);
+  }
+}

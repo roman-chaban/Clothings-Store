@@ -11,37 +11,41 @@ interface ShoppingCartButtonProps {
 }
 
 export const ShoppingCartButton: FC<ShoppingCartButtonProps> = ({
-  product,
-  onClick,
-  onDelete,
+  product = null,
+  onClick = () => {},
+  onDelete = () => {},
 }) => {
   const [isActiveButton, setIsActiveButton] = useState<boolean>(false);
 
   useEffect(() => {
     if (product) {
       const savedColor = localStorage.getItem(
-        `favoriteBackgroundColor_${product?.productId}`
+        `favoriteBackgroundColor_${product.productId}`
       );
       setIsActiveButton(savedColor === '#66CDAA');
     }
   }, [product]);
 
-  const handleAddToShoppingCart = () => {
+  const handleToggleFavorite = () => {
     if (product) {
       const newColor = isActiveButton ? '#313237' : '#66CDAA';
       setIsActiveButton(!isActiveButton);
       localStorage.setItem(
-        `favoriteBackgroundColor_${product?.productId}`,
+        `favoriteBackgroundColor_${product.productId}`,
         newColor
       );
-      onClick(product);
+      if (!isActiveButton) {
+        onClick(product);
+      } else {
+        onDelete(product.productId);
+      }
     }
   };
 
   return (
     <button
       className={styles.shoppingCart}
-      onClick={handleAddToShoppingCart}
+      onClick={handleToggleFavorite}
       style={{ backgroundColor: isActiveButton ? '#66CDAA' : '#313237' }}
     >
       <svg

@@ -36,7 +36,8 @@
 }
 
 .footer__form {
-  width: 359px;
+  width: 100%;
+  max-width: 359px;
   display: flex;
   align-items: center;
   padding: 0 32px;
@@ -124,7 +125,7 @@
     justify-content: space-between;
   }
   .menu__title {
-    font-size: clamp(1rem, 1.3rem, 2rem);
+    font-size: clamp(3rem, 1.3rem, 2rem);
   }
   .menu__ListLink {
     font-size: clamp(1rem, 1.1rem, 1.5rem);
@@ -150,5 +151,37 @@
   .menu__title {
     font-size: 1.5rem;
     padding-bottom: rem(8px);
+  }
+}
+
+@media screen and (max-width: rem(450px)) {
+  .footer__nav {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .searchIcon {
+    max-width: rem(25px);
+    max-height: rem(25px);
+  }
+  .footer__input::placeholder {
+    max-width: rem(77px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+  .footer__logo {
+    gap: rem(16px);
+  }
+  .footer__copyright {
+    font-size: 0.9rem;
+  }
+  .nikeLogo {
+    max-width: rem(80px);
+    max-height: rem(80px);
+  }
+  .footer__logoContainer {
+    gap: rem(20px);
+    align-items: center;
   }
 }

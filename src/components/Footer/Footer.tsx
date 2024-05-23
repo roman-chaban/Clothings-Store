@@ -17,6 +17,7 @@ export const Footer: FC = () => {
           <div className={styles.footer__logo}>
             <h3 className={styles.logo}>Clothing store</h3>
             <svg
+              className={styles.nikeLogo}
               xmlns='http://www.w3.org/2000/svg'
               width='100'
               height='80'
@@ -40,6 +41,7 @@ export const Footer: FC = () => {
               placeholder='Subscribe to our newsletter ...'
             />
             <svg
+              className={styles.searchIcon}
               aria-hidden='true'
               color='#111111'
               focusable='false'

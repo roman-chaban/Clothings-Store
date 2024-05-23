@@ -230,3 +230,9 @@
     display: none;
   }
 }
+
+@media screen and (max-width: rem(450px)) {
+    .header__logo {
+      font-size: $five-size;
+    };
+}

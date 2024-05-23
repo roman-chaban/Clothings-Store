@@ -4,7 +4,7 @@ import { FC } from 'react';
 import styles from './product.module.scss';
 import { Products } from '@/interfaces/products';
 import Image from 'next/image';
-import { Shop, Star } from 'grommet-icons';
+import { Star } from 'grommet-icons';
 import Link from 'next/link';
 import { Button } from '@/components/UI components/Button/Button';
 import { ShoppingCartButton } from '@/components/UI components/ShoppingButton/ShoppingButton';

@@ -154,3 +154,13 @@
     transform: scale(1.2);
   }
 }
+
+@media screen and (max-width: rem(450px)) {
+  .nikeLogo {
+    max-width: rem(70px);
+    max-height: rem(70px);
+  }
+  .burger__logo__wrapper {
+    gap: 1rem;
+  }
+}
