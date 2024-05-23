@@ -169,6 +169,7 @@
 @media screen and (max-width: rem(650px)) {
   .productImage {
     max-width: rem(280px);
+    max-height: rem(370px);
   }
   .productCart {
     max-width: rem(280px);
@@ -179,5 +180,12 @@
   .productCart__container {
     justify-content: center;
     align-items: baseline;
+  }
+  .productButtons__block {
+    gap: 3rem;
+    padding-bottom: rem(40px);
+  }
+  .cardDiscount {
+    left: rem(190px);
   }
 }

@@ -44,6 +44,7 @@ export const Burger: FC<BurgerProps> = ({ onClose }) => {
         <div className={styles.burger__logo__wrapper}>
           <h3 className={styles.burgerLogo__title}>Clothings store</h3>
           <svg
+            className={styles.nikeLogo}
             xmlns='http://www.w3.org/2000/svg'
             width='100'
             height='80'

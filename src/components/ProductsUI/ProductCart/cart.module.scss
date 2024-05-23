@@ -147,3 +147,22 @@
   color: $light-black;
   font-weight: 600;
 }
+
+@media screen and (max-width: rem(950px)) {
+  .cartContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .check {
+    display: none;
+  }
+  .counterProduct {
+    align-items: flex-start;
+  }
+  .cart__titlesBlock {
+    gap: 1rem;
+  }
+  .cartTitle {
+    font-size: 1.3rem;
+  }
+}

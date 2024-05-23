@@ -12,7 +12,7 @@ const initialState: ShoppingCartState = {
 };
 
 export const ShoppingCartSlice = createSlice({
-  name: 'cartProducts',
+  name: 'cart/products',
   initialState,
   reducers: {
     addProductsFromCart: (state, action: PayloadAction<Products>) => {

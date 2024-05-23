@@ -35,6 +35,7 @@ export const ProductCart: FC<ProductCartProps> = ({
       <div className={styles.cartContainer}>
         <div className={styles.blockCard}>
           <Checkbox
+            className={styles.check}
             color='success'
             checked={checkedValue}
             onChange={(event) => setCheckedValue(event.target.checked)}

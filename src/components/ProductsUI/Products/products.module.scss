@@ -87,3 +87,17 @@
     max-width: rem(600px);
   }
 }
+
+
+@media screen and (max-width: rem(450px)) {
+    .shoesTitle {
+      font-size: $five-size;
+    }
+    .nextButton, .prevButton {
+      font-size: 0.4rem;
+      padding: rem(6px);
+    }
+    .swiper__wrapper {
+      max-width: rem(300px);
+    }
+}
