@@ -43,6 +43,7 @@ const Header: FC = () => {
       >
         <div className={styles.empty__blockBg}>
           <svg
+            className={styles.light__logo}
             xmlns='http://www.w3.org/2000/svg'
             width='100'
             height='80'

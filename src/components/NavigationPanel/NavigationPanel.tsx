@@ -16,6 +16,13 @@ export const NavigationPanel: FC = () => {
     (state) => state.shoppingCart.shoppingCartCounter
   );
 
+  const handleUpPage = () => {
+    window.scrollTo({
+      top: 10,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <nav className={styles.header__navBar}>
       <ul className={styles.header__menu}>
@@ -38,13 +45,21 @@ export const NavigationPanel: FC = () => {
         })}
       </ul>
       <div className={styles.nav__icons}>
-        <button className={styles.nav__icon} title='Contacts'>
+        <button
+          onClick={handleUpPage}
+          className={styles.nav__icon}
+          title='Contacts'
+        >
           <Link href={DEFAULT__LINKS.CONTACTS}>
             <Tooltip color='#111111' style={{ width: 26, height: 26 }} />
           </Link>
         </button>
-        <button className={styles.nav__icon} title='Favorite'>
-          <Link href={DEFAULT__LINKS.FAVORITE}>
+        <button
+          onClick={handleUpPage}
+          className={styles.nav__icon}
+          title='Favorite'
+        >
+          <Link onClick={handleUpPage} href={DEFAULT__LINKS.FAVORITE}>
             <svg
               style={{ position: 'relative', bottom: 2 }}
               aria-hidden='true'
