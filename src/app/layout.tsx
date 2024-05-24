@@ -7,15 +7,15 @@ import { Footer } from '@/components/Footer/Footer';
 import { ButtonUp } from '@/components/UI components/buttonUp/ButtonUp';
 import { Providers } from '@/redux/provider/provider';
 
-const inter = DM_Sans({
+const projectFont = DM_Sans({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700', '800'],
+  weight: ['400', '700', '300', '500', '600'],
 });
 
 const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <html lang='en'>
-      <body className={`${inter.className} ${styles.body}`}>
+      <body className={`${projectFont.className} ${styles.body}`}>
         <Providers>
           <Header />
           <main className={styles.main}>{children}</main>

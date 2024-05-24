@@ -15,7 +15,9 @@ export const Footer: FC = () => {
       <div className={styles.footer__container}>
         <div className={styles.footer__logoContainer}>
           <div className={styles.footer__logo}>
-            <h3 className={styles.logo}>Clothing store</h3>
+            <h3 className={styles.logo}>
+              <strong>Clothings store</strong>
+            </h3>
             <svg
               className={styles.nikeLogo}
               xmlns='http://www.w3.org/2000/svg'

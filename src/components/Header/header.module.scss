@@ -55,6 +55,8 @@
 
 .header__active {
   background-color: $input-bg;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .header__logo {
@@ -91,7 +93,7 @@
 
 .header__menu {
   display: flex;
-  gap: rem(16px);
+  gap: rem(20px);
 }
 
 .active {
@@ -101,7 +103,7 @@
 
 .menu__listItem {
   color: $secondary;
-  font-weight: 700;
+  font-weight: 800;
   font-size: $primary-size;
   position: relative;
   transition: all 0.4s ease-in-out 0s;

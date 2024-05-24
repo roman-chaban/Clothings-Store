@@ -19,12 +19,6 @@ export const NAVBAR__LINKS: HeaderNavLinks[] = [
     title: 'Sneakers',
   },
   {
-    label: 'Collections',
-    href: '/collections',
-    slugRef: `/collections`,
-    title: 'Collections',
-  },
-  {
     label: 'Clothings',
     href: '/clothings',
     slugRef: '/clothings/clothing',
@@ -35,5 +29,11 @@ export const NAVBAR__LINKS: HeaderNavLinks[] = [
     href: '/accessories',
     slugRef: '/accessories/',
     title: 'Accessories',
+  },
+  {
+    label: 'Collections',
+    href: '/collections',
+    slugRef: `/collections`,
+    title: 'Collections',
   },
 ];
