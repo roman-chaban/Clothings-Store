@@ -35,7 +35,7 @@ export const Button: FC<ButtonProps> = ({
 
   const handleAddToCart = () => {
     if (product) {
-      const newColor = isActive ? '#313237' : '#ffb800';
+      const newColor = isActive ? '#313237' : '#676767';
       setIsActive(!isActive);
       localStorage.setItem(`catalogButtonColor_${product.productId}`, newColor);
       if (!isActive) {
@@ -56,7 +56,7 @@ export const Button: FC<ButtonProps> = ({
       style={{
         display: 'flex',
         alignItems: 'center',
-        background: isActive ? '#ffb800' : '#313237',
+        background: isActive ? '#676767' : '#313237',
         color: '#ffffff',
         width: 300,
       }}

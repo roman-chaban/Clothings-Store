@@ -11,6 +11,7 @@
 .sneakersFlex {
   display: flex;
   gap: rem(40px);
+  height: 800px;
 }
 
 .sneakersNav__block {
@@ -33,19 +34,21 @@
 }
 
 .sneakerImage {
-  max-width: 100%;
-  width: auto;
-  height: auto;
-  object-fit: cover;
+  width: 100%;
+  object-fit: contain;
   border-radius: rem(20px);
   cursor: pointer;
-  width: auto;
-  height: auto;
 }
 
 .sneakerImagesBlock {
+  position: sticky;
+  top: rem(170px);
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: flex;
-  gap: rem(50px);
+  gap: 50px;
+  max-height: 600px;
 }
 
 .smallImages {
@@ -127,15 +130,15 @@
   }
 }
 
-
 @media screen and (max-width: rem(550px)) {
-    .nextPrev__buttons {
-      display: none;
-    }
-    .sneakerImagesBlock {
-      flex-direction: column-reverse;
-    }
-    .smallImages {
-      flex-direction: row;
-    }
+  .nextPrev__buttons {
+    display: none;
+  }
+  .sneakerImagesBlock {
+    flex-direction: column-reverse;
+  }
+  .smallImages {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

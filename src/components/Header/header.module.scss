@@ -213,6 +213,15 @@
   gap: 3rem;
 }
 
+.light__logo {
+  cursor: pointer;
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+  &:hover {
+    opacity: 0.4;
+    transform: scale(1.1);
+  }
+}
+
 @media screen and (max-width: rem(1050px)) {
   .header__menu {
     display: none;
@@ -232,7 +241,7 @@
 }
 
 @media screen and (max-width: rem(450px)) {
-    .header__logo {
-      font-size: $five-size;
-    };
+  .header__logo {
+    font-size: $five-size;
+  }
 }
