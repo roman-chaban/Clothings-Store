@@ -51,6 +51,10 @@
   gap: rem(40px);
 }
 
-@media screen and (max-width: rem(1070px)) {
-  
+@media screen and (max-width: rem(730px)) {
+    .favorite__subTitle {
+      flex-direction: column-reverse;
+      gap: 1rem;
+      font-size: rem(35px);
+    }
 }

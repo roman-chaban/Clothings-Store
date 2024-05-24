@@ -11,7 +11,7 @@
 .sneakersFlex {
   display: flex;
   gap: rem(40px);
-  height: 800px;
+  height: 100%;
 }
 
 .sneakersNav__block {
@@ -48,7 +48,7 @@
   right: 0;
   display: flex;
   gap: 50px;
-  max-height: 600px;
+  height: 100%;
 }
 
 .smallImages {
@@ -128,6 +128,10 @@
     max-width: rem(80px);
     max-height: rem(80px);
   }
+  .sneakerImagesBlock {
+    position: static;
+    gap: rem(20px);
+  }
 }
 
 @media screen and (max-width: rem(550px)) {
@@ -139,6 +143,7 @@
   }
   .smallImages {
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2.5rem;
   }
 }

@@ -212,10 +212,11 @@ s.shopBtn:active::after {
   }
 }
 
-@media screen and (max-width: rem(650px)) {
+@media screen and (max-width: rem(670px)) {
   .productImage {
     max-width: rem(280px);
     max-height: rem(370px);
+    border-radius: rem(20px);
   }
   .productCart {
     max-width: rem(280px);
@@ -233,5 +234,9 @@ s.shopBtn:active::after {
   }
   .cardDiscount {
     left: rem(190px);
+    bottom: rem(300px);
+  }
+  .shopBtn {
+    max-width: 7.5rem;
   }
 }

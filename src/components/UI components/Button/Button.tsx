@@ -3,7 +3,7 @@
 import { IsActive } from '@/constants/types';
 import { Products } from '@/interfaces/products';
 import { Like, Shop } from 'grommet-icons';
-import { FC, Fragment, useState, useEffect } from 'react';
+import { FC, useState, useEffect } from 'react';
 
 interface ButtonProps {
   className?: string;
@@ -35,7 +35,7 @@ export const Button: FC<ButtonProps> = ({
 
   const handleAddToCart = () => {
     if (product) {
-      const newColor = isActive ? '#313237' : '#676767';
+      const newColor = isActive ? '#313237' : '#ffb800';
       setIsActive(!isActive);
       localStorage.setItem(`catalogButtonColor_${product.productId}`, newColor);
       if (!isActive) {
@@ -48,7 +48,7 @@ export const Button: FC<ButtonProps> = ({
 
   return (
     <button
-      title='Delete from Favorite'
+      title={isActive ? 'Delete from Favorite' : 'Add to Favorite'}
       id={id}
       onClick={handleAddToCart}
       className={className}
@@ -56,20 +56,25 @@ export const Button: FC<ButtonProps> = ({
       style={{
         display: 'flex',
         alignItems: 'center',
+        justifyContent: 'center',
         background: isActive ? '#676767' : '#313237',
         color: '#ffffff',
         width: 300,
+        height: 30,
+        border: 'none',
+        cursor: 'pointer',
       }}
     >
       {isActive ? (
-        <Fragment>
+        <>
           Added to Favorite{' '}
-          <Like color='#ffffff' style={{ width: 20, height: 20 }} />
-        </Fragment>
+          <Like color='#ffffff' style={{ width: 20, height: 20, marginLeft: 8 }} />
+        </>
       ) : (
-        <Fragment>
-          Show now! <Shop style={{ width: 16, height: 16 }} color='#ffffff' />
-        </Fragment>
+        <>
+          Shop now!{' '}
+          <Shop style={{ width: 16, height: 16, marginLeft: 8 }} color='#ffffff' />
+        </>
       )}
     </button>
   );

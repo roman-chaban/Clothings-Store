@@ -1,7 +1,7 @@
 'use client';
 
 import { Products } from '@/interfaces/products';
-import React, { FC, useRef } from 'react';
+import React, { FC, useRef, useState, useEffect } from 'react';
 import { ProductFavorite } from '../ProductFavorite/ProductFavorite';
 import styles from './products.module.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -34,14 +34,8 @@ export const ProductsItem: FC<ProductsProps> = ({
   productTitle,
 }: ProductsProps) => {
   const swiperRef = useRef<any>(null);
-
-  const slideNext = () => {
-    swiperRef.current?.swiper?.slideNext();
-  };
-
-  const slidePrev = () => {
-    swiperRef.current?.swiper?.slidePrev();
-  };
+  const [isNextDisabled, setIsNextDisabled] = useState(false);
+  const [isPrevDisabled, setIsPrevDisabled] = useState(true);
 
   const dispatch = useAppDispatch();
 
@@ -53,15 +47,35 @@ export const ProductsItem: FC<ProductsProps> = ({
     dispatch(deleteProductFromFavorite(productId));
   };
 
+  const updateNavigationButtons = () => {
+    if (swiperRef.current) {
+      const swiper = swiperRef.current.swiper;
+      setIsPrevDisabled(swiper.isBeginning);
+      setIsNextDisabled(swiper.isEnd);
+    }
+  };
+
+  useEffect(() => {
+    updateNavigationButtons();
+  }, []);
+
   return (
     <div className={styles.products}>
       <div className={styles.productBlock}>
         <h2 className={styles.shoesTitle}>{productTitle}</h2>
         <div className={styles.navigationButtons}>
-          <Button className={styles.prevButton} onClick={slidePrev}>
+          <Button
+            className={styles.prevButton}
+            onClick={() => swiperRef.current?.swiper?.slidePrev()}
+            disabled={isPrevDisabled}
+          >
             Previous
           </Button>
-          <Button className={styles.nextButton} onClick={slideNext}>
+          <Button
+            className={styles.nextButton}
+            onClick={() => swiperRef.current?.swiper?.slideNext()}
+            disabled={isNextDisabled}
+          >
             Next
           </Button>
         </div>
@@ -70,19 +84,15 @@ export const ProductsItem: FC<ProductsProps> = ({
         <Swiper
           ref={swiperRef}
           className={styles.swiper__wrapper}
-          pagination={{
-            dynamicBullets: true,
-            dynamicMainBullets: 2,
-          }}
           spaceBetween={55}
           navigation={{
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
           }}
-          slidesPerView={'auto'}
-          mousewheel={true}
           speed={900}
           style={{ cursor: 'grab' }}
+          onSlideChange={updateNavigationButtons}
+          onInit={(swiper) => updateNavigationButtons()}
           breakpoints={{
             1050: {
               slidesPerView: 3,

@@ -21,7 +21,8 @@
 
 .email__field,
 .fullName__field {
-  width: rem(349px);
+  max-width: rem(350px);
+  width: 100%;
   height: rem(49px);
   border-radius: rem(8px);
   padding: rem(16px);
@@ -49,7 +50,8 @@
 }
 
 .fieldsContainer {
-  width: rem(729px);
+  width: 100%;
+  max-width: rem(729px);
   display: flex;
   flex-direction: column;
   gap: rem(57px);
@@ -57,6 +59,7 @@
 }
 
 .contactsArea {
+  width: 100%;
   height: rem(205px);
   border-radius: rem(8px);
   background: $input-bg;
@@ -89,5 +92,20 @@
   &:hover {
     background: $yellow;
     color: $light-black;
+  }
+}
+
+@media screen and (max-width: rem(830px)) {
+  .contacts {
+    padding-left: rem(40px);
+    padding-right: rem(40px);
+  }
+}
+
+@media screen and (max-width: rem(550px)) {
+  .fields {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

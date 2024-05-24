@@ -99,5 +99,7 @@
 @media screen and (max-width: rem(530px)) {
     .search__blockItem {
       width: 100%;
+      padding: 2rem 2rem;
+      max-height: rem(40px);
     }
 }
