@@ -15,10 +15,11 @@
   gap: rem(5px);
   padding: rem(10px);
   color: $thirdary;
-  background: $discount-color;
+  font-size: $primary-size;
+  background: $light-black;
   opacity: 0.9;
   max-width: rem(135px);
-  border-radius: rem(20px);
+  border-radius: rem(10px);
   font-weight: 600;
 }
 
@@ -33,25 +34,25 @@
 
 .sneakerTitle {
   font-weight: 700;
-  font-size: $thirdary-size;
+  font-size: $primary-info-title;
 }
 
 .infoDiscount__title {
   text-decoration: line-through;
   font-weight: 600;
-  font-size: $four-size;
-  color: $discount-color;
+  font-size: $five-size;
+  color: $gray;
 }
 
 .priceTitle {
   font-weight: 700;
-  font-size: $six-size;
-  color: $green-color;
+  font-size: $five-size;
+  color: $light-black;
 }
 
 .categoryTitle {
   font-weight: 500;
-  font-size: $five-size;
+  font-size: $primary-info-category;
 }
 
 .productSize__container {
@@ -68,7 +69,7 @@
   padding: rem(8px);
   background: $thirdary;
   color: $light-black;
-  box-shadow: rgb(229, 229, 229) 0px 0px 0px 1px;
+  border: rem(1.5px) solid $light-black;
   font-weight: 500;
   border-radius: rem(5px);
 }
@@ -82,7 +83,7 @@
 .selectSize {
   font-weight: 600;
   color: $gray;
-  font-size: $four-size;
+  font-size: $five-size;
 }
 
 .markSize {
@@ -94,7 +95,7 @@
   line-height: 150%;
   text-align: justify;
   font-weight: 400;
-  font-size: $five-size;
+  font-size: $primary-info-about;
 }
 
 .about__blockTitle {
@@ -118,7 +119,7 @@
 .about__listItem {
   list-style-type: disc;
   font-weight: 500;
-  font-size: $five-size;
+  font-size: $primary-info-about;
   line-height: 120%;
 }
 
@@ -167,14 +168,13 @@
   }
 }
 
-
 @media screen and (max-width: rem(600px)) {
-    .sneakerTitle {
-      font-size: 1.6em;
-    }
-    .productSize__container {
-      display: grid;
-      place-items: center;
-      grid-template-columns: repeat(2, 1fr);
-    }
+  .sneakerTitle {
+    font-size: 1.6em;
+  }
+  .productSize__container {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
