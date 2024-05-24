@@ -12,6 +12,8 @@
 }
 
 .title {
+  position: relative;
+  bottom: rem(100px);
   padding: 25px 0 40px 0;
   text-align: center;
   font-size: $thirdary-size;

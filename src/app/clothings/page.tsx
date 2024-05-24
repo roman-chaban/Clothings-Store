@@ -1,19 +1,24 @@
-import { Metadata } from 'next';
+'use client';
+
 import clothes from '@/api/clothing/clothing.json';
 import { Products } from '@/interfaces/products';
 import { ProductsCatalog } from '@/components/ProductsUI/ProductsCatalog/ProductsCatalog';
-
-export const metadata: Metadata = {
-  title: 'Sneakers Store | Clothings',
-};
+import { useEffect, useState } from 'react';
+import { ProductsSelect } from '@/components/UI components/Select/Select';
 
 export default function ClothingsPage() {
+  const [clothings, setClothings] = useState<Products[]>([]);
+
+  useEffect(() => {
+    (document.title = 'Clothings Store | Sneakers'), setClothings(clothes);
+  }, []);
   return (
     <div>
+      <ProductsSelect products={clothings} setProducts={setClothings} />
       <ProductsCatalog
         productLinkTitle='/clothings/'
         pageTitle="Men's Clothings"
-        products={clothes as Products[]}
+        products={clothings}
       />
     </div>
   );

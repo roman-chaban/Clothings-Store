@@ -60,7 +60,7 @@ const Header: FC = () => {
           <div className={styles.empty__links}>
             <Link
               style={{
-                color: pathname === DEFAULT__LINKS.HELP ? '#ffb800' : '',
+                color: pathname === DEFAULT__LINKS.HELP ? '#737373' : '',
               }}
               className={`${styles.empty__link} ${styles.decoration__line}`}
               href={DEFAULT__LINKS.HELP}
@@ -69,7 +69,7 @@ const Header: FC = () => {
             </Link>
             <Link
               style={{
-                color: pathname === DEFAULT__LINKS.STORE ? '#ffb800' : '',
+                color: pathname === DEFAULT__LINKS.STORE ? '#737373' : '',
               }}
               className={styles.empty__link}
               href={DEFAULT__LINKS.STORE}

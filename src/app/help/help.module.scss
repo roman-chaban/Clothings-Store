@@ -1,0 +1,54 @@
+@import '../../assets/styles/colors.scss';
+@import '../../assets/styles/globals.scss';
+@import '../../assets/styles/functions.scss';
+
+.help {
+  display: flex;
+  flex-direction: column;
+  gap: 2.3rem;
+  padding-left: rem(40px);
+  padding-right: rem(40px);
+}
+
+.help__subTitle {
+  text-align: center;
+  font-weight: 700;
+  font-size: $thirdary-size;
+  line-height: 120%;
+}
+
+.help__title {
+  text-align: center;
+  font-weight: 600;
+  font-size: $five-size;
+}
+
+.help__description {
+  font-weight: 500;
+  margin: 0 auto;
+  text-align: justify;
+  line-height: 120%;
+}
+
+
+.helpList {
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+}
+
+.listBlock {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+}
+
+.helpList__title {
+   font-size: $four-size;
+   font-weight: 600;
+}
+
+
+.helpList__subTitle{
+   list-style-type: disc;
+}

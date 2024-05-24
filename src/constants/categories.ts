@@ -28,19 +28,19 @@ export const categories: Categories = {
   products: {
     data: products,
     title: "Men's Sneakers",
-    pageTitle: "Clothings store | Men's Sneakers",
+    pageTitle: "Men's Sneakers",
     link: '/sneakers/sneaker/',
   },
   clothings: {
     data: clothings,
     title: 'Clothings',
-    pageTitle: 'Clothings store | Clothings',
+    pageTitle: 'Clothings',
     link: '/clothings/',
   },
   accessories: {
     data: accessories,
     title: 'Accessories',
-    pageTitle: 'Clothings store | Accessories',
+    pageTitle: 'Accessories',
     link: '/accessories/',
   },
 };

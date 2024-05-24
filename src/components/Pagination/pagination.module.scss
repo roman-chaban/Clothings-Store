@@ -16,6 +16,10 @@
   background: $light-black;
   color: $thirdary;
   border-radius: rem(20px);
+  transition: background 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+  &:hover {
+    background: $gray;
+  }
 }
 
 .pagination__previous {
@@ -23,6 +27,10 @@
   background: $light-black;
   color: $thirdary;
   border-radius: rem(20px);
+  transition: background 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+  &:hover {
+    background: $gray;
+  }
 }
 
 .pagination__list {
@@ -35,6 +43,7 @@
   color: $light-black;
   padding: 7px 13px;
   border-radius: rem(10px);
+  font-weight: 600;
   background: $input-bg;
 }
 

@@ -12,6 +12,8 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  position: relative;
+  bottom: rem(-40px);
 }
 
 .category__button {
