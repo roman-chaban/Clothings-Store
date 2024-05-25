@@ -26,12 +26,14 @@ interface ProductsProps {
   products: Products[];
   productLinkTitle: string;
   productTitle: string;
+  handleAddToShoppingCart: (product: Products) => void;
 }
 
 export const ProductsItem: FC<ProductsProps> = ({
   products,
   productLinkTitle,
   productTitle,
+  handleAddToShoppingCart
 }: ProductsProps) => {
   const swiperRef = useRef<any>(null);
   const [isNextDisabled, setIsNextDisabled] = useState(false);
@@ -108,6 +110,7 @@ export const ProductsItem: FC<ProductsProps> = ({
           {products.map((product) => (
             <SwiperSlide key={product.productId} className={styles.slide}>
               <ProductFavorite
+              handleAddToShoppingCart={handleAddToShoppingCart}
                 about={product.about}
                 productId={product.productId}
                 images={product.images}

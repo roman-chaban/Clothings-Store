@@ -1,6 +1,6 @@
 'use client';
 
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import styles from './product.module.scss';
 import { Products } from '@/interfaces/products';
 import Image from 'next/image';
@@ -8,13 +8,12 @@ import { Star } from 'grommet-icons';
 import Link from 'next/link';
 import { Button } from '@/components/UI components/Button/Button';
 import { ShoppingCartButton } from '@/components/UI components/ShoppingButton/ShoppingButton';
-import { useAppDispatch } from '@/hooks/useAppDispatch';
-import { addProductsFromCart } from '@/redux/slices/shoppingCartSlice';
 
 interface ProductCartProps extends Products {
   productLinkTitle: string;
   onAddToFavorite?: () => void;
   onDeleteProduct: () => void;
+  handleAddToShoppingCart: (product: Products) => void;
 }
 
 export const ProductFavorite: FC<ProductCartProps> = ({
@@ -24,20 +23,17 @@ export const ProductFavorite: FC<ProductCartProps> = ({
   price,
   productRating,
   mainImage,
+  about,
   style,
   productId,
   priceDiscount = 0,
   productLinkTitle,
   onAddToFavorite,
   onDeleteProduct,
+  handleAddToShoppingCart,
 }) => {
   const discount = price - priceDiscount;
 
-  const dispatch = useAppDispatch();
-
-  const handleAddToShoppingCart = (product: Products) => {
-    dispatch(addProductsFromCart(product));
-  };
 
   return (
     <div className={styles.productCart}>
@@ -94,7 +90,7 @@ export const ProductFavorite: FC<ProductCartProps> = ({
               type='button'
               className={styles.shopBtn}
               product={{
-                about: '',
+                about,
                 category,
                 images: [],
                 mainImage,
@@ -109,7 +105,7 @@ export const ProductFavorite: FC<ProductCartProps> = ({
             />
             <ShoppingCartButton
               product={{
-                about: '',
+                about,
                 category,
                 images: [],
                 mainImage,

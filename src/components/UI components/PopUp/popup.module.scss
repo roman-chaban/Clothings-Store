@@ -1,0 +1,44 @@
+@import '../../../assets/styles/colors.scss';
+
+.popup {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  opacity: 0.9;
+  color: #fff;
+  border: 1px solid #888;
+  width: 100%;
+  max-width: 350px;
+  height: 70px;
+  border-radius: 20px;
+  padding: 20px;
+  z-index: 50;
+}
+
+.popup__content {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+  gap: 1rem;
+  text-align: center;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #fff;
+}
+
+.popup__capture {
+  font-weight: 600;
+  width: 100%;
+  max-width: 300px;
+}

@@ -2,7 +2,7 @@
 
 import { IsActive } from '@/constants/types';
 import { Products } from '@/interfaces/products';
-import { Like, Shop } from 'grommet-icons';
+import { Shop } from 'grommet-icons';
 import { FC, useState, useEffect } from 'react';
 
 interface ButtonProps {
@@ -66,14 +66,14 @@ export const Button: FC<ButtonProps> = ({
       }}
     >
       {isActive ? (
-        <>
-          Added to Favorite{' '}
-          <Like color='#ffffff' style={{ width: 20, height: 20, marginLeft: 8 }} />
-        </>
+        <>Delete from Favorite </>
       ) : (
         <>
-          Shop now!{' '}
-          <Shop style={{ width: 16, height: 16, marginLeft: 8 }} color='#ffffff' />
+          Add to Favorite{' '}
+          <Shop
+            style={{ width: 16, height: 16, marginLeft: 8 }}
+            color='#ffffff'
+          />
         </>
       )}
     </button>

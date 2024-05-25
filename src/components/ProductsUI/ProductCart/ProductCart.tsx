@@ -22,7 +22,7 @@ export const ProductCart: FC<ProductCartProps> = ({
   price,
   style,
   title,
-  about = 'Information not available',
+  about,
   productRating,
   onDeleteFromCart,
 }) => {

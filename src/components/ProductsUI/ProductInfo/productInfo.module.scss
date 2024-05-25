@@ -156,6 +156,15 @@
   }
 }
 
+.addBtn {
+  background: $gray;
+  border-radius: rem(5px);
+  height: rem(45px);
+  max-width: rem(250px);
+  color: $thirdary;
+  font-size: $primary-info-about;
+}
+
 @media screen and (min-width: rem(1440px)) {
   .productInfo {
     max-width: 50%;

@@ -146,6 +146,9 @@
 .about {
   color: $light-black;
   font-weight: 600;
+  max-width: rem(400px);
+  text-align: justify;
+  line-height: 120%;
 }
 
 @media screen and (max-width: rem(950px)) {

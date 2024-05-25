@@ -74,32 +74,37 @@ const Favorite: FC = () => {
           </h2>
         ) : (
           <div className={styles.favorite__container}>
-            {favoriteProducts.map((favorite) => (
-              <ProductFavorite
-                about={favorite.about}
-                key={favorite.productId}
-                category={favorite.category}
-                productLinkTitle={`${
-                  favorite.category.includes('Shoes')
+            {favoriteProducts.map((favorite) => {
+              const categoryLink =
+                typeof favorite.category === 'string'
+                  ? favorite.category.includes('Shoes')
                     ? '/sneakers/sneaker/'
                     : favorite.category.includes("Men's")
                     ? '/clothings/'
                     : '/accessories/'
-                }`}
-                onAddToFavorite={() => handleAddToFavorites(favorite)}
-                onDeleteProduct={() =>
-                  handleRemoveFromFavorites(favorite.productId)
-                }
-                productId={favorite.productId}
-                title={favorite.title}
-                name={favorite.name}
-                style={favorite.style}
-                price={favorite.price}
-                productRating={favorite.productRating}
-                mainImage={favorite.mainImage}
-                images={[]}
-              />
-            ))}
+                  : '/accessories/';
+
+              return (
+                <ProductFavorite
+                  about={favorite.about}
+                  key={favorite.productId}
+                  category={favorite.category}
+                  productLinkTitle={categoryLink}
+                  onAddToFavorite={() => handleAddToFavorites(favorite)}
+                  onDeleteProduct={() =>
+                    handleRemoveFromFavorites(favorite.productId)
+                  }
+                  productId={favorite.productId}
+                  title={favorite.title}
+                  name={favorite.name}
+                  style={favorite.style}
+                  price={favorite.price}
+                  productRating={favorite.productRating}
+                  mainImage={favorite.mainImage}
+                  images={favorite.images || []}
+                />
+              );
+            })}
           </div>
         )}
       </div>

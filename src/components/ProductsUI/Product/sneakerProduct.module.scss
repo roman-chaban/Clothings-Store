@@ -36,8 +36,13 @@
 .sneakerImage {
   width: 100%;
   object-fit: contain;
+
   border-radius: rem(20px);
   cursor: pointer;
+  transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+  &:hover {
+    transform: scale(0.90);
+  }
 }
 
 .sneakerImagesBlock {
@@ -88,8 +93,8 @@
   align-items: center;
   gap: rem(10px);
   position: relative;
-  bottom: 60px;
-  left: 75%;
+  bottom: 80px;
+  left: 70%;
   max-width: 100px;
 }
 

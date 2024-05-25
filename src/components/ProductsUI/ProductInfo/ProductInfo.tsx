@@ -6,7 +6,9 @@ import styles from './productInfo.module.scss';
 import { CLOTHES__SIZES, SIZES } from '@/constants/product-sizes';
 import { notFound, redirect } from 'next/navigation';
 import { useAppDispatch } from '@/hooks/useAppDispatch';
-import { addProductsFromCart } from '@/redux/slices/shoppingCartSlice';
+import { addProductToFavorite } from '@/redux/slices/favoriteSlice';
+import { useAppSelector } from '@/hooks/useAppSelector';
+import dynamic from 'next/dynamic';
 
 interface SneakerProductProps {
   products: Products[];
@@ -14,17 +16,23 @@ interface SneakerProductProps {
   onDeleteProduct?: () => void;
 }
 
-export const ProductInfo: FC<SneakerProductProps> = ({ products }) => {
+const ProductInfo: FC<SneakerProductProps & Products> = ({
+  products,
+}) => {
   const [selectedSize, setSelectedSize] = useState<string>('');
   const [isShoes, setIsShoes] = useState<boolean>(false);
+  const favoriteProducts = useAppSelector((state) => state.favorite.favorite);
   const dispatch = useAppDispatch();
-
-  const handleAddToShoppingCart = (product: Products) => {
-    dispatch(addProductsFromCart(product));
-  };
 
   const firstSneaker = products[0];
 
+  const isProductsFavorites = favoriteProducts.some(
+    (product) => product.productId === firstSneaker.productId
+  );
+
+  const handleAddToShoppingCart = (product: Products) => {
+    dispatch(addProductToFavorite(product));
+  };
   const discount = firstSneaker.priceDiscount || 0;
   const discountPercentage =
     discount > 0
@@ -83,6 +91,14 @@ export const ProductInfo: FC<SneakerProductProps> = ({ products }) => {
             : firstSneaker.price
         )}
       </h3>
+      <button
+        className={styles.addBtn}
+        style={{ background: isProductsFavorites ? '' : '#737373' }}
+        onClick={() => handleAddToShoppingCart(firstSneaker)}
+      >
+        {isProductsFavorites ? 'Added to favorites' : 'Add to favorite'}
+      </button>
+
       <span className={styles.selectSize}>
         Select size: <mark className={styles.markSize}>{selectedSize}</mark>
       </span>
@@ -128,3 +144,5 @@ export const ProductInfo: FC<SneakerProductProps> = ({ products }) => {
     </div>
   );
 };
+
+export default dynamic(() => Promise.resolve(ProductInfo), { ssr: false });

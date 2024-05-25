@@ -6,7 +6,7 @@ import { Products } from '@/interfaces/products';
 import Image from 'next/image';
 import styles from './sneakerProduct.module.scss';
 import { FormNext, Next, Previous } from 'grommet-icons';
-import { ProductInfo } from '../ProductInfo/ProductInfo';
+import  ProductInfo  from '../ProductInfo/ProductInfo';
 import { CurrentIndex, SneakerImage } from '@/constants/types';
 
 interface SneakerProductProps {
@@ -203,6 +203,16 @@ export const Product: FC<SneakerProductProps> = memo(({ products }) => {
         ))}
         <ProductInfo
           products={products}
+          productId={0}
+          title={''}
+          name={''}
+          category={''}
+          style={''}
+          price={0}
+          productRating={0}
+          mainImage={''}
+          images={[]}
+          about={''}
         />
       </div>
     </div>

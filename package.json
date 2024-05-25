@@ -29,6 +29,7 @@
     "react-dom": "^18",
     "react-loader-spinner": "^6.1.6",
     "react-select": "^5.8.0",
+    "react-spring": "^9.7.3",
     "redux": "^5.0.1",
     "redux-persist": "^6.0.0",
     "style-loader": "^4.0.0",
