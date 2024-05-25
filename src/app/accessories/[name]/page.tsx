@@ -1,6 +1,3 @@
-'use client';
-
-
 import accessories from '@/api/accessories/accessories.json';
 import { Product } from '@/components/ProductsUI/Product/Product';
 import { ProductsItem } from '@/components/ProductsUI/Products/Products';
