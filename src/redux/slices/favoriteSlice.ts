@@ -21,17 +21,21 @@ export const favoriteSlice = createSlice({
       );
       if (!existingProduct) {
         state.favorite.push(action.payload);
-        state.favoriteCounter++;
+        state.favoriteCounter += 1;
       }
     },
     deleteProductFromFavorite: (state, action: PayloadAction<number>) => {
-      state.favorite = state.favorite.filter(
-        (fav) => fav.productId !== action.payload
+      const productIndex = state.favorite.findIndex(
+        (favorite) => favorite.productId === action.payload
       );
-      state.favoriteCounter = Math.max(0, state.favoriteCounter - 1);
+      if (productIndex !== -1) {
+        state.favorite.splice(productIndex, 1);
+        state.favoriteCounter -= 1;
+      }
     },
     setSelectedProduct: (state, action: PayloadAction<Products[]>) => {
       state.favorite = action.payload;
+      state.favoriteCounter = action.payload.length;
     },
   },
 });
@@ -41,3 +45,5 @@ export const {
   deleteProductFromFavorite,
   setSelectedProduct,
 } = favoriteSlice.actions;
+
+

@@ -3,8 +3,8 @@
 import { FC, useEffect, useState } from 'react';
 import { Products } from '@/interfaces/products';
 import {
-  addProductsFromCart,
-  deleteProductsFromCart,
+  addProductToCart,
+  removeProductFromCart,
 } from '@/redux/slices/shoppingCartSlice';
 import { useAppDispatch } from '@/hooks/useAppDispatch';
 import { useAppSelector } from '@/hooks/useAppSelector';
@@ -34,11 +34,11 @@ const ShoppingCart: FC = () => {
   }
 
   const handleAddToShoppingCart = (product: Products) => {
-    dispatch(addProductsFromCart(product));
+    dispatch(addProductToCart(product));
   };
 
   const handleRemoveFromShoppingCart = (productId: number) => {
-    dispatch(deleteProductsFromCart(productId));
+    dispatch(removeProductFromCart(productId));
   };
 
   return (

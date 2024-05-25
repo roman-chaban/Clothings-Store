@@ -8,12 +8,13 @@ import { Star } from 'grommet-icons';
 import Link from 'next/link';
 import { Button } from '@/components/UI components/Button/Button';
 import { ShoppingCartButton } from '@/components/UI components/ShoppingButton/ShoppingButton';
+import { useAppDispatch } from '@/hooks/useAppDispatch';
+import { addProductToCart } from '@/redux/slices/shoppingCartSlice';
 
 interface ProductCartProps extends Products {
   productLinkTitle: string;
   onAddToFavorite?: () => void;
   onDeleteProduct: () => void;
-  handleAddToShoppingCart: (product: Products) => void;
 }
 
 export const ProductFavorite: FC<ProductCartProps> = ({
@@ -30,10 +31,14 @@ export const ProductFavorite: FC<ProductCartProps> = ({
   productLinkTitle,
   onAddToFavorite,
   onDeleteProduct,
-  handleAddToShoppingCart,
 }) => {
   const discount = price - priceDiscount;
 
+  const dispatch = useAppDispatch();
+
+  const handleAddToShoppingCart = (product: Products) => {
+    dispatch(addProductToCart(product));
+  };
 
   return (
     <div className={styles.productCart}>
@@ -117,6 +122,7 @@ export const ProductFavorite: FC<ProductCartProps> = ({
                 title,
                 style,
               }}
+              onDeleteProduct={onDeleteProduct}
               onClick={handleAddToShoppingCart}
             />
           </div>

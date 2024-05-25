@@ -92,7 +92,7 @@ const Favorite: FC = () => {
                   productLinkTitle={categoryLink}
                   onAddToFavorite={() => handleAddToFavorites(favorite)}
                   onDeleteProduct={() =>
-                    handleRemoveFromFavorites(favorite.productId)
+                    handleRemoveFromFavorites(favorite.productId || 0)
                   }
                   productId={favorite.productId}
                   title={favorite.title}

@@ -11,29 +11,30 @@ const initialState: ShoppingCartState = {
   shoppingCartCounter: 0,
 };
 
-export const ShoppingCartSlice = createSlice({
+const shoppingCartSlice = createSlice({
   name: 'cart/products',
   initialState,
   reducers: {
-    addProductsFromCart: (state, action: PayloadAction<Products>) => {
+    addProductToCart: (state, action: PayloadAction<Products>) => {
       const existingProduct = state.products.find(
         (product) => product.productId === action.payload.productId
       );
       if (!existingProduct) {
         state.products.push(action.payload);
-        state.shoppingCartCounter++;
+        state.shoppingCartCounter += 1;
       }
     },
-    deleteProductsFromCart: (state, action: PayloadAction<number>) => {
-      state.products = state.products.filter(
-        (product) => product.productId !== action.payload
+    removeProductFromCart: (state, action: PayloadAction<number>) => {
+      const productIndex = state.products.findIndex(
+        (product) => product.productId === action.payload
       );
-      state.shoppingCartCounter = Math.max(0, state.shoppingCartCounter - 1);
+      if (productIndex !== -1) {
+        state.products.splice(productIndex, 1);
+        state.shoppingCartCounter -= 1;
+      }
     },
   },
 });
 
-export default ShoppingCartSlice;
-
-export const { addProductsFromCart, deleteProductsFromCart } =
-  ShoppingCartSlice.actions;
+export const { addProductToCart, removeProductFromCart } = shoppingCartSlice.actions;
+export default shoppingCartSlice.reducer;

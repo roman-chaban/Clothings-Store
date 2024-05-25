@@ -19,4 +19,5 @@ export interface Products {
   images: Images[];
   about: string;
   subStyle?: string;
+  isFavorite?: boolean;
 }

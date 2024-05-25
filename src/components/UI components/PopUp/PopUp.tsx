@@ -19,7 +19,7 @@ export const Popup: FC<PopupProps> = ({ onClose }) => {
     return () => {
       clearTimeout(timer);
     };
-  }, []);
+  }, [onClose]);
 
   const animation = useSpring({
     top: visible ? '1200px' : '-100px',
