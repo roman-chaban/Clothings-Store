@@ -131,7 +131,7 @@
     font-size: clamp(1rem, 1.1rem, 1.5rem);
   }
   #shortestTitle {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   .footer__logoContainer {
     flex-direction: column;
@@ -139,7 +139,7 @@
   }
 }
 
-@media screen and (max-width: rem(750px)) {
+@media screen and (max-width: rem(777px)) {
   .footer__nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

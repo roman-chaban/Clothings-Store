@@ -93,7 +93,7 @@ const ProductInfo: FC<SneakerProductProps & Products> = ({
       </h3>
       <button
         className={styles.addBtn}
-        style={{ background: isProductsFavorites ? '' : '#737373' }}
+        style={{ background: isProductsFavorites ? '' : '#111111' }}
         onClick={() => handleAddToShoppingCart(firstSneaker)}
       >
         {isProductsFavorites ? 'Added to favorites' : 'Add to favorite'}

@@ -84,7 +84,7 @@ export const ProductsItem: FC<ProductsProps> = ({
         <Swiper
           ref={swiperRef}
           className={styles.swiper__wrapper}
-          spaceBetween={55}
+          spaceBetween={20}
           navigation={{
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -94,6 +94,9 @@ export const ProductsItem: FC<ProductsProps> = ({
           onSlideChange={updateNavigationButtons}
           onInit={(swiper) => updateNavigationButtons()}
           breakpoints={{
+            1440: {
+              slidesPerView: 4,
+            },
             1050: {
               slidesPerView: 3,
             },

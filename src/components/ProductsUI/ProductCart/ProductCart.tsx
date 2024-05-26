@@ -10,6 +10,7 @@ import { useCount } from '@/hooks/useCount';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 import RemoveCircleIcon from '@mui/icons-material/RemoveCircle';
 import { CheckedValue, ProductItem } from '@/constants/types';
+import Link from 'next/link';
 
 interface ProductCartProps extends Products {
   productLinkTitle: string;
@@ -21,9 +22,11 @@ export const ProductCart: FC<ProductCartProps> = ({
   mainImage,
   price,
   style,
+  name,
   title,
   about,
   productRating,
+  productLinkTitle,
   onDeleteFromCart,
 }) => {
   const [checkedValue, setCheckedValue] = useState<CheckedValue>(false);
@@ -34,20 +37,22 @@ export const ProductCart: FC<ProductCartProps> = ({
     <div className={styles.cart}>
       <div className={styles.cartContainer}>
         <div className={styles.blockCard}>
-          <Checkbox
+          {/* <Checkbox
             className={styles.check}
             color='success'
             checked={checkedValue}
             onChange={(event) => setCheckedValue(event.target.checked)}
             inputProps={{ 'aria-label': 'controlled' }}
-          />
-          <Image
-            src={mainImage}
-            alt={`${title}`}
-            width={150}
-            height={200}
-            className={styles.cart__image}
-          />
+          /> */}
+          <Link href={`${productLinkTitle}${encodeURIComponent(name)}`}>
+            <Image
+              src={mainImage}
+              alt={`${title}`}
+              width={150}
+              height={200}
+              className={styles.cart__image}
+            />
+          </Link>
           <div className={styles.cartInfo}>
             <div className={styles.cart__titlesBlock}>
               <h2 className={styles.cartTitle}>{title}</h2>
