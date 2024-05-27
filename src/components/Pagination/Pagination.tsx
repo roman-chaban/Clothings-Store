@@ -98,7 +98,7 @@ export const Pagination: FC<PaginationProps> = ({
                       ? styles.paginationLink__isCurrent
                       : styles.pagination__link
                   }
-                  aria-label={`Goto page ${pageNumber}`}
+                  aria-label={`Go to page ${pageNumber}`}
                   onClick={() => onPageChange(pageNumber)}
                 >
                   {pageNumber}

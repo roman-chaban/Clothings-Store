@@ -43,6 +43,7 @@ export const HeroSlider: FC = () => {
       >
         <SwiperSlide>
           <Image
+            priority
             className={styles.slide__img}
             src={SecondBanner}
             width={1080}
@@ -52,6 +53,7 @@ export const HeroSlider: FC = () => {
         </SwiperSlide>
         <SwiperSlide>
           <Image
+            priority
             className={styles.slide__img}
             src={FirstBanner}
             width={1080}
@@ -61,6 +63,7 @@ export const HeroSlider: FC = () => {
         </SwiperSlide>
         <SwiperSlide>
           <Image
+            priority
             src={ThirdBanner}
             className={styles.slide__img}
             width={1080}

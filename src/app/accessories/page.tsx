@@ -2,7 +2,7 @@
 
 import accessoriesProducts from '@/api/accessories/accessories.json';
 import { ProductsCatalog } from '@/components/ProductsUI/ProductsCatalog/ProductsCatalog';
-import { ProductsSelect } from '@/components/UI components/Select/Select';
+import ProductsSelect from '@/components/UI components/Select/Select';
 import { Products } from '@/interfaces/products';
 import { useEffect, useState } from 'react';
 

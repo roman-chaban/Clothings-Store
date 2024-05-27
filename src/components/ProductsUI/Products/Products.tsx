@@ -93,23 +93,13 @@ export const ProductsItem: FC<ProductsProps> = ({
           style={{ cursor: 'grab' }}
           onSlideChange={updateNavigationButtons}
           onInit={(swiper) => updateNavigationButtons()}
-          breakpoints={{
-            1440: {
-              slidesPerView: 4,
-            },
-            1050: {
-              slidesPerView: 3,
-            },
-            930: {
-              slidesPerView: 2,
-            },
-            600: {
-              slidesPerView: 1,
-            },
-          }}
         >
           {products.map((product) => (
-            <SwiperSlide key={product.productId} className={styles.slide}>
+            <SwiperSlide
+              key={product.productId}
+              className={styles.slide}
+              style={{ width: '100%', maxWidth: '300px' }}
+            >
               <ProductFavorite
                 about={product.about}
                 productId={product.productId}

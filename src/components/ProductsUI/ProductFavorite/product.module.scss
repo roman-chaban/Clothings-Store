@@ -4,7 +4,7 @@
 
 .productCart {
   display: flex;
-  height: 560px;
+  height: 590px;
   width: 280px;
   background: $thirdary;
   border-radius: rem(20px);
@@ -41,7 +41,7 @@
 }
 
 .productCart__Info {
-  padding-top: rem(20px);
+  padding-top: rem(65px);
   padding-left: 10px;
   display: flex;
   flex-direction: column;
@@ -64,7 +64,7 @@
   display: flex;
   align-items: center;
   gap: rem(10px);
-  margin-top: rem(20px);
+  margin-top: rem(10px);
 }
 
 .productCart__productRating {
@@ -156,7 +156,7 @@ s.shopBtn:active::after {
 
 .cardDiscount {
   position: relative;
-  bottom: 280px;
+  bottom: 330px;
   left: 200px;
   font-size: rem(14px);
   background: $light-black;

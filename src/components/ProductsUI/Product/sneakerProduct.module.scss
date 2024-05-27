@@ -34,14 +34,15 @@
 }
 
 .sneakerImage {
-  width: 100%;
+  width: auto;
+  height: auto;
   object-fit: contain;
 
   border-radius: rem(20px);
   cursor: pointer;
   transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
   &:hover {
-    transform: scale(0.90);
+    transform: scale(0.9);
   }
 }
 
@@ -65,10 +66,10 @@
 }
 
 .smallImage {
-  max-width: 100px;
-  max-height: 100px;
   width: auto;
   height: auto;
+  max-width: 100px;
+  max-height: 100px;
   cursor: pointer;
   object-fit: cover;
   border-radius: rem(10px);

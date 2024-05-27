@@ -7,6 +7,7 @@ import Select, { MultiValue, StylesConfig } from 'react-select';
 import { Sort, getSortedProducts } from '@/components/Sort/Sort';
 import { Products } from '@/interfaces/products';
 import styles from './select.module.scss';
+import dynamic from 'next/dynamic';
 
 interface CustomSelectProps {
   products: Products[];
@@ -65,19 +66,14 @@ const customStyles: StylesConfig<Option, true> = {
   }),
 };
 
-export const ProductsSelect: FC<CustomSelectProps> = ({
-  products,
-  setProducts,
-}) => {
+const ProductsSelect: FC<CustomSelectProps> = ({ products, setProducts }) => {
   const [currentSort, setCurrentSort] = useState<Option[]>([]);
 
   const getValue = () => {
     return currentSort;
   };
 
-  const onChange = (
-    newValue: MultiValue<Option>,
-  ) => {
+  const onChange = (newValue: MultiValue<Option>) => {
     const newSortValues = newValue ? newValue.map((v) => v.value) : [];
     setCurrentSort(newValue as Option[]);
 
@@ -91,6 +87,7 @@ export const ProductsSelect: FC<CustomSelectProps> = ({
         Sort By:
         <Select
           id='sortBy'
+          name='sortBy'
           classNamePrefix='custom-select'
           value={getValue()}
           onChange={onChange}
@@ -104,3 +101,5 @@ export const ProductsSelect: FC<CustomSelectProps> = ({
     </div>
   );
 };
+
+export default dynamic(() => Promise.resolve(ProductsSelect), { ssr: false });

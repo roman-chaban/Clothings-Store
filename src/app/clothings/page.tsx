@@ -4,7 +4,7 @@ import clothes from '@/api/clothing/clothing.json';
 import { Products } from '@/interfaces/products';
 import { ProductsCatalog } from '@/components/ProductsUI/ProductsCatalog/ProductsCatalog';
 import { useEffect, useState } from 'react';
-import { ProductsSelect } from '@/components/UI components/Select/Select';
+import ProductsSelect from '@/components/UI components/Select/Select';
 
 export default function ClothingsPage() {
   const [clothings, setClothings] = useState<Products[]>([]);

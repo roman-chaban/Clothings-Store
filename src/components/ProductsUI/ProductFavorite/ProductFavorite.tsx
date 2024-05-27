@@ -49,10 +49,17 @@ export const ProductFavorite: FC<ProductCartProps> = ({
             href={`${productLinkTitle}${encodeURIComponent(name)}`}
           >
             <Image
-              className={styles.productImage}
+              priority
               src={mainImage}
               width={300}
               height={300}
+              style={{
+                width: '100%',
+                height: 'auto',
+                objectFit: 'cover',
+                borderRadius: '1.2rem',
+                objectPosition: 'top',
+              }}
               alt={`product ${title} photo`}
             />
           </Link>
@@ -85,7 +92,7 @@ export const ProductFavorite: FC<ProductCartProps> = ({
           <span className={styles.productCart__style}>{style}</span>
           <br />
           <h3 className={styles.categoryBlock}>
-            Category: <br />
+            Category:
             <strong className={styles.productCart__category}>{category}</strong>
           </h3>
           <div className={styles.productButtons__block}>
