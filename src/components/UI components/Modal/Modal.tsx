@@ -10,8 +10,10 @@ import { FC, useState } from 'react';
 import styles from './modal.module.scss';
 import { Cursor } from 'grommet-icons';
 
+type Open = boolean;
+
 export const Modal: FC = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState<Open>(false);
 
   return (
     <>

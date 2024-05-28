@@ -10,7 +10,10 @@
 }
 
 .form__flex {
+  width: 100%;
+  max-width: rem(600px);
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: rem(31px);
   margin-bottom: rem(32px);
@@ -18,6 +21,8 @@
 
 .email__label {
   display: flex;
+  width: 100%;
+  max-width: rem(400px);
   flex-direction: column;
   gap: rem(16px);
 }
@@ -29,6 +34,7 @@
 
 .email {
   width: 100%;
+  max-width: rem(250px);
   height: rem(49px);
   border-radius: rem(8px);
   padding: rem(16px);
@@ -39,6 +45,8 @@
 }
 
 .password__label {
+  width: 100%;
+  max-width: rem(400px);
   display: flex;
   flex-direction: column;
   gap: rem(16px);
@@ -51,6 +59,7 @@
 
 .password {
   width: 100%;
+  max-width: rem(250px);
   height: rem(49px);
   border-radius: rem(8px);
   padding: rem(16px);
@@ -62,7 +71,7 @@
 
 .submit__button {
   width: 100%;
-  max-width: rem(450px);
+  max-width: rem(565px);
   background: $light-black;
   color: $thirdary;
   font-weight: 600;
