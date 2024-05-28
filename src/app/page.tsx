@@ -5,7 +5,7 @@ import { ProductsItem } from '@/components/ProductsUI/Products/Products';
 import products from '@/api/products/products.json';
 import { Products } from '@/interfaces/products';
 import { Provider } from 'react-redux';
-import { store } from '@/redux/store/store';
+import { store } from '@/store/store/store';
 
 export default function Home() {
   return (
