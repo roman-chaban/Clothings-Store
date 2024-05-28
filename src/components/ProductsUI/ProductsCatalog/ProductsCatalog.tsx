@@ -8,7 +8,7 @@ import { useAppDispatch } from '@/hooks/useAppDispatch';
 import {
   addProductToFavorite,
   deleteProductFromFavorite,
-} from '@/redux/slices/favoriteSlice';
+} from '@/store/slices/favoriteSlice';
 import { ProductFavorite } from '../ProductFavorite/ProductFavorite';
 
 interface ProductsProps {

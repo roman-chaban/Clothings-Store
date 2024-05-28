@@ -9,7 +9,7 @@ import Link from 'next/link';
 import { Button } from '@/components/UI components/Button/Button';
 import { ShoppingCartButton } from '@/components/UI components/ShoppingButton/ShoppingButton';
 import { useAppDispatch } from '@/hooks/useAppDispatch';
-import { addProductToCart } from '@/redux/slices/shoppingCartSlice';
+import { addProductToCart } from '@/store/slices/shoppingCartSlice';
 
 interface ProductCartProps extends Products {
   productLinkTitle: string;

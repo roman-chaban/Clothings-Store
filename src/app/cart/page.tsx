@@ -5,7 +5,7 @@ import { Products } from '@/interfaces/products';
 import {
   addProductToCart,
   removeProductFromCart,
-} from '@/redux/slices/shoppingCartSlice';
+} from '@/store/slices/shoppingCartSlice';
 import { useAppDispatch } from '@/hooks/useAppDispatch';
 import { useAppSelector } from '@/hooks/useAppSelector';
 import { ProductCart } from '@/components/ProductsUI/ProductCart/ProductCart';
@@ -77,7 +77,7 @@ const ShoppingCart: FC = () => {
           </h2>
         ) : (
           <div className={styles.cart__container}>
-            {shoppingCartProducts.map((shoppingCart) => (
+            {shoppingCartProducts.map((shoppingCart: Products) => (
               <ProductCart
                 key={shoppingCart.productId}
                 about={shoppingCart.about}

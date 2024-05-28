@@ -6,7 +6,7 @@ import styles from './productInfo.module.scss';
 import { CLOTHES__SIZES, SIZES } from '@/constants/product-sizes';
 import { notFound, redirect } from 'next/navigation';
 import { useAppDispatch } from '@/hooks/useAppDispatch';
-import { addProductToFavorite } from '@/redux/slices/favoriteSlice';
+import { addProductToFavorite } from '@/store/slices/favoriteSlice';
 import { useAppSelector } from '@/hooks/useAppSelector';
 import dynamic from 'next/dynamic';
 
@@ -16,9 +16,7 @@ interface SneakerProductProps {
   onDeleteProduct?: () => void;
 }
 
-const ProductInfo: FC<SneakerProductProps & Products> = ({
-  products,
-}) => {
+const ProductInfo: FC<SneakerProductProps & Products> = ({ products }) => {
   const [selectedSize, setSelectedSize] = useState<string>('');
   const [isShoes, setIsShoes] = useState<boolean>(false);
   const favoriteProducts = useAppSelector((state) => state.favorite.favorite);
@@ -27,7 +25,7 @@ const ProductInfo: FC<SneakerProductProps & Products> = ({
   const firstSneaker = products[0];
 
   const isProductsFavorites = favoriteProducts.some(
-    (product) => product.productId === firstSneaker.productId
+    (product: Products) => product.productId === firstSneaker.productId
   );
 
   const handleAddToShoppingCart = (product: Products) => {

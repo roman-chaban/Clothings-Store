@@ -6,7 +6,7 @@ import { useAppSelector } from '@/hooks/useAppSelector';
 import {
   addProductToFavorite,
   deleteProductFromFavorite,
-} from '@/redux/slices/favoriteSlice';
+} from '@/store/slices/favoriteSlice';
 import { Products } from '@/interfaces/products';
 import styles from './favorite.module.scss';
 import { ProductFavorite } from '@/components/ProductsUI/ProductFavorite/ProductFavorite';
@@ -74,7 +74,7 @@ const Favorite: FC = () => {
           </h2>
         ) : (
           <div className={styles.favorite__container}>
-            {favoriteProducts.map((favorite) => {
+            {favoriteProducts.map((favorite: Products) => {
               const categoryLink =
                 typeof favorite.category === 'string'
                   ? favorite.category.includes('Shoes')
