@@ -1,10 +1,11 @@
 @import '../../../assets/styles/colors.scss';
 @import '../../../assets/styles/globals.scss';
 @import '../../../assets/styles/functions.scss';
-
 .productCart {
-  display: flex;
-  height: 590px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100%;
+  max-height: 600px;
   width: 280px;
   background: $thirdary;
   border-radius: rem(20px);
@@ -17,19 +18,18 @@
 }
 
 .productCart__container {
-  width: 300px;
   display: flex;
+  gap: 1rem;
   flex-direction: column;
+  height: 100%;
 }
 
-.productImage {
+.productCart__image {
   width: 100%;
   height: auto;
-  max-width: 280px;
-  max-height: 300px;
-  object-position: top;
+  grid-row: 2 / 3;
+  padding: 10px;
   object-fit: cover;
-  border-radius: 1rem 1rem 0 0;
 }
 
 .categoryBlock {
@@ -41,7 +41,6 @@
 }
 
 .productCart__Info {
-  padding-top: rem(65px);
   padding-left: 10px;
   display: flex;
   flex-direction: column;
@@ -55,7 +54,7 @@
   line-height: 125%;
   font-size: $five-size;
   max-width: rem(250px);
-  height: 30px;
+  height: rem(55px);
 }
 
 .productCart__price {
@@ -64,7 +63,6 @@
   display: flex;
   align-items: center;
   gap: rem(10px);
-  margin-top: rem(10px);
 }
 
 .productCart__productRating {
@@ -149,15 +147,15 @@
   height: 100%;
 }
 
-s.shopBtn:active::after {
+.shopBtn:active::after {
   transition: 0s;
   transform: translate(0, 5%);
 }
 
 .cardDiscount {
-  position: relative;
-  bottom: 330px;
-  left: 200px;
+  position: absolute;
+  top: 10px;
+  right: 30px;
   font-size: rem(14px);
   background: $light-black;
   font-weight: 600;
@@ -172,6 +170,7 @@ s.shopBtn:active::after {
   align-items: center;
   justify-content: space-between;
   gap: rem(20px);
+  margin-bottom: rem(20px);
 }
 
 .shoppingCart {
@@ -192,17 +191,17 @@ s.shopBtn:active::after {
   opacity: 0.8;
 }
 
+.sneaker__img {
+  width: 100%;
+  max-width: rem(320px);
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
 @media screen and (max-width: rem(1070px)) {
-  .productImage {
-    width: 100%;
-    max-width: rem(300px);
-  }
-  .productCart {
-    max-width: rem(300px);
-  }
   .cardDiscount {
-    left: rem(200px);
-    top: rem(-340px);
+    left: auto;
+    right: rem(10px);
   }
   .shopBtn {
     max-width: rem(200px);
@@ -214,16 +213,13 @@ s.shopBtn:active::after {
 }
 
 @media screen and (max-width: rem(670px)) {
-  .productImage {
-    max-width: rem(280px);
-    max-height: rem(370px);
-    border-radius: rem(20px);
-  }
   .productCart {
     max-width: rem(280px);
   }
   .cardDiscount {
-    left: rem(160px);
+    left: auto;
+    right: rem(10px);
+    top: rem(10px);
   }
   .productCart__container {
     justify-content: center;
@@ -232,10 +228,6 @@ s.shopBtn:active::after {
   .productButtons__block {
     gap: 3rem;
     padding-bottom: rem(40px);
-  }
-  .cardDiscount {
-    left: rem(190px);
-    bottom: rem(300px);
   }
   .shopBtn {
     max-width: 7.5rem;

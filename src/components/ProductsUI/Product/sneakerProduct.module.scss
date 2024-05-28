@@ -9,7 +9,8 @@
 }
 
 .sneakersFlex {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(50%, 1fr));
   gap: rem(40px);
   height: 100%;
   position: relative;
@@ -106,9 +107,6 @@
 }
 
 @media screen and (min-width: rem(1440px)) {
-  .sneakersFlex {
-    gap: 10rem;
-  }
   .sneakerImagesBlock {
     gap: 5rem;
   }
@@ -116,7 +114,7 @@
 
 @media screen and (max-width: rem(1050px)) {
   .sneakersFlex {
-    flex-direction: column;
+    grid-template-columns: repeat(2, minmax(50%, 1fr));
   }
   .sneakerImagesBlock {
     position: static;
@@ -138,6 +136,12 @@
   }
   .sneakerImagesBlock {
     gap: rem(20px);
+  }
+}
+
+@media screen and (max-width: rem(990px)) {
+  .sneakersFlex {
+    grid-template-columns: repeat(1, minmax(50%, 1fr));
   }
 }
 

@@ -50,6 +50,7 @@ export const ProductFavorite: FC<ProductCartProps> = ({
           >
             <Image
               priority
+              className={styles.sneaker__img}
               src={mainImage}
               width={300}
               height={300}
@@ -57,7 +58,6 @@ export const ProductFavorite: FC<ProductCartProps> = ({
                 width: '100%',
                 height: 'auto',
                 objectFit: 'cover',
-                borderRadius: '1.2rem',
                 objectPosition: 'top',
               }}
               alt={`product ${title} photo`}

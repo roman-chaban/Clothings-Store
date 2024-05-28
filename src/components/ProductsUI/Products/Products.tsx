@@ -48,7 +48,7 @@ export const ProductsItem: FC<ProductsProps> = ({
   };
 
   const updateNavigationButtons = () => {
-    if (swiperRef.current) {
+    if (swiperRef.current && swiperRef.current.swiper) {
       const swiper = swiperRef.current.swiper;
       setIsPrevDisabled(swiper.isBeginning);
       setIsNextDisabled(swiper.isEnd);
@@ -56,7 +56,16 @@ export const ProductsItem: FC<ProductsProps> = ({
   };
 
   useEffect(() => {
+    const swiperInstance = swiperRef.current?.swiper;
     updateNavigationButtons();
+    if (swiperInstance) {
+      swiperInstance.on('slideChange', updateNavigationButtons);
+    }
+    return () => {
+      if (swiperInstance) {
+        swiperInstance.off('slideChange', updateNavigationButtons);
+      }
+    };
   }, []);
 
   return (
@@ -85,14 +94,12 @@ export const ProductsItem: FC<ProductsProps> = ({
           ref={swiperRef}
           className={styles.swiper__wrapper}
           spaceBetween={20}
-          navigation={{
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          }}
           speed={900}
-          style={{ cursor: 'grab' }}
+          loop={false}
+          allowSlideNext={!isNextDisabled}
+          allowSlidePrev={!isPrevDisabled}
+          style={{ cursor: 'grab', width: '100%', maxWidth: '1440px' }}
           onSlideChange={updateNavigationButtons}
-          onInit={(swiper) => updateNavigationButtons()}
         >
           {products.map((product) => (
             <SwiperSlide
