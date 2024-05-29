@@ -8,6 +8,7 @@ import { FormClose } from 'grommet-icons';
 import { DEFAULT__LINKS } from '@/constants/default-links';
 import { usePathname } from 'next/navigation';
 import { IsActive } from '@/constants/types';
+import { useBodyOverFlow } from '@/hooks/useBodyOverflow';
 
 interface BurgerProps {
   onClose: () => void;
@@ -16,6 +17,8 @@ interface BurgerProps {
 export const Burger: FC<BurgerProps> = ({ onClose }) => {
   const pathname = usePathname();
   const [isActive, setIsActive] = useState<IsActive>(false);
+
+ useBodyOverFlow(isActive);
 
   useEffect(() => {
     setIsActive(true);
