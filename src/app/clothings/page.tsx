@@ -12,6 +12,7 @@ export default function ClothingsPage() {
   useEffect(() => {
     (document.title = 'Clothings Store | Sneakers'), setClothings(clothes);
   }, []);
+  
   return (
     <div>
       <ProductsSelect products={clothings} setProducts={setClothings} />

@@ -1,38 +1,24 @@
 'use client';
 
-import { FC, Fragment, useEffect, useState } from 'react';
+import { FC, Fragment, useState } from 'react';
 import styles from '@/components/Header/header.module.scss';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import dynamic from 'next/dynamic';
-import { ScrolledNav } from '@/constants/types';
 import { DEFAULT__LINKS } from '@/constants/default-links';
 import { Burger } from '../Burger/Burger';
 import { NavigationPanel } from '../NavigationPanel/NavigationPanel';
 import { BurgerButton } from '../UI components/BurgerButton/BurgerButton';
+import { useScrollObserver } from '@/hooks/useScrollObserver';
 
 const Header: FC = () => {
   const pathname = usePathname();
   const [isMenuActive, setIsMenuActive] = useState<boolean>(false);
-  const [isScrolledNav, setIsScrolledNav] = useState<ScrolledNav>(false);
+  const { isScrolledNav } = useScrollObserver();
 
   const handleToggleMenu = () => {
     setIsMenuActive(!isMenuActive);
   };
-
-  useEffect(() => {
-    const handleNavScrolled = () => {
-      if (window.scrollY > 0) {
-        setIsScrolledNav(true);
-      } else {
-        setIsScrolledNav(false);
-      }
-    };
-    window.addEventListener('scroll', handleNavScrolled);
-    return () => {
-      window.removeEventListener('scroll', handleNavScrolled);
-    };
-  }, []);
 
   return (
     <Fragment>

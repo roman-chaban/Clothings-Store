@@ -29,10 +29,7 @@ export default function Collections() {
     return items.slice(start, end);
   };
 
-  const paginatedItems = paginate(
-    currentData as unknown as Products[],
-    currentPage
-  );
+  const paginatedItems = paginate(currentData, currentPage);
 
   return (
     <div className={styles.collections}>

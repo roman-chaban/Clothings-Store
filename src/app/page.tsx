@@ -3,7 +3,6 @@
 import { Hero } from '@/components/Hero/Hero';
 import { ProductsItem } from '@/components/ProductsUI/Products/Products';
 import products from '@/api/products/products.json';
-import { Products } from '@/interfaces/products';
 import { Provider } from 'react-redux';
 import { store } from '@/store/store/store';
 
@@ -12,7 +11,7 @@ export default function Home() {
     <Provider store={store}>
       <Hero />
       <ProductsItem
-        products={products as Products[]}
+        products={products}
         productLinkTitle={'/sneakers/sneaker/'}
         productTitle={'Most Popular'}
       />

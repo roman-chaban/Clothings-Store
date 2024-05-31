@@ -2,7 +2,7 @@
 
 import sneakersProducts from '@/api/products/products.json';
 import { ProductsCatalog } from '@/components/ProductsUI/ProductsCatalog/ProductsCatalog';
-import ProductsSelect  from '@/components/UI components/Select/Select';
+import ProductsSelect from '@/components/UI components/Select/Select';
 import { useEffect, useState } from 'react';
 import { Products } from '@/interfaces/products';
 
