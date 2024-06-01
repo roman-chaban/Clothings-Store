@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import styles from './SignUp.module.scss';
+import styles from './SignUpStyles.module.scss';
 import { SignUpForm } from '@/components/SignUpForm/SignUpForm';
 
 export const metadata: Metadata = {
