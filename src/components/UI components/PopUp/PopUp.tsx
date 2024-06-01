@@ -1,7 +1,7 @@
 'use client';
 
 import { FC, useEffect, useState } from 'react';
-import styles from './popup.module.scss';
+import styles from './Popup.module.scss';
 import { useSpring, animated } from 'react-spring';
 
 interface PopupProps {

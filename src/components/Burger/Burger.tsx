@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect, FC, KeyboardEventHandler } from 'react';
-import styles from './burger.module.scss';
+import styles from './Burger.module.scss';
 import Link from 'next/link';
 import { HeaderNavLinks, NAVBAR__LINKS } from '@/constants/header-links';
 import { FormClose } from 'grommet-icons';

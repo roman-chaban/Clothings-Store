@@ -1,7 +1,7 @@
 'use client';
 
 import { FC } from 'react';
-import styles from './socialForm.module.scss';
+import styles from './SocialForm.module.scss';
 import { Button } from '../UI components/Button/Button';
 import { Facebook, Google, Phone } from 'grommet-icons';
 import { ButtonBase } from '@mui/material';

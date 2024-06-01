@@ -7,7 +7,7 @@ import {
   DialogTitle,
 } from '@headlessui/react';
 import { FC, useState } from 'react';
-import styles from './modal.module.scss';
+import styles from './Modal.module.scss';
 import { Cursor } from 'grommet-icons';
 
 type Open = boolean;

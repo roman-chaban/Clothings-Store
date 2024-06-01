@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { HeaderNavLinks, NAVBAR__LINKS } from '@/constants/header-links';
 import { useAppSelector } from '@/hooks/useAppSelector';
 import { usePathname } from 'next/navigation';
-import styles from '@/components/Header/header.module.scss';
+import styles from '@/components/Header/Header.module.scss';
 import { Tooltip } from 'grommet-icons';
 
 export const NavigationPanel: FC = () => {

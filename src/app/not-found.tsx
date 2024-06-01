@@ -1,4 +1,4 @@
-import styles from '@/assets/styles/not-found.module.scss';
+import styles from '@/assets/styles/Not-found.module.scss';
 import { Revert } from 'grommet-icons';
 import { Metadata } from 'next';
 import Link from 'next/link';

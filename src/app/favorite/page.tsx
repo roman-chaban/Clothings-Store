@@ -8,7 +8,7 @@ import {
   deleteProductFromFavorite,
 } from '@/store/slices/favoriteSlice';
 import { Products } from '@/interfaces/products';
-import styles from './favorite.module.scss';
+import styles from './Favorite.module.scss';
 import { ProductFavorite } from '@/components/ProductsUI/ProductFavorite/ProductFavorite';
 
 const Favorite: FC = () => {

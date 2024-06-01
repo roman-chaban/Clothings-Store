@@ -1,7 +1,7 @@
 'use client';
 
 import { ChangeEvent, FC, useState } from 'react';
-import styles from './signInForm.module.scss';
+import styles from './SignInForm.module.scss';
 import { Input } from '@/components/UI components/Input/Input';
 import Link from 'next/link';
 import { SocialForm } from '../SocialForm/SocialForm';

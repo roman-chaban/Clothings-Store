@@ -1,7 +1,7 @@
 'use client';
 
 import { FC, Fragment, useState } from 'react';
-import styles from '@/components/Header/header.module.scss';
+import styles from '@/components/Header/Header.module.scss';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import dynamic from 'next/dynamic';

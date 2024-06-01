@@ -6,7 +6,7 @@ import makeAnimated from 'react-select/animated';
 import Select, { MultiValue, StylesConfig } from 'react-select';
 import { Sort, getSortedProducts } from '@/components/Sort/Sort';
 import { Products } from '@/interfaces/products';
-import styles from './select.module.scss';
+import styles from './Select.module.scss';
 import dynamic from 'next/dynamic';
 
 interface CustomSelectProps {

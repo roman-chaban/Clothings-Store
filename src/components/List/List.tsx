@@ -1,7 +1,7 @@
 'use client';
 
 import { FC } from 'react';
-import styles from '@/components/Footer/footer.module.scss';
+import styles from '@/components/Footer/Footer.module.scss';
 import Link from 'next/link';
 import { Github, Linkedin, Send } from 'grommet-icons';
 

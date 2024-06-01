@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { ProductsCatalog } from '@/components/ProductsUI/ProductsCatalog/ProductsCatalog';
 import { Products } from '@/interfaces/products';
-import styles from './collections.module.scss';
+import styles from './Collections.module.scss';
 import { Pagination } from '@/components/Pagination/Pagination';
 import { categories } from '@/constants/categories';
 import { CurrentPage } from '@/constants/types';

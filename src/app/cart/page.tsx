@@ -9,7 +9,7 @@ import {
 import { useAppDispatch } from '@/hooks/useAppDispatch';
 import { useAppSelector } from '@/hooks/useAppSelector';
 import { ProductCart } from '@/components/ProductsUI/ProductCart/ProductCart';
-import styles from '@/app/favorite/favorite.module.scss';
+import styles from '@/app/favorite/Favorite.module.scss';
 
 const ShoppingCart: FC = () => {
   const [isHydrated, setIsHydrated] = useState(false);

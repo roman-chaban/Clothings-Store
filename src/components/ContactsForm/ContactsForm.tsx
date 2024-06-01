@@ -1,7 +1,7 @@
 'use client';
 
 import { ChangeEvent, FC, useState } from 'react';
-import styles from '../../app/contacts/contacts.module.scss';
+import styles from '../../app/contacts/Contacts.module.scss';
 import { Input } from '@/components/UI components/Input/Input';
 import { Button } from '@mui/material';
 

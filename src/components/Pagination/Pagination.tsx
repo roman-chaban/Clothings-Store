@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { FC, useEffect } from 'react';
-import styles from './pagination.module.scss';
+import styles from './Pagination.module.scss';
 
 type PaginationProps = {
   totalPages: number;

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import styles from './help.module.scss';
+import styles from './Help.module.scss';
 import { HelpList } from '@/components/HelpList/HelpList';
 
 export const metadata: Metadata = {

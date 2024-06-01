@@ -1,7 +1,6 @@
 import products from '@/api/products/products.json';
-import styles from './sneaker.module.scss';
+import styles from './Sneaker.module.scss';
 import { Product } from '@/components/ProductsUI/Product/Product';
-import { Products } from '@/interfaces/products';
 import { ProductsItem } from '@/components/ProductsUI/Products/Products';
 
 interface SneakerProps {
