@@ -23,8 +23,14 @@
 
 @media only screen and (max-width: 1200px) {
   .sneakersContainer {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .sneakersContainer {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
 
