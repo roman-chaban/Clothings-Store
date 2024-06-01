@@ -4,7 +4,7 @@ import { Button } from '@mui/material';
 import { ChangeEvent, FC, useState } from 'react';
 import { SocialForm } from '@/components/SocialForm/SocialForm';
 import Link from 'next/link';
-import styles from './SignUpForm.module.scss';
+import styles from './SignUpFormStyles.module.scss';
 import { InputsFields } from '../InputsFields/InputsFields';
 
 export interface InputsFormData {

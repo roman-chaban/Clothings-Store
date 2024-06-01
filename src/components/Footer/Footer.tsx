@@ -1,7 +1,7 @@
 'use client';
 
 import { FC, useState } from 'react';
-import styles from './Footer.module.scss';
+import styles from './FooterStyles.module.scss';
 import { Input } from '../UI components/Input/Input';
 import { List, listItemsSocialMedia } from '../List/List';
 import { listItemsContacts } from '../List/contacts/contacts';

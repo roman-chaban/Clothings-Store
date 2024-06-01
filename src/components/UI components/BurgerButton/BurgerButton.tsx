@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import styles from './BurgerButton.module.scss';
+import styles from './BurgerButtonStyles.module.scss';
 
 interface ButtonProps {
   onClick: () => void;

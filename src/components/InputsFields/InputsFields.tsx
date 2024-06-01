@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { Input } from '../UI components/Input/Input';
-import styles from '../SignUpForm/SignUpForm.module.scss';
+import styles from '../SignUpForm/SignUpFormStyles.module.scss';
 import { InputsFormData } from '../SignUpForm/SignUpForm';
 
 export const InputsFields: FC<InputsFormData> = ({

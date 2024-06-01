@@ -1,7 +1,7 @@
 'use client';
 
 import { FC, useState } from 'react';
-import styles from './Hero.module.scss';
+import styles from './HeroStyles.module.scss';
 import { Input } from '../UI components/Input/Input';
 import { HeroSlider } from '../HeroSlider/HeroSlider';
 import { TypeValue } from '@/constants/types';

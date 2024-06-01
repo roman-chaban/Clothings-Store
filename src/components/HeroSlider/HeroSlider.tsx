@@ -14,7 +14,7 @@ import FirstBanner from '../../../public/images/banner/first.jpg';
 import SecondBanner from '../../../public/images/banner/second.jpg';
 import ThirdBanner from '../../../public/images/banner/third.jpg';
 
-import styles from './HeroSlider.module.scss';
+import styles from './HeroSliderStyles.module.scss';
 import { ActiveIndex } from '@/constants/types';
 
 export const HeroSlider: FC = () => {
