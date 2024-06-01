@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { DM_Sans } from 'next/font/google';
 import '@/assets/styles/main.scss';
 import Header from '@/components/Header/Header';
-import styles from '@/assets/styles/Layout.module.scss';
+import styles from '@/assets/styles/layout.module.scss';
 import { Footer } from '@/components/Footer/Footer';
 import { ButtonUp } from '@/components/UI components/buttonUp/ButtonUp';
 import { Providers } from '@/store/provider/provider';
