@@ -1,5 +1,5 @@
 import products from '@/api/products/products.json';
-import styles from './Sneaker.module.scss';
+import styles from './SneakerStyles.module.scss';
 import { Product } from '@/components/ProductsUI/Product/Product';
 import { ProductsItem } from '@/components/ProductsUI/Products/Products';
 

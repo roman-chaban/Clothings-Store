@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import styles from './Contacts.module.scss';
+import styles from './ContactsStyles.module.scss';
 import { ContactsForm } from '@/components/ContactsForm/ContactsForm';
 
 export const metadata: Metadata = {

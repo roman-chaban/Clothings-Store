@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import styles from '@/app/help/Help.module.scss';
+import styles from '@/app/help/HelpStyles.module.scss';
 import { helpList } from './help-list';
 
 export const HelpList: FC = () => {
