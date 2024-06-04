@@ -5,13 +5,14 @@ import { ProductsCatalog } from '@/components/ProductsUI/ProductsCatalog/Product
 import ProductsSelect from '@/components/UI components/Select/Select';
 import { useEffect, useState } from 'react';
 import { Products } from '@/interfaces/products';
+import { useChangePageTitle } from '@/hooks/useChangePageTitle';
 
 export default function Sneakers() {
   const [products, setProducts] = useState<Products[]>([]);
+  useChangePageTitle('Clothings Store | Sneakers')
 
   useEffect(() => {
-    (document.title = 'Clothings Store | Sneakers'),
-      setProducts(sneakersProducts);
+    setProducts(sneakersProducts);
   }, []);
 
   return (

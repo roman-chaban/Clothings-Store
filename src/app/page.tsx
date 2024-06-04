@@ -5,8 +5,10 @@ import { ProductsItem } from '@/components/ProductsUI/Products/Products';
 import products from '@/api/products/products.json';
 import { Provider } from 'react-redux';
 import { store } from '@/store/store/store';
+import { useChangePageTitle } from '@/hooks/useChangePageTitle';
 
 export default function Home() {
+  useChangePageTitle('Clothings Store | Home');
   return (
     <Provider store={store}>
       <Hero />
