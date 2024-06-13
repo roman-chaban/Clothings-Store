@@ -12,7 +12,7 @@ export const helpList: ListItems[] = [
     listSubitems: [
       {
         firstSubTitle:
-          'How to Place an Order: Browse our collections, select your desired items, choose the size and color, and add them to your cart. When you\re ready, proceed to checkout and follow the prompts to complete your purchase.',
+          'How to Place an Order: Browse our collections, select your desired items, choose the size and color, and add them to your cart. When you’re ready, proceed to checkout and follow the prompts to complete your purchase.',
         secondSubTitle:
           "Order Confirmation: After placing your order, you'll receive a confirmation email with your order details. If you don't receive it, please check your spam folder or contact us.",
       },
