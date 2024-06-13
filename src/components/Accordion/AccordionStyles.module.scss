@@ -1,25 +1,23 @@
-:root {
-  --primary-accordion: #ffffff;
-  --primary-accordion-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
-    rgba(0, 0, 0, 0.24) 0px 1px 2px;
-  --primary-accordion-background: #f0f0f0;
-  --primary-accordion-light: #dddddd;
-  --primary-accordion-gray: #333333;
-}
+$primary-accordion: #ffffff;
+$primary-accordion-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+  rgba(0, 0, 0, 0.24) 0px 1px 2px;
+$primary-accordion-background: #f0f0f0;
+$primary-accordion-light: #dddddd;
+$primary-accordion-gray: #333333;
 
 .accordion {
   display: flex;
   flex-direction: column;
   gap: 20px;
   cursor: pointer;
-  background-color: var(--primary-accordion);
+  background-color: $primary-accordion;
   border-radius: 8px;
   padding: 15px;
   transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease;
 }
 
 .accordion:hover {
-  background-color: var(--primary-accordion-background);
+  background-color: $primary-accordion-background;
 }
 
 .title {
@@ -29,7 +27,7 @@
   font-size: 24px;
   font-weight: 600;
   margin: 0;
-  color: var(--primary-accordion-gray);
+  color: $primary-accordion-gray;
   transition: color 0.3s ease;
 }
 
