@@ -6,3 +6,31 @@
 * {
   transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background: $gray;
+  border-radius: rem(12px);
+  cursor: pointer;
+  transition: background 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    height 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $secondary;
+  height: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
