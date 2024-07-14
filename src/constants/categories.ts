@@ -1,7 +1,8 @@
-import { Products } from '@/interfaces/products';
-import products from '@/api/products/products.json';
-import clothings from '@/api/clothing/clothing.json';
-import accessories from '@/api/accessories/accessories.json';
+import { Products } from "@/interfaces/products";
+import products from "@/api/products/products.json";
+import clothings from "@/api/clothing/clothing.json";
+import accessories from "@/api/accessories/accessories.json";
+import { CategoriesCaptures } from "@/enums/categories";
 
 export interface Categories {
   products: {
@@ -27,20 +28,20 @@ export interface Categories {
 export const categories: Categories = {
   products: {
     data: products,
-    title: "Men's Sneakers",
-    pageTitle: "Men's Sneakers",
-    link: '/sneakers/sneaker/',
+    title: CategoriesCaptures.SNEAKERS,
+    pageTitle: CategoriesCaptures.SNEAKERS,
+    link: "/sneakers/sneaker/",
   },
   clothings: {
     data: clothings,
-    title: 'Clothings',
-    pageTitle: 'Clothings',
-    link: '/clothings/',
+    title: CategoriesCaptures.CLOTHINGS,
+    pageTitle: CategoriesCaptures.CLOTHINGS,
+    link: "/clothings/",
   },
   accessories: {
     data: accessories,
-    title: 'Accessories',
-    pageTitle: 'Accessories',
-    link: '/accessories/',
+    title: CategoriesCaptures.ACCESSORIES,
+    pageTitle: CategoriesCaptures.ACCESSORIES,
+    link: "/accessories/",
   },
 };

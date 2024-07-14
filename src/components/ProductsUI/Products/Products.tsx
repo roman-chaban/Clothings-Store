@@ -8,9 +8,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import 'swiper/swiper-bundle.css';
-import 'swiper/css/effect-fade';
-import 'swiper/css/effect-flip';
+import 'swiper/css/scrollbar';
+import './ProductsSwiper.scss';
 import SwiperCore from 'swiper';
 import { Navigation } from 'swiper/modules';
 import { Button } from '@mui/material';
@@ -92,21 +91,15 @@ export const ProductsItem: FC<ProductsProps> = ({
       <div className={styles.productsWrapper}>
         <Swiper
           ref={swiperRef}
-          className={styles.swiper__wrapper}
           spaceBetween={20}
-          speed={900}
+          speed={100}
           loop={false}
-          allowSlideNext={!isNextDisabled}
-          allowSlidePrev={!isPrevDisabled}
-          style={{ cursor: 'grab', width: '100%', maxWidth: '1440px' }}
           onSlideChange={updateNavigationButtons}
+          slidesPerView="auto"
+          centeredSlides={false}
         >
           {products.map((product) => (
-            <SwiperSlide
-              key={product.productId}
-              className={styles.slide}
-              style={{ width: '100%', maxWidth: '300px' }}
-            >
+            <SwiperSlide key={product.productId} style={{width: 300}}>
               <ProductFavorite
                 about={product.about}
                 productId={product.productId}

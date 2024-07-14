@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { FC, useEffect } from 'react';
-import styles from './PaginationStyles.module.scss';
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { FC, useEffect } from "react";
+import styles from "./PaginationStyles.module.scss";
 
 type PaginationProps = {
   totalPages: number;
@@ -30,14 +30,14 @@ export const Pagination: FC<PaginationProps> = ({
 
       if (currentPage <= 4) {
         pageNumbers.push(3, 4, 5);
-        pageNumbers.push('...');
+        pageNumbers.push("...");
       } else if (currentPage >= totalPages - 3) {
-        pageNumbers.push('...');
+        pageNumbers.push("...");
         pageNumbers.push(totalPages - 4, totalPages - 3, totalPages - 2);
       } else {
-        pageNumbers.push('...');
+        pageNumbers.push("...");
         pageNumbers.push(currentPage - 1, currentPage, currentPage + 1);
-        pageNumbers.push('...');
+        pageNumbers.push("...");
       }
 
       pageNumbers.push(totalPages - 1, totalPages);
@@ -49,7 +49,7 @@ export const Pagination: FC<PaginationProps> = ({
   useEffect(() => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   }, [currentPage]);
 
@@ -57,18 +57,16 @@ export const Pagination: FC<PaginationProps> = ({
     <>
       <nav
         className={styles.pagination__isRounded}
-        role='navigation'
-        aria-label='pagination'
-      >
+        role="navigation"
+        aria-label="pagination">
         <button
           className={styles.pagination__previous}
           onClick={() => onPageChange(currentPage - 1)}
           disabled={currentPage === 1}
           style={{
             opacity: currentPage === 1 ? 0.7 : 1,
-            cursor: currentPage === 1 ? 'not-allowed' : '',
-          }}
-        >
+            cursor: currentPage === 1 ? "not-allowed" : "",
+          }}>
           Previous
         </button>
 
@@ -78,16 +76,15 @@ export const Pagination: FC<PaginationProps> = ({
           disabled={currentPage === totalPages}
           style={{
             opacity: currentPage === totalPages ? 0.7 : 1,
-            cursor: currentPage === totalPages ? 'not-allowed' : '',
-          }}
-        >
+            cursor: currentPage === totalPages ? "not-allowed" : "",
+          }}>
           Next page
         </button>
 
         <ul className={styles.pagination__list}>
           {generatePageNumbers().map((pageNumber, index) => (
             <li key={index}>
-              {typeof pageNumber === 'number' ? (
+              {typeof pageNumber === "number" ? (
                 <Link
                   href={{
                     pathname: pathname,
@@ -99,12 +96,11 @@ export const Pagination: FC<PaginationProps> = ({
                       : styles.pagination__link
                   }
                   aria-label={`Go to page ${pageNumber}`}
-                  onClick={() => onPageChange(pageNumber)}
-                >
+                  onClick={() => onPageChange(pageNumber)}>
                   {pageNumber}
                 </Link>
               ) : (
-                <span className='pagination-ellipsis'>...</span>
+                <span className="pagination-ellipsis">...</span>
               )}
             </li>
           ))}

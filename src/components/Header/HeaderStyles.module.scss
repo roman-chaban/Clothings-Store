@@ -1,6 +1,6 @@
-@import '../../assets/styles/colors.scss';
-@import '../../assets/styles/globals.scss';
-@import '../../assets/styles/functions.scss';
+@import "../../assets/styles/colors.scss";
+@import "../../assets/styles/globals.scss";
+@import "../../assets/styles/functions.scss";
 
 .empty__blockBg {
   display: flex;
@@ -25,7 +25,7 @@
 }
 
 .decoration__line::before {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   left: 38px;
@@ -40,6 +40,7 @@
   font-weight: 500;
   color: $thirdary;
   transition: color 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+
   &:hover {
     color: $secondary;
   }
@@ -68,6 +69,7 @@
   font-weight: 600;
   cursor: pointer;
   transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+
   &:hover {
     transform: scale(1.1);
   }
@@ -107,13 +109,14 @@
   font-size: $primary-size;
   position: relative;
   transition: all 0.4s ease-in-out 0s;
+
   &:hover {
     color: $light-black;
   }
 }
 
 .menu__listItem::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   bottom: -3px;
@@ -138,7 +141,7 @@
   position: relative;
 }
 
-.nav__icon > .counter__icon {
+.nav__icon>.counter__icon {
   position: absolute;
   top: -5px;
   right: -14px;
@@ -219,6 +222,7 @@
 .light__logo {
   cursor: pointer;
   transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+
   &:hover {
     opacity: 0.4;
     transform: scale(1.1);
@@ -229,9 +233,11 @@
   .header__menu {
     display: none;
   }
+
   .header__container {
     padding-right: rem(40px);
   }
+
   .nav__buttonsBlock {
     display: none;
   }

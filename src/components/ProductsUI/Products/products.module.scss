@@ -1,14 +1,11 @@
-@import '../../../assets/styles/colors.scss';
-@import '../../../assets/styles/globals.scss';
-@import '../../../assets/styles/functions.scss';
+@import "../../../assets/styles/colors.scss";
+@import "../../../assets/styles/globals.scss";
+@import "../../../assets/styles/functions.scss";
 
 .products {
   display: flex;
   flex-direction: column;
   gap: rem(40px);
-}
-.swiper__wrapper {
-  gap: rem(40px) !important;
 }
 
 .productsWrapper {
@@ -19,7 +16,15 @@
   max-width: 1440px;
   overflow: hidden;
   margin-bottom: rem(50px);
-  height: 600px;
+  height: auto;
+}
+
+.slide {
+  width: 400px !important;
+}
+
+.swiper__wrapper {
+  gap: rem(40px) !important;
 }
 
 .productBlock {
@@ -31,10 +36,6 @@
   padding: rem(20px);
   border-radius: rem(181px);
   margin: rem(20px) 0;
-}
-
-.slide {
-  width: 400px !important;
 }
 
 .shoesTitle {

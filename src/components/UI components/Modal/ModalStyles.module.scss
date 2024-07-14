@@ -1,13 +1,20 @@
-@import '../../../assets/styles/colors.scss';
-@import '../../../assets/styles/globals.scss';
-@import '../../../assets/styles/functions.scss';
+@import "../../../assets/styles/colors.scss";
+@import "../../../assets/styles/globals.scss";
+@import "../../../assets/styles/functions.scss";
 
 .modalButton {
   background: $light-black;
   color: $thirdary;
   padding: rem(10px);
   border-radius: rem(20px);
-  max-width: rem(800px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: rem(20px);
+  transition: background 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+  &:hover {
+    background: $gray;
+  }
 }
 
 .modalContainer {
@@ -17,9 +24,26 @@
   top: 0;
   left: 0;
   z-index: 50;
+  background: rgba(0, 0, 0, 0.8);
+  padding: rem(20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+
+.fixedModal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: rem(600px);
+  height: auto;
   background: $light-black;
-  padding: rem(50px);
-  padding-top: 0;
+  padding: rem(30px);
+  border-radius: rem(10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  flex-direction: column;
 }
 
 .modalPanel {
@@ -27,7 +51,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: rem(20px);
+  gap: rem(40px);
+  width: 100%;
 }
 
 .modalTitle {
@@ -36,16 +61,14 @@
   align-items: center;
   font-size: $ten-size;
   color: $thirdary;
+  text-align: center;
 }
 
 .modalSubTitle {
   color: $thirdary;
   line-height: 150%;
   font-size: $four-size;
-}
-
-.modalDescription {
-  color: $thirdary;
+  text-align: center;
 }
 
 .closedBtn {
@@ -54,15 +77,68 @@
   color: $light-black;
   font-weight: 600;
   border-radius: rem(10px);
+  cursor: pointer;
 }
 
-.modalButton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: rem(20px);
-  transition: background 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
-  &:hover {
-    background: $gray;
+@media (max-width: rem(872px)) {
+  .modalButton {
+    padding: rem(8px);
+    font-size: $eight-size;
+  }
+
+  .modalContainer {
+    padding: rem(10px);
+  }
+
+  .fixedModal {
+    padding: rem(15px);
+  }
+
+  .modalTitle {
+    font-size: $six-size;
+  }
+
+  .modalSubTitle {
+    font-size: $primary-info-about;
+  }
+
+  .closedBtn {
+    padding: rem(8px);
+  }
+}
+
+@media (max-width: 480px) {
+  .modalButton {
+    flex-direction: column;
+    gap: rem(10px);
+  }
+
+  .modalTitle {
+    font-size: $four-size;
+  }
+
+  .closedBtn {
+    padding: rem(6px);
+  }
+}
+
+@media (max-width: 320px) {
+  .modalButton {
+    padding: rem(5px);
+    font-size: $six-size;
+    gap: rem(5px);
+  }
+
+  .fixedModal {
+    padding: rem(10px);
+  }
+
+  .modalTitle {
+    font-size: $five-size;
+  }
+
+  .closedBtn {
+    padding: rem(5px);
+    font-size: $five-size;
   }
 }
