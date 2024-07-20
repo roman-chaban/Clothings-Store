@@ -10,3 +10,6 @@ We take pride in offering a wide selection of renowned brands, including Nike, A
 At Clothings Store, we don't just sell clothing - we provide unparalleled service aimed at satisfying our customers. Our experts are always ready to help you find the perfect piece, taking into account your needs and style preferences. We strive to make your shopping experience enjoyable and unforgettable.
 
 Visit Clothings Store today to discover endless possibilities of fashionable clothing and elevate your style to new heights!
+
+**Project Demo Image**: 
+![image](https://github.com/user-attachments/assets/2049bfc4-7365-4bd1-bf63-1b9b33952cca)
