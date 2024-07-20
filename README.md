@@ -13,5 +13,7 @@ Visit Clothings Store today to discover endless possibilities of fashionable clo
 
 **Project Demo Image**: 
 ![image](https://github.com/user-attachments/assets/2459aba2-e0f4-42e1-b4d2-2daf52d2c046)
-<br />
+
+
+
 ![image](https://github.com/user-attachments/assets/2049bfc4-7365-4bd1-bf63-1b9b33952cca)
