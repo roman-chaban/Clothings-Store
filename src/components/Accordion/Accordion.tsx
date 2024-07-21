@@ -1,6 +1,6 @@
-import React, { type FC } from 'react';
-import styles from './AccordionStyles.module.scss';
-import { Add, Subtract } from 'grommet-icons';
+import React, { type FC } from "react";
+import styles from "./AccordionStyles.module.scss";
+import { Add, Subtract } from "grommet-icons";
 
 interface AccordionProps {
   onToggle: () => void;
@@ -23,17 +23,17 @@ export const Accordion: FC<AccordionProps> = ({
       <h1 className={styles.title}>
         {title}
         <span
-          className='icon'
-          style={{ transform: isOpen ? 'rotate(0deg)' : 'rotate(90deg)' }}
+          className="icon"
+          style={{ transform: isOpen ? "rotate(0deg)" : "rotate(90deg)" }}
         >
           {isOpen ? (
-            <Subtract color='rgba(0, 0, 0, 0.8)' />
+            <Subtract color="rgba(0, 0, 0, 0.8)" />
           ) : (
-            <Add color='rgba(0, 0, 0, 0.8)' />
+            <Add color="rgba(0, 0, 0, 0.8)" />
           )}
         </span>
       </h1>
-      <div className={`${styles.content} ${isOpen ? styles.open : ''}`}>
+      <div className={`${styles.content} ${isOpen ? styles.open : ""}`}>
         <div>
           <p className={styles.subTitle}>{subTitles.firstSubTitle}</p>
           {subTitles.secondSubTitle && (

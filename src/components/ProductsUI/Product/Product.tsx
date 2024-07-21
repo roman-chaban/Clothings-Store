@@ -1,6 +1,6 @@
 "use client";
 
-import { FC, memo, useState } from "react";
+import { FC, memo, useState, useEffect } from "react";
 import Link from "next/link";
 import { Products } from "@/interfaces/products";
 import Image from "next/image";
@@ -17,42 +17,23 @@ interface SneakerProductProps {
 export const Product: FC<SneakerProductProps> = memo(({ products }) => {
   const [sneakerImage, setSneakerImage] = useState<SneakerImage>("");
   const [currentImageIndex, setCurrentImageIndex] = useState<CurrentIndex>(0);
+  const [currentProduct, setCurrentProduct] = useState<Products | null>(null);
 
-  const handleThumbnailClick = (image: string) => {
+  useEffect(() => {
+    if (products.length > 0) {
+      setCurrentProduct(products[0]);
+      setSneakerImage(products[0].mainImage);
+      setCurrentImageIndex(0);
+    }
+  }, [products]);
+
+  const handleThumbnailClick = (image: string, product: Products) => {
     setSneakerImage(image);
-  };
-
-  const handleNextImageClick = (product: Products) => {
-    const nextIndex = (currentImageIndex + 1) % product.images.length;
-    setCurrentImageIndex(nextIndex);
-    const nextImage = product.images[nextIndex];
-    const nextImageUrl =
-      nextImage &&
-      (nextImage.one ||
-        nextImage.two ||
-        nextImage.three ||
-        nextImage.four ||
-        nextImage.five);
-    if (nextImageUrl) {
-      setSneakerImage(nextImageUrl);
-    }
-  };
-
-  const handlePrevImageClick = (product: Products) => {
-    const prevIndex =
-      (currentImageIndex - 1 + product.images.length) % product.images.length;
-    setCurrentImageIndex(prevIndex);
-    const prevImage = product.images[prevIndex];
-    const prevImageUrl =
-      prevImage &&
-      (prevImage.one ||
-        prevImage.two ||
-        prevImage.three ||
-        prevImage.four ||
-        prevImage.five);
-    if (prevImageUrl) {
-      setSneakerImage(prevImageUrl);
-    }
+    setCurrentProduct(product);
+    const index = product.images.findIndex((img) =>
+      Object.values(img).includes(image)
+    );
+    setCurrentImageIndex(index);
   };
 
   return (
@@ -82,94 +63,21 @@ export const Product: FC<SneakerProductProps> = memo(({ products }) => {
           <div key={product.productId} className={styles.sneakerImagesBlock}>
             <div className={styles.product__images}>
               <div className={styles.smallImages}>
-                {Array.isArray(product.images) && product.images.length > 0 && (
-                  <>
-                    {product.images[0]?.one && (
-                      <Image
-                        loading="lazy"
-                        className={`${styles.smallImage} ${
-                          sneakerImage === product.images[0].one
-                            ? styles.active
-                            : ""
-                        }`}
-                        alt={product.title}
-                        width={80}
-                        height={100}
-                        src={product.images[0].one}
-                        onClick={() =>
-                          handleThumbnailClick(product.images[0].one)
-                        }
-                      />
-                    )}
-                    {product.images[0]?.two && (
-                      <Image
-                        loading="lazy"
-                        className={`${styles.smallImage} ${
-                          sneakerImage === product.images[0].two
-                            ? styles.active
-                            : ""
-                        }`}
-                        alt={product.title}
-                        width={80}
-                        height={100}
-                        src={product.images[0].two}
-                        onClick={() =>
-                          handleThumbnailClick(product.images[0].two)
-                        }
-                      />
-                    )}
-                    {product.images[0]?.three && (
-                      <Image
-                        loading="lazy"
-                        className={`${styles.smallImage} ${
-                          sneakerImage === product.images[0].three
-                            ? styles.active
-                            : ""
-                        }`}
-                        alt={product.title}
-                        width={80}
-                        height={100}
-                        src={product.images[0].three}
-                        onClick={() =>
-                          handleThumbnailClick(product.images[0].three)
-                        }
-                      />
-                    )}
-                    {product.images[0]?.four && (
-                      <Image
-                        loading="lazy"
-                        className={`${styles.smallImage} ${
-                          sneakerImage === product.images[0].four
-                            ? styles.active
-                            : ""
-                        }`}
-                        alt={product.title}
-                        width={80}
-                        height={100}
-                        src={product.images[0].four}
-                        onClick={() =>
-                          handleThumbnailClick(product.images[0].four)
-                        }
-                      />
-                    )}
-                    {product.images[0]?.five && (
-                      <Image
-                        loading="lazy"
-                        className={`${styles.smallImage} ${
-                          sneakerImage === product.images[0].five
-                            ? styles.active
-                            : ""
-                        }`}
-                        alt={product.title}
-                        width={80}
-                        height={100}
-                        src={product.images[0].five}
-                        onClick={() =>
-                          handleThumbnailClick(product.images[0].five)
-                        }
-                      />
-                    )}
-                  </>
+                {product.images.map((imageSet, index) =>
+                  Object.values(imageSet).map((image, i) => (
+                    <Image
+                      key={`${index}-${i}`}
+                      loading="lazy"
+                      className={`${styles.smallImage} ${
+                        sneakerImage === image ? styles.active : ""
+                      }`}
+                      alt={product.title}
+                      width={80}
+                      height={100}
+                      src={image}
+                      onClick={() => handleThumbnailClick(image, product)}
+                    />
+                  ))
                 )}
               </div>
             </div>
@@ -182,36 +90,40 @@ export const Product: FC<SneakerProductProps> = memo(({ products }) => {
                 height={500}
                 alt={product.title}
               />
-              <div className={styles.nextPrev__buttons}>
+              {/* <div className={styles.nextPrev__buttons}>
                 <button
                   className={styles.btn}
                   type="button"
-                  onClick={() => handlePrevImageClick(product)}>
+                  onClick={handlePrevImageClick}
+                >
                   <Previous color="#111111" style={{ width: 20, height: 20 }} />
                 </button>
                 <button
                   className={styles.btn}
                   type="button"
-                  onClick={() => handleNextImageClick(product)}>
+                  onClick={handleNextImageClick}
+                >
                   <Next color="#111111" style={{ width: 20, height: 20 }} />
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
         ))}
-        <ProductInfo
-          products={products}
-          productId={0}
-          title={""}
-          name={""}
-          category={""}
-          style={""}
-          price={0}
-          productRating={0}
-          mainImage={""}
-          images={[]}
-          about={""}
-        />
+        {currentProduct && (
+          <ProductInfo
+            products={products}
+            productId={currentProduct.productId}
+            title={currentProduct.title}
+            name={currentProduct.name}
+            category={currentProduct.category}
+            style={currentProduct.style}
+            price={currentProduct.price}
+            productRating={currentProduct.productRating}
+            mainImage={currentProduct.mainImage}
+            images={currentProduct.images}
+            about={currentProduct.about}
+          />
+        )}
       </div>
     </div>
   );

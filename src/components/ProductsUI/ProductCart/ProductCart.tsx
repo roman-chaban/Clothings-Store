@@ -4,7 +4,6 @@ import { Products } from "@/interfaces/products";
 import { FC, useState } from "react";
 import styles from "./cart.module.scss";
 import Image from "next/image";
-import Checkbox from "@mui/material/Checkbox";
 import { FormClose, Star } from "grommet-icons";
 import { useCount } from "@/hooks/useCount";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
@@ -29,7 +28,6 @@ export const ProductCart: FC<ProductCartProps> = ({
   productLinkTitle,
   onDeleteFromCart,
 }) => {
-  const [checkedValue, setCheckedValue] = useState<CheckedValue>(false);
   const [productItemCounter, setProductCounter] = useState<ProductItem>(0);
   const { productPrice, onAddProduct, onDeleteProduct } = useCount(price);
 
