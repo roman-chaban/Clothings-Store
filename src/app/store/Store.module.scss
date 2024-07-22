@@ -1,0 +1,16 @@
+@import "../../assets/styles/colors.scss";
+@import "../../assets/styles/globals.scss";
+
+.store__title {
+  font-size: $six-size;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.store__about {
+  font-size: $five-size;
+  font-weight: 500;
+  line-height: 125%;
+}

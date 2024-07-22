@@ -5,7 +5,6 @@ import styles from './HeroStyles.module.scss';
 import { Input } from '../UI components/Input/Input';
 import { HeroSlider } from '../HeroSlider/HeroSlider';
 import { TypeValue } from '@/constants/types';
-import { Modal } from '../UI components/Modal/Modal';
 
 export const Hero: FC = () => {
   const [value, setValue] = useState<TypeValue>('Search...');
@@ -13,7 +12,6 @@ export const Hero: FC = () => {
   return (
     <div className={styles.hero}>
       <div className={styles.heroTop__block}>
-        <Modal />
         <div className={styles.search__blockItem}>
           <Input
             className={styles.hero__search}

@@ -10,16 +10,13 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "./ProductsSwiper.scss";
-import SwiperCore from "swiper";
-import { Navigation } from "swiper/modules";
 import { Button } from "@mui/material";
 import { useAppDispatch } from "@/hooks/useAppDispatch";
 import {
   addProductToFavorite,
   deleteProductFromFavorite,
 } from "@/store/slices/favoriteSlice";
-
-SwiperCore.use([Navigation]);
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 interface ProductsProps {
   products: Products[];
@@ -78,6 +75,7 @@ export const ProductsItem: FC<ProductsProps> = ({
             }`}
             onClick={() => swiperRef.current?.swiper?.slidePrev()}
             disabled={isPrevDisabled}
+            style={{ cursor: isPrevDisabled ? "not-allowed" : "" }}
           >
             Previous
           </Button>
@@ -95,10 +93,12 @@ export const ProductsItem: FC<ProductsProps> = ({
       </div>
       <div className={styles.productsWrapper}>
         <Swiper
+          modules={[Navigation, Pagination, Autoplay]}
+          // autoplay={{ delay: 1000 }}
           ref={swiperRef}
           spaceBetween={20}
-          speed={100}
-          loop={false}
+          speed={700}
+          loop={true}
           onSlideChange={updateNavigationButtons}
           slidesPerView="auto"
           centeredSlides={false}
