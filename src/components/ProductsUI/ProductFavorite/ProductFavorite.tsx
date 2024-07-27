@@ -131,7 +131,6 @@ export const ProductFavorite: FC<ProductCartProps> = ({
               }}
               onDeleteProduct={onDeleteProduct}
               onClick={handleAddToShoppingCart}
-              isProductInCart={false}
             />
           </div>
         </div>

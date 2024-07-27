@@ -2,7 +2,6 @@
 @import '../../../assets/styles/globals.scss';
 @import '../../../assets/styles/functions.scss';
 
-
 .productCart {
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -157,7 +156,7 @@
 .cardDiscount {
   position: absolute;
   top: 10px;
-  right: 30px;
+  right: 40px;
   font-size: rem(14px);
   background: $light-black;
   font-weight: 600;
@@ -200,17 +199,25 @@
   border-top-left-radius: 1rem;
 }
 
-@media screen and (max-width: rem(1070px)) {
-  .cardDiscount {
-    left: auto;
-    right: rem(10px);
-  }
+.favorite__button {
+  padding: 5px !important;
+  min-width: 40px !important;
+}
+
+.favorite__icon {
+  color: rgb(162, 11, 11);
+}
+
+@media screen and (max-width: rem(1196px)) {
   .shopBtn {
     max-width: rem(200px);
   }
   .productButtons__block {
     justify-content: flex-start;
     gap: rem(40px);
+  }
+  .cardDiscount {
+    right: 100px;
   }
 }
 
@@ -220,8 +227,6 @@
   }
   .cardDiscount {
     left: auto;
-    right: rem(10px);
-    top: rem(10px);
   }
   .productCart__container {
     justify-content: center;

@@ -1,6 +1,6 @@
-@import "../../../assets/styles/colors.scss";
-@import "../../../assets/styles/globals.scss";
-@import "../../../assets/styles/functions.scss";
+@import '../../../assets/styles/colors.scss';
+@import '../../../assets/styles/globals.scss';
+@import '../../../assets/styles/functions.scss';
 
 .products {
   display: flex;
@@ -63,8 +63,6 @@
     border: 1.5px solid $light-black !important;
   }
 }
-
-
 
 @media screen and (max-width: rem(1050px)) {
   .swiper__wrapper {

@@ -94,7 +94,6 @@ export const ProductsItem: FC<ProductsProps> = ({
       <div className={styles.productsWrapper}>
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
-          // autoplay={{ delay: 1000 }}
           ref={swiperRef}
           spaceBetween={20}
           speed={700}

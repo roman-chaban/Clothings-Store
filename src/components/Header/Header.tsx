@@ -25,7 +25,8 @@ const Header: FC = () => {
       <header
         className={`${styles.header} ${
           isScrolledNav ? styles.header__active : ""
-        }`}>
+        }`}
+      >
         <div className={styles.empty__blockBg}>
           <svg
             className={styles.light__logo}
@@ -33,12 +34,14 @@ const Header: FC = () => {
             width="100"
             height="80"
             color="#fff"
-            viewBox="0 0 24 24">
+            viewBox="0 0 24 24"
+          >
             <path
               fill="currentColor"
               fillRule="evenodd"
               d="M21 8.719L7.836 14.303C6.74 14.768 5.818 15 5.075 15c-.836 0-1.445-.295-1.819-.884-.485-.76-.273-1.982.559-3.272.494-.754 1.122-1.446 1.734-2.108-.144.234-1.415 2.349-.025 3.345.275.2.666.298 1.147.298.386 0 .829-.063 1.316-.19L21 8.719z"
-              clipRule="evenodd"></path>
+              clipRule="evenodd"
+            ></path>
           </svg>
           <div className={styles.empty__links}>
             <Link
@@ -46,7 +49,8 @@ const Header: FC = () => {
                 color: pathname === DEFAULT__LINKS.HELP ? "#737373" : "",
               }}
               className={`${styles.empty__link} ${styles.decoration__line}`}
-              href={DEFAULT__LINKS.HELP}>
+              href={DEFAULT__LINKS.HELP}
+            >
               Help
             </Link>
             <Link
@@ -54,7 +58,8 @@ const Header: FC = () => {
                 color: pathname === DEFAULT__LINKS.STORE ? "#737373" : "",
               }}
               className={styles.empty__link}
-              href={DEFAULT__LINKS.STORE}>
+              href={DEFAULT__LINKS.STORE}
+            >
               Store
             </Link>
           </div>
@@ -68,12 +73,14 @@ const Header: FC = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 width="50"
                 height="50"
-                viewBox="0 0 24 24">
+                viewBox="0 0 24 24"
+              >
                 <path
                   fill="currentColor"
                   fillRule="evenodd"
                   d="M21 8.719L7.836 14.303C6.74 14.768 5.818 15 5.075 15c-.836 0-1.445-.295-1.819-.884-.485-.76-.273-1.982.559-3.272.494-.754 1.122-1.446 1.734-2.108-.144.234-1.415 2.349-.025 3.345.275.2.666.298 1.147.298.386 0 .829-.063 1.316-.19L21 8.719z"
-                  clipRule="evenodd"></path>
+                  clipRule="evenodd"
+                ></path>
               </svg>
             </Link>
           </div>

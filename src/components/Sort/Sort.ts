@@ -1,9 +1,9 @@
-import { Products } from '@/interfaces/products';
+import { Products } from "@/interfaces/products";
 
 export const enum Sort {
-  ALPHABET = 'Alphabetically',
-  DISCOUNT = 'Discount',
-  CHEAPEST = 'Cheapest',
+  ALPHABET = "Alphabetically",
+  DISCOUNT = "Discount",
+  CHEAPEST = "Cheapest",
 }
 
 export const getSortedProducts = (products: Products[], sortBy: Sort) => {
@@ -17,17 +17,17 @@ export const getSortedProducts = (products: Products[], sortBy: Sort) => {
       break;
     case Sort.CHEAPEST:
       preparedProducts.sort((a, b) => {
-        const aPrice = typeof a.price === 'number' ? a.price : 0;
-        const bPrice = typeof b.price === 'number' ? b.price : 0;
+        const aPrice = typeof a.price === "number" ? a.price : 0;
+        const bPrice = typeof b.price === "number" ? b.price : 0;
         return aPrice - bPrice;
       });
       break;
     case Sort.DISCOUNT:
       preparedProducts.sort((a, b) => {
         const aDiscount =
-          typeof a.priceDiscount === 'number' ? a.priceDiscount : 0;
+          typeof a.priceDiscount === "number" ? a.priceDiscount : 0;
         const bDiscount =
-          typeof b.priceDiscount === 'number' ? b.priceDiscount : 0;
+          typeof b.priceDiscount === "number" ? b.priceDiscount : 0;
         return bDiscount - aDiscount;
       });
       break;
